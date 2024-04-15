@@ -49,7 +49,7 @@ header nav ul li a:hover {
 
 .Jumbotron {
   background-color: rgb(13, 110, 253); /* color de fondo: negro */
-  text-shadow: black -2px; /* Sombra de texto */
+  text-shadow: #000000 -2px; /* Sombra de texto */
   font-size: 16px; /* Tamaño de fuente */
   text-align: left; /* Alinea el texto a la izquierda */
 }
@@ -165,7 +165,7 @@ video {
   width: 150px; /* Ancho */
   background-color: white; /* Color de fondo */
   text-align: center; /* Alineación del texto al centro */
-  border: 4px solid black; /* Borde sólido con color negro */
+  border: 4px solid #000000; /* Borde sólido con color negro */
   padding: 15px; /* Espaciado interno */
   max-height: 150px; /* Altura máxima */
   overflow: hidden; /* Oculta la barra de desplazamiento */
@@ -181,7 +181,7 @@ video {
 }
 .contenedor-recuadros .recuadro:hover {
   transform: scale(0.7); /* Reduce el tamaño del elemento al 70% */
-  background-color: black; /* Cambia el color de fondo a negro */
+  background-color: #000000; /* Cambia el color de fondo a negro */
   border-radius: 20px; /* Establece un radio de borde de 20px */
   color: white; /* Color del texto */
 }
@@ -231,7 +231,7 @@ button {
 }
 
 footer {
-  background-color: black; /* Color de fondo */
+  background-color: #000000; /* Color de fondo */
   color: white; /* Color del texto */
   text-align: center; /* Alineación del texto al centro */
   padding: 10px; /* Espaciado interno */
@@ -240,6 +240,132 @@ footer .redes a {
   color: rgb(13, 110, 253); /* Color del texto azul */
   font-size: 35px; /* Tamaño de fuente de 35px */
   letter-spacing: 20px; /* Espaciado entre letras de 20px */
+}
+
+.whats {
+  background-color: blanchedalmond; /* Color de fondo */
+  color: rgb(34, 204, 12); /* Color del texto */
+  height: 100px; /* Altura del elemento */
+  width: 100px; /* Ancho del elemento */
+  border: 2px solid; /* Grosor, estilo y color del borde */
+  font-size: 45px; /* Tamaño de la fuente */
+  right: 40px; /* Distancia desde el borde derecho */
+  bottom: 40px; /* Distancia desde el borde inferior */
+}
+
+.contact {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  padding-top: 20px;
+}
+
+.subir {
+  height: 20px; /* Altura del elemento */
+  width: 20px; /* Ancho del elemento */
+  background-color: #333; /* Color de fondo */
+  color: white; /* Color del texto */
+  position: fixed; /* Posicionamiento fijo */
+  border-radius: 50%; /* Forma redondeada */
+  text-align: center; /* Alineación del texto */
+  line-height: 20px; /* Altura de línea */
+  font-size: 15px; /* Tamaño del texto */
+  right: 20px; /* Distancia desde el borde derecho del contenedor padre */
+  bottom: 100px; /* Distancia desde el borde inferior del contenedor padre */
+}
+
+input {
+  border-radius: 10px; /* Radio de borde */
+  text-align: center; /* Alineación del texto */
+  padding: 3px; /* Espaciado interno */
+  border: 4px #000000; /* Borde */
+  font-size: 25px; /* Tamaño del texto */
+  box-shadow: inset 0 0 5px; /* Sombra */
+  background-color: white; /* Color de fondo */
+  /* Estilos para diferentes tipos de input */
+}
+input[type=text] {
+  height: 40px; /* Altura del campo de texto */
+  color: rgb(13, 110, 253); /* Color del texto */
+  margin: 0; /* Margen */
+}
+input[type=number] {
+  height: 40px; /* Altura del campo de número */
+  color: #3000b3; /* Color del texto */
+  margin: 0; /* Margen */
+}
+input:focus {
+  box-shadow: 0 0 15px 10px yellow; /* Sombra al enfocar */
+  border: 5px; /* Borde al enfocar */
+}
+
+turnos {
+  font-size: 30px; /* Tamaño del texto */
+}
+
+.formulario-turnos {
+  display: flex; /* Establece el contenedor como un contenedor flexible */
+  flex-direction: column; /* Establece la dirección de los elementos como columna */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+}
+
+.formulario-turnos input:nth-of-type(3) { /* Selecciona el tercer input dentro del formulario de turnos */
+  text-align: center; /* Alinea el texto al centro */
+  color: red; /* Cambia el color del texto a rojo */
+}
+
+.formulario-turnos label {
+  margin-left: 5px; /* Ajusta el espacio entre el input y la etiqueta */
+}
+
+.formulario-turnos input {
+  margin-bottom: 15px; /* Espacio entre los input */
+}
+
+/* modificar la barra */
+/* Estilos para la barra de desplazamiento en navegadores WebKit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+  background-color: #800080; /* Color de fondo de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gold; /* Color del área deslizable de la barra de desplazamiento */
+  border-radius: 10px; /* Radio de borde para la parte deslizable */
+  border: black; /* Borde de la parte deslizable */
+}
+
+/* Estilos para la barra de desplazamiento en navegadores Firefox */
+::-moz-scrollbar {
+  background-color: #800080; /* Color de fondo de la barra de desplazamiento */
+}
+
+::-moz-scrollbar-thumb {
+  background-color: gold; /* Color del área deslizable de la barra de desplazamiento */
+  border-radius: 10px; /* Radio de borde para la parte deslizable */
+  border: #000000; /* Borde de la parte deslizable */
+}
+
+/* Estilos para la barra de desplazamiento en navegadores Internet Explorer */
+::-ms-scrollbar {
+  background-color: #800080; /* Color de fondo de la barra de desplazamiento */
+}
+
+::-ms-scrollbar-thumb {
+  background-color: mul; /* Color del área deslizable de la barra de desplazamiento */
+  border-radius: 10px; /* Radio de borde para la parte deslizable */
+  border: #000000;
+}
+
+/* Estilos para la barra de desplazamiento en navegadores Opera */
+::-o-scrollbar {
+  background-color: #800080; /* Color de fondo de la barra de desplazamiento */
+}
+
+::-o-scrollbar-thumb {
+  background-color: gold; /* Color del área deslizable de la barra de desplazamiento */
+  border-radius: 10px; /* Radio de borde para la parte deslizable */
+  border: #000000; /* Borde de la parte deslizable */
 }
 
 /*# sourceMappingURL=estilos.css.map */

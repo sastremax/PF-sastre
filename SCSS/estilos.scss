@@ -5,14 +5,18 @@
 }
 
 $c1: rgb(13, 110, 253);
-$c2: black;
+$c2: #000000;
 $c3: white;
 $c4: green;
 $c5: yellow;
 $c6: red;
-$c7: purple;
+$c7: #800080;
 $c8: gold;
 $c9: palevioletred;
+$c10: blanchedalmond;
+$c11: rgb(34, 204, 12);
+$c12: #333;
+$c13: #3000b3;
 $centro: center;
 $izq: left;
 $tg: 'Gwendolin';
@@ -276,6 +280,136 @@ footer {
         font-size: 35px; /* Tamaño de fuente de 35px */
         letter-spacing: 20px; /* Espaciado entre letras de 20px */
     }
+}
+
+.whats {
+    background-color: $c10; /* Color de fondo */
+    color: $c11; /* Color del texto */
+    height: 100px; /* Altura del elemento */
+    width: 100px; /* Ancho del elemento */    
+    border: 2px solid; /* Grosor, estilo y color del borde */
+    font-size: 45px; /* Tamaño de la fuente */      
+    right: 40px; /* Distancia desde el borde derecho */
+    bottom: 40px; /* Distancia desde el borde inferior */   
+}
+
+.contact{
+    display: flex;
+    justify-content: $centro; /* Centra horizontalmente */
+    align-items: $centro; /* Centra verticalmente */   
+    padding-top: 20px;
+}
+
+.subir {
+    height: 20px; /* Altura del elemento */
+    width: 20px; /* Ancho del elemento */
+    background-color: $c12; /* Color de fondo */
+    color: $c3; /* Color del texto */
+    position: fixed; /* Posicionamiento fijo */
+    border-radius: 50%; /* Forma redondeada */
+    text-align: $centro; /* Alineación del texto */
+    line-height: 20px; /* Altura de línea */
+    font-size: 15px; /* Tamaño del texto */
+    right: 20px; /* Distancia desde el borde derecho del contenedor padre */
+    bottom: 100px; /* Distancia desde el borde inferior del contenedor padre */
+}
+
+input {
+    border-radius: 10px; /* Radio de borde */
+    text-align: $centro; /* Alineación del texto */
+    padding: 3px; /* Espaciado interno */
+    border: 4px $c2; /* Borde */
+    font-size: 25px; /* Tamaño del texto */
+    box-shadow: inset 0 0 5px; /* Sombra */
+    background-color: $c3; /* Color de fondo */
+
+    /* Estilos para diferentes tipos de input */
+    &[type="text"] {
+        height: 40px; /* Altura del campo de texto */
+        color: $c1; /* Color del texto */
+        margin: 0; /* Margen */
+    }
+
+    &[type="number"] {
+        height: 40px; /* Altura del campo de número */
+        color: $c13; /* Color del texto */
+        margin: 0; /* Margen */
+    }
+
+    &:focus {
+        box-shadow: 0 0 15px 10px $c5; /* Sombra al enfocar */
+        border: 5px; /* Borde al enfocar */
+    }
+}
+
+turnos {
+    font-size: 30px; /* Tamaño del texto */
+}
+
+.formulario-turnos{
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+    flex-direction: column; /* Establece la dirección de los elementos como columna */
+    justify-content: $centro; /* Centra verticalmente */
+    align-items: $centro; /* Centra horizontalmente */
+}
+
+.formulario-turnos input:nth-of-type(3){ /* Selecciona el tercer input dentro del formulario de turnos */
+    text-align: $centro; /* Alinea el texto al centro */
+    color: $c6; /* Cambia el color del texto a rojo */
+}
+
+.formulario-turnos label {
+    margin-left: 5px; /* Ajusta el espacio entre el input y la etiqueta */
+}
+
+.formulario-turnos input {
+    margin-bottom: 15px; /* Espacio entre los input */
+}
+
+/* modificar la barra */
+
+/* Estilos para la barra de desplazamiento en navegadores WebKit (Chrome, Safari, Opera) */
+::-webkit-scrollbar{
+    background-color: $c7; /* Color de fondo de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $c8; /* Color del área deslizable de la barra de desplazamiento */
+    border-radius: 10px; /* Radio de borde para la parte deslizable */
+    border: black; /* Borde de la parte deslizable */
+}
+
+/* Estilos para la barra de desplazamiento en navegadores Firefox */
+::-moz-scrollbar{
+    background-color: $c7; /* Color de fondo de la barra de desplazamiento */
+}
+
+::-moz-scrollbar-thumb{
+    background-color: $c8; /* Color del área deslizable de la barra de desplazamiento */
+    border-radius: 10px; /* Radio de borde para la parte deslizable */
+    border: $c2; /* Borde de la parte deslizable */
+}
+
+/* Estilos para la barra de desplazamiento en navegadores Internet Explorer */
+::-ms-scrollbar{
+    background-color: $c7; /* Color de fondo de la barra de desplazamiento */
+}
+
+::-ms-scrollbar-thumb{
+    background-color: mul; /* Color del área deslizable de la barra de desplazamiento */
+    border-radius: 10px; /* Radio de borde para la parte deslizable */
+    border: $c2/* Borde de la parte deslizable */
+}
+
+/* Estilos para la barra de desplazamiento en navegadores Opera */
+::-o-scrollbar{
+    background-color: $c7; /* Color de fondo de la barra de desplazamiento */
+}
+
+::-o-scrollbar-thumb{
+    background-color: $c8; /* Color del área deslizable de la barra de desplazamiento */
+    border-radius: 10px; /* Radio de borde para la parte deslizable */
+    border: $c2; /* Borde de la parte deslizable */
 }
 
 
