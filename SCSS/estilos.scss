@@ -195,7 +195,7 @@ video {
     margin: 0 auto; /* Centra el contenedor horizontalmente */
 
     .recuadro {
-        height: 150px;
+        height: 150px;  /*Alto*/
         width: 150px; /* Ancho */
         background-color: $c3; /* Color de fondo */
         text-align: $centro; /* Alineación del texto al centro */
@@ -221,6 +221,33 @@ video {
             color: $c3; /* Color del texto */
         }
     }
+
+    .recuadroMasPeque {
+        height: 80px;  /*Alto*/
+        width: 80px; /* Ancho */
+        background-color: $c3; /* Color de fondo */
+        text-align: $centro; /* Alineación del texto al centro */
+        border: 4px solid $c2; /* Borde sólido con color negro */        
+        max-height: 150px; /* Altura máxima */
+        overflow: hidden; /* Oculta la barra de desplazamiento */
+        margin: 15px; /* Margen */
+        text-transform: uppercase;
+        display: flex; /* Establece el contenedor como flexbox */
+        justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del eje principal */
+        flex-direction: column; /* Dirección de los elementos: en formato columna */    
+        transition: 0.7s; /* Transición con duración de 0.7 segundos */
+
+        a {
+            text-decoration: none; /* Elimina el subrayado */
+        }
+
+        &:hover {
+            transform: scale(0.7); /* Reduce el tamaño del elemento al 70% */
+            background-color: $c2; /* Cambia el color de fondo a negro */
+            border-radius: 20px; /* Establece un radio de borde de 20px */
+            color: $c3; /* Color del texto */
+        }
+    }    
 }
 
 .mapa {

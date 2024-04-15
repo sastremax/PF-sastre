@@ -161,7 +161,7 @@ video {
   margin: 0 auto; /* Centra el contenedor horizontalmente */
 }
 .contenedor-recuadros .recuadro {
-  height: 150px;
+  height: 150px; /*Alto*/
   width: 150px; /* Ancho */
   background-color: rgb(255, 255, 255); /* Color de fondo */
   text-align: center; /* Alineación del texto al centro */
@@ -180,6 +180,30 @@ video {
   text-decoration: none; /* Elimina el subrayado */
 }
 .contenedor-recuadros .recuadro:hover {
+  transform: scale(0.7); /* Reduce el tamaño del elemento al 70% */
+  background-color: #000000; /* Cambia el color de fondo a negro */
+  border-radius: 20px; /* Establece un radio de borde de 20px */
+  color: rgb(255, 255, 255); /* Color del texto */
+}
+.contenedor-recuadros .recuadroMasPeque {
+  height: 80px; /*Alto*/
+  width: 80px; /* Ancho */
+  background-color: rgb(255, 255, 255); /* Color de fondo */
+  text-align: center; /* Alineación del texto al centro */
+  border: 4px solid #000000; /* Borde sólido con color negro */
+  max-height: 150px; /* Altura máxima */
+  overflow: hidden; /* Oculta la barra de desplazamiento */
+  margin: 15px; /* Margen */
+  text-transform: uppercase;
+  display: flex; /* Establece el contenedor como flexbox */
+  justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del eje principal */
+  flex-direction: column; /* Dirección de los elementos: en formato columna */
+  transition: 0.7s; /* Transición con duración de 0.7 segundos */
+}
+.contenedor-recuadros .recuadroMasPeque a {
+  text-decoration: none; /* Elimina el subrayado */
+}
+.contenedor-recuadros .recuadroMasPeque:hover {
   transform: scale(0.7); /* Reduce el tamaño del elemento al 70% */
   background-color: #000000; /* Cambia el color de fondo a negro */
   border-radius: 20px; /* Establece un radio de borde de 20px */
