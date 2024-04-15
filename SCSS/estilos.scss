@@ -6,10 +6,10 @@
 
 $c1: rgb(13, 110, 253);
 $c2: #000000;
-$c3: white;
+$c3: rgb(255, 255, 255);
 $c4: green;
 $c5: yellow;
-$c6: red;
+$c6: rgb(255, 0, 0);
 $c7: #800080;
 $c8: gold;
 $c9: palevioletred;
@@ -79,7 +79,7 @@ header {
     
 }
 
-.Jumbotron{
+.Jumbotromp{
     background-color: $c1; /* color de fondo: negro */
     text-shadow: $c2 -2px; /* Sombra de texto */
     font-size: 16px; /* Tamaño de fuente */  
@@ -143,7 +143,7 @@ h4 {
 }
 
 .parrafo-principal{
-    font-size: 14px; /* Tamaño de fuente de 14px */
+    font-size: 18px; /* Tamaño de fuente de 14px */
     text-align: left; /* Alineación del texto a la izquierda */
     padding: 18px; /* Espaciado interno */
 }
@@ -184,7 +184,7 @@ video {
     max-width: 20px; /* Ancho máximo */
     display: block; /* Establece el elemento como bloque */
     height: auto; /* Altura automática */
-    margin-bottom: 20px; /* Margen inferior */
+    margin-bottom: 20px;
 }
 
 .contenedor-recuadros {
@@ -263,6 +263,113 @@ button {
     padding: 20px; /* Espaciado interno */
     color: $c3; /* Color del texto */
 }
+
+aside {
+    text-align: $centro; /* Alineación del texto al centro */
+    margin-top: 20px; /* Margen superior */
+
+    p {
+        display: inline-block; /* Permite centrar el elemento <p> horizontalmente */
+    }
+
+}
+
+.titulo {
+    align-self: top; /* Alinea el título en la parte superior */
+    text-align: top; /* Alineación del texto al tope */
+    font-size: 20px; /* Tamaño de fuente */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.terapeutas-container {
+    text-align: left; /* Alineación del texto a la izquierda */
+    padding: 12px; /* Espaciado interno */  
+    text-shadow: $c13 0 -1px; /* Sombra de texto */  
+}
+
+.Equipo-de-terapeutas {
+    display: grid; /* Establece el contenedor como cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr)); /* Columnas automáticas */
+    gap: 10px; /* Espacio entre columnas */
+    margin-top: 25px; /* Margen superior */
+}
+
+.about-grid {
+    display: flex; /* Establece el contenedor como flexbox */
+    grid-template-columns: 1fr; /* tamaño de las columnas en un contenedor de cuadrícula */
+    align-items: $centro; /* Alinea verticalmente el contenido al centro */
+    justify-content: $centro; /* Centra horizontalmente el contenido */
+    margin-left: 40px; /* Espacio a la izquierda del elemento */
+}
+
+.service-container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    width: 100%; /* Ancho completo */
+}
+
+.service-contenido {
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.aboutGaleria {
+    display: grid; /* Establece el contenedor como una cuadrícula */
+    grid-template-columns: repeat(4,1fr); /* Define 4 columnas de igual ancho */
+    grid-template-rows: repeat(3,200px); /* Define 3 filas de 200px de alto cada una */
+    grid-template-areas: 
+    "img1 img2 img3 img3" /* Define el área de la cuadrícula para los elementos */
+    "img1 img4 img5 img6" /* Define el área de la cuadrícula para los elementos */
+    "img7 img4 img8 img8"; /* Define el área de la cuadrícula para los elementos */
+    grid-gap: 15px; /* Espacio entre las celdas de la cuadrícula */
+    padding: 20px; /* Espacio interno del contenedor */
+}
+
+.item {
+    border: 3px solid #000; // Borde de 3px sólido negro
+    background-size: cover; // Tamaño del fondo de la imagen cubriendo completamente el elemento
+    background-position: center; // Posición del fondo de la imagen centrado en el elemento
+    border-radius: 9px; // Bordes redondeados de 9px
+    filter: grayscale(20%); // Imagen en escala de grises al 20% por defecto
+    transition: all 0.9s; // Transición suave de todas las propiedades durante 0.9 segundos  
+    // Estilos al pasar el cursor sobre los elementos
+    &:hover {
+      filter: grayscale(0%); // Elimina la escala de grises al pasar el cursor
+      transform: scale(0.9) rotate(360deg); // Escala del elemento al 90% de su tamaño original al pasar el cursor
+    }  
+    // Estilos específicos para cada elemento de la cuadrícula
+    &.item1 {
+      background-image: url("https://lh5.googleusercontent.com/p/AF1QipMFewmhUT81J5itFkTem-D2Ideq5o1HUlw72nNz=w203-h152-k-no"); // URL de la imagen de fondo para item1
+      grid-area: img1; // Posición en la cuadrícula para item1
+    }  
+    &.item2 {
+    background-image: url("https://lh5.googleusercontent.com/p/AF1QipNzn56ntzIR7nMUlDPIWtxEuye6lURZ68Ui0RWy=w203-h270-k-no");
+      grid-area: img2; // Posición en la cuadrícula para item2
+    }  
+    &.item3 {
+    background-image: url("https://lh5.googleusercontent.com/p/AF1QipNNGe9wQJvmNRWEElXSuAcrV9RfV7harBlMMF1t=w203-h152-k-no");
+      grid-area: img3; // Posición en la cuadrícula para item3
+    }  
+    &.item4 {
+    background-image: url("https://lh5.googleusercontent.com/p/AF1QipPPWouPFlybOtiiEDX_TJWo1gIypR9_AUtDud_q=w203-h152-k-no");
+      grid-area: img4; // Posición en la cuadrícula para item4
+    }  
+    &.item5 {
+    background-image: url("https://lh5.googleusercontent.com/p/AF1QipNPYjPN2nVz8XRZ5EkQKL3Xcfv9vElFwHMY7u9P=w203-h152-k-no");
+      grid-area: img5; // Posición en la cuadrícula para item5
+    }  
+    &.item6 {
+    background-image: url("https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=12Y5PsnbSq3exUeSXMka8A&cb_client=maps_sv.tactile.gps&w=203&h=100&yaw=243.99649&pitch=0&thumbfov=100");
+      grid-area: img6; // Posición en la cuadrícula para item6
+    }  
+    &.item7 {
+    background-image: url("https://lh5.googleusercontent.com/p/AF1QipPdDoYh1zDqj8tKePWzyY10uAW15wpRMzrhw7mF=w203-h152-k-no");
+      grid-area: img7; // Posición en la cuadrícula para item7
+    }  
+    &.item8 {
+    background-image: url("https://lh5.googleusercontent.com/p/AF1QipPJ6NLsm4cwRuv4xwbT7ZQNxB73Qc4n6QcuytvH=w203-h152-k-no");
+      grid-area: img8; // Posición en la cuadrícula para item8
+    }
+}
+
 
 .service-grid {
     display: flex; /* Establece el contenedor como flexbox */
@@ -412,64 +519,12 @@ turnos {
     border: $c2; /* Borde de la parte deslizable */
 }
 
-/* Estilos base comunes para todos los dispositivos */
-
-.logo {
-    width: 40px;
-    height: 20px;
-    margin-top: 30px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+.centralizado {
+    display: flex; /* Utiliza el modelo de caja flexible */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
 }
 
-body {
-    font-size: 16px;
-}
-
-header {
-    padding: 5px;
-    margin-top: 10px;
-    font-size: 15px;
-    width: 250px;
-}
-
-nav ul {
-    display: block;
-    padding: 0;
-    margin-left: 15px;
-    width: 250px;
-}
-
-nav ul li {
-    display: block;
-    margin-bottom: 10px;
-}
-
-main {
-    padding: 10px;
-}
-
-aside {
-    padding: 10px;
-}
-
-footer {
-    padding: 10px;
-    width: 250px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.recuadro {
-    width: 100%;
-    padding: 15px;
-}
-
-.mapa iframe {
-    height: 100px;
-    width: 250px;
-}
 
 /* Estilos específicos para dispositivos móviles */
 /* dispositivos con un ancho máximo de 320px (modo vertical) */
