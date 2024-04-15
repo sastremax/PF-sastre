@@ -358,6 +358,7 @@ footer {
   color: rgb(255, 255, 255); /* Color del texto */
   text-align: center; /* Alineación del texto al centro */
   padding: 10px; /* Espaciado interno */
+  width: 100%; /* Ancho igual al 100% del contenedor */
 }
 footer .redes a {
   color: rgb(13, 110, 253); /* Color del texto azul */
@@ -497,6 +498,10 @@ turnos {
   align-items: center; /* Centra los elementos verticalmente */
 }
 
+.table-responsive {
+  overflow-x: auto;
+}
+
 /* Estilos específicos para dispositivos móviles */
 /* dispositivos con un ancho máximo de 320px (modo vertical) */
 @media screen and (max-width: 320px) {
@@ -516,7 +521,7 @@ turnos {
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
-    width: 250px;
+    width: 320px;
   }
   body {
     background-color: blue;
@@ -530,16 +535,18 @@ turnos {
     padding: 5px;
     margin-top: 10px;
     font-size: 15px;
-    width: 250px;
+    width: 320px;
   }
   nav ul {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 0;
-    margin-left: 15px;
-    width: 250px;
+    margin: 0 auto;
+    width: 100%;
   }
   nav ul li {
-    display: block;
+    display: flex;
     margin-bottom: 10px;
   }
   main {
@@ -551,11 +558,11 @@ turnos {
   .descripcion {
     text-align: center;
     margin: 0 auto;
-    width: 250px;
+    width: 320px;
   }
   .mapa iframe {
     height: 100px;
-    width: 250px;
+    width: 320px;
   }
   video {
     max-height: 480px;
@@ -565,10 +572,12 @@ turnos {
     margin-right: auto;
   }
   footer {
+    font-size: 14px;
     padding: 10px;
-    width: 250px;
     text-align: center;
     margin: 0 auto;
+    max-height: 480px;
+    max-width: 320px;
   }
   .recuadro {
     width: 100%;

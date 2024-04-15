@@ -407,8 +407,8 @@ footer {
     background-color: $c2; /* Color de fondo */
     color: $c3; /* Color del texto */
     text-align: $centro; /* Alineación del texto al centro */ 
-    padding: 10px;  /* Espaciado interno */    
-
+    padding: 10px;  /* Espaciado interno */
+    width: 100%; /* Ancho igual al 100% del contenedor */
     .redes a {   
         color: $c1; /* Color del texto azul */
         font-size: 35px; /* Tamaño de fuente de 35px */
@@ -552,6 +552,11 @@ turnos {
     align-items: center; /* Centra los elementos verticalmente */
 }
 
+.table-responsive {
+    overflow-x: auto;
+}
+
+
 
 /* Estilos específicos para dispositivos móviles */
 /* dispositivos con un ancho máximo de 320px (modo vertical) */
@@ -573,7 +578,7 @@ turnos {
         display: grid;
         grid-template-columns: 1fr;
         gap: 15px;
-        width: 250px;
+        width: 320px;
     }
 
     body {
@@ -590,19 +595,20 @@ turnos {
         padding: 5px;
         margin-top: 10px;
         font-size: 15px;
-        width: 250px;
+        width: 320px;
     }
 
     nav ul {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 0;
-        margin-left: 15px;
-        width: 250px;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
+        margin: 0 auto;
+        width: 100%;
+        li {
+            display: flex;
+            margin-bottom: 10px;
+        }
     }
     
     main {
@@ -616,12 +622,12 @@ turnos {
     .descripcion {
         text-align: center;
         margin: 0 auto;
-        width: 250px;
+        width: 320px;
     }
 
     .mapa iframe {
         height: 100px;
-        width: 250px;
+        width: 320px;
     }   
     
     video {
@@ -633,10 +639,12 @@ turnos {
     }
 
     footer {
-        padding: 10px;
-        width: 250px;
+        font-size: 14px;
+        padding: 10px;        
         text-align: center;
         margin: 0 auto;
+        max-height: 480px;
+        max-width: 320px;
     }
     
     .recuadro {
