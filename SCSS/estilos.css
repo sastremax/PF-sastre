@@ -1,0 +1,243 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.favicon {
+  vertical-align: middle;
+}
+
+img {
+  float: left;
+  width: 80px;
+  height: 80px;
+}
+
+@font-face {
+  font-family: "Gwendolin";
+  src: url(/fonts/Gwendolyn-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(/fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+body {
+  background-color: rgb(13, 110, 253);
+}
+body .body-background {
+  background-color: rgb(13, 110, 253); /* Color de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+  background-repeat: no-repeat; /* No repetir la imagen de fondo */
+  padding: 20px; /* Espaciado interno */
+  color: white; /* Color del texto */
+}
+
+header nav ul li a {
+  text-align: center; /* Alineación del texto al centro */
+  list-style: none; /* Quita los puntos de la lista */
+  margin-right: 30px; /* Margen derecho */
+  margin-top: 15px; /* Margen superior */
+  margin-bottom: 10px; /* Margen inferior */
+  font-size: 20px; /* Tamaño de fuente */
+  text-decoration: none !important; /* Elimina el subrrayado */
+}
+header nav ul li a:hover {
+  color: green;
+}
+
+.Jumbotron {
+  background-color: rgb(13, 110, 253); /* color de fondo: negro */
+  text-shadow: black -2px; /* Sombra de texto */
+  font-size: 16px; /* Tamaño de fuente */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+section {
+  margin: 0; /* Establece el margen exterior a 0 */
+  padding: auto; /* Establece el relleno a automatico */
+  font-size: 20px; /* Tamaño de fuente */
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; /* Familia de fuentes primero Arial */
+}
+
+article {
+  height: 500px; /* Altura del artículo */
+  padding-top: 15px; /* Espaciado superior */
+  padding-right: 10px; /* Espaciado derecho */
+}
+article ul li {
+  list-style: none; /* Quita los puntos de la lista */
+}
+
+.alineado-parrafo {
+  margin-left: 30px; /* Margen izquierdo para alinear párrafos */
+}
+
+main {
+  display: flex; /* Se establece el contenedor principal como flexbox */
+  flex-direction: column; /* Dirección de los elementos: columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+h1 {
+  font-family: "Gwendolin"; /* Fuente Gwendolin */
+  text-align: center; /* Alineación del texto al centro */
+  padding: 18px; /* Espaciado interno */
+  margin-right: 2px; /* Margen superior para separar del icono */
+}
+
+h2 {
+  font-size: 40px; /* Tamaño de fuente grande */
+  text-align: left; /* Alineación del texto a la izquierda */
+}
+
+h4 {
+  padding: 18px; /* Espaciado interno */
+  font-size: 36px; /* Tamaño de fuente grande */
+  text-align: left; /* Alineación del texto a la izquierda */
+}
+
+.col-sm-12.col-md-6 {
+  background-image: url(https://www.instagram.com/p/CXQ4XParqoi/?igsh=NGc0czF4bHdnYzRk);
+  background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+}
+
+.container {
+  padding: 10px; /* Relleno de 10px en todos los lados del contenedor */
+}
+
+.parrafo-principal {
+  font-size: 14px; /* Tamaño de fuente de 14px */
+  text-align: left; /* Alineación del texto a la izquierda */
+  padding: 18px; /* Espaciado interno */
+}
+
+.videosCentrado {
+  margin-top: 15px; /* Margen superior de 15px */
+  margin-bottom: 10px; /* Margen inferior de 10px */
+  text-align: center; /* Alineación del texto al centro */
+  color: white; /* Color del texto */
+  text-shadow: dark 0.8; /* Sombra de texto */
+}
+
+video {
+  max-height: 500px; /* Establece la altura máxima del video */
+  max-width: 370px; /* Establece el ancho máximo del video */
+  display: block; /* Asegura que el video se muestre como un bloque */
+  margin-left: auto; /* Centra el video horizontalmente */
+  margin-right: auto; /* Centra el video horizontalmente */
+}
+
+/* Cambia el color del icono de deslizamiento del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%); /* Invierte el color del icono */
+}
+
+.solicitar-link {
+  display: inline-block; /* Establece el elemento como bloque en línea */
+  background-color: rgb(13, 110, 253); /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Relleno */
+  text-decoration: none; /* Quita la decoración de enlace */
+  border-radius: 5px; /* Borde redondeado */
+}
+
+.icono {
+  max-width: 20px; /* Ancho máximo */
+  display: block; /* Establece el elemento como bloque */
+  height: auto; /* Altura automática */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+.contenedor-recuadros {
+  display: flex; /* Establece el contenedor como flexbox */
+  flex-direction: column; /* Dirección de los elementos: columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  max-width: 300px; /* Establece un ancho máximo para el contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+.contenedor-recuadros .recuadro {
+  height: 150px;
+  width: 150px; /* Ancho */
+  background-color: white; /* Color de fondo */
+  text-align: center; /* Alineación del texto al centro */
+  border: 4px solid black; /* Borde sólido con color negro */
+  padding: 15px; /* Espaciado interno */
+  max-height: 150px; /* Altura máxima */
+  overflow: hidden; /* Oculta la barra de desplazamiento */
+  margin: 15px; /* Margen */
+  text-transform: uppercase;
+  display: flex; /* Establece el contenedor como flexbox */
+  justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del eje principal */
+  flex-direction: column; /* Dirección de los elementos: en formato columna */
+  transition: 0.7s; /* Transición con duración de 0.7 segundos */
+}
+.contenedor-recuadros .recuadro a {
+  text-decoration: none; /* Elimina el subrayado */
+}
+.contenedor-recuadros .recuadro:hover {
+  transform: scale(0.7); /* Reduce el tamaño del elemento al 70% */
+  background-color: black; /* Cambia el color de fondo a negro */
+  border-radius: 20px; /* Establece un radio de borde de 20px */
+  color: white; /* Color del texto */
+}
+
+.mapa {
+  margin-top: 20px; /* Espacio entre los recuadros y el mapa */
+  text-align: center; /* Alinea horizontalmente el contenido del mapa */
+  border: 0; /* Sin borde */
+  clear: both; /* Limpia los flotadores anteriores */
+  width: 100%; /* Ancho completo del contenedor */
+}
+.mapa iframe {
+  width: 100%; /* Ancho del mapa */
+  height: 300px; /* Ajusta la altura del mapa según sea necesario */
+  display: block; /* Cambia la visualización a bloque para ocupar todo el ancho disponible */
+  margin: 20px auto 0; /* Centrado horizontal y margen superior */
+  background-color: transparent; /* Elimina el color de fondo del mapa si es necesario */
+}
+
+.spacer {
+  height: 90px; /* Altura espaciada */
+}
+
+.subrayado {
+  text-decoration: underline; /* Subrayado */
+}
+
+button {
+  background-color: rgb(13, 110, 253); /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 5px 10px; /* Relleno */
+  cursor: pointer; /* Cursor al señalar */
+}
+
+.body-background {
+  background-color: rgb(13, 110, 253); /* Color de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+  background-repeat: no-repeat; /* No repetir la imagen de fondo */
+  padding: 20px; /* Espaciado interno */
+  color: white; /* Color del texto */
+}
+
+.service-grid {
+  display: flex; /* Establece el contenedor como flexbox */
+  justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+footer {
+  background-color: black; /* Color de fondo */
+  color: white; /* Color del texto */
+  text-align: center; /* Alineación del texto al centro */
+  padding: 10px; /* Espaciado interno */
+}
+footer .redes a {
+  color: rgb(13, 110, 253); /* Color del texto azul */
+  font-size: 35px; /* Tamaño de fuente de 35px */
+  letter-spacing: 20px; /* Espaciado entre letras de 20px */
+}/*# sourceMappingURL=estilos.css.map */
