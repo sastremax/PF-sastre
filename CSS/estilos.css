@@ -110,7 +110,7 @@ h4 {
 }
 
 .parrafo-principal {
-  font-size: 18px; /* Tamaño de fuente de 14px */
+  font-size: 20px; /* Tamaño de fuente de 14px */
   text-align: left; /* Alineación del texto a la izquierda */
   padding: 18px; /* Espaciado interno */
 }
@@ -297,7 +297,7 @@ aside p {
 .aboutGaleria {
   display: grid; /* Establece el contenedor como una cuadrícula */
   grid-template-columns: repeat(4, 1fr); /* Define 4 columnas de igual ancho */
-  grid-template-rows: repeat(3, 200px); /* Define 3 filas de 200px de alto cada una */
+  grid-template-rows: repeat(3, 240px); /* Define 3 filas de 200px de alto cada una */
   grid-template-areas: "img1 img2 img3 img3" "img1 img4 img5 img6" "img7 img4 img8 img8"; /* Define el área de la cuadrícula para los elementos */
   grid-gap: 15px; /* Espacio entre las celdas de la cuadrícula */
   padding: 20px; /* Espacio interno del contenedor */
@@ -423,7 +423,17 @@ input:focus {
   border: 5px; /* Borde al enfocar */
 }
 
-turnos {
+.fotoAgrandada img {
+  padding-top: 15px;
+  width: 70%;
+  max-width: 70%;
+  max-height: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.turnos {
   font-size: 30px; /* Tamaño del texto */
 }
 
@@ -645,37 +655,33 @@ turnos {
 /* Estilos para tabletas pequeñas con una resolución de 600x800 */
 @media screen and (min-width: 600px) and (max-width: 800px) {
   .logo {
-    width: 30px; /* Ajustar el ancho del logo en porcentaje */
-    height: auto; /* Altura automática para mantener la proporción */
-    margin-top: 5%; /* Ajustar el margen superior en porcentaje */
+    width: 60px;
+    height: 40px;
+    margin-top: 30px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
   header {
     padding: 5px;
-    margin-top: 5%; /* Ajustar el margen superior en porcentaje */
+    margin-top: 10px;
     font-size: 20px;
-    width: 90%; /* Ajustar el ancho del header en porcentaje */
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    width: 600px;
   }
   nav ul {
-    font-size: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
     margin: 0 auto;
-    width: 100%; /* Ajustar el ancho del nav en porcentaje */
+    width: 100%;
   }
   nav ul li {
     display: flex;
-    margin-bottom: 5%; /* Ajustar el margen inferior en porcentaje */
+    margin-bottom: 10px;
   }
   main {
     padding: 5%; /* Ajustar el relleno en porcentaje */
@@ -704,23 +710,43 @@ turnos {
     width: 90%; /* Ajustar el ancho del mapa en porcentaje */
     height: 200px;
   }
+  .alineado-parrafo {
+    height: 400px;
+  }
+  .galeria {
+    height: 100%;
+  }
 }
 /* Estilos para tabletas de 600x1024 en modo vertical */
 @media screen and (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
   .logo {
-    width: 20%; /* Ajustar el ancho del logo en porcentaje */
-    height: auto; /* Altura automática para mantener la proporción */
-    margin-top: 10px;
-  }
-  body {
-    font-size: 18px;
+    width: 80px; /* Ajustar el ancho del logo */
+    height: 50px; /* Ajustar la altura del logo */
+    margin-top: 15px; /* Ajustar el margen superior */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   header {
     padding: 10px;
-    margin-top: 5%; /* Ajustar el margen superior en porcentaje */
+    margin-top: 50px; /* Ajustar el margen superior */
+    font-size: 20px;
+    width: 90%; /* Ajustar el ancho del encabezado */
+    text-align: center; /* Centrar el texto del encabezado */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
   }
   nav ul li {
-    margin-right: 5%; /* Ajustar el margen derecho en porcentaje */
+    display: flex;
+    margin-bottom: 10px; /* Ajustar el margen inferior */
   }
   main {
     padding: 5%; /* Ajustar el relleno en porcentaje */
@@ -748,6 +774,9 @@ turnos {
     width: 90%; /* Ajustar el ancho del mapa en porcentaje */
     height: 100%;
   }
+  .galeria {
+    rows: 480px; /* Define 3 filas de 280px de alto cada una */
+  }
 }
 /* Estilos para tabletas de 10 pulgadas en modo vertical */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
@@ -757,17 +786,17 @@ turnos {
     margin-top: 15px;
   }
   body {
-    font-size: 20px;
+    font-size: 18px;
   }
   header {
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 5%; /* Ajustar el margen superior en porcentaje */
   }
   nav ul li {
-    margin-right: 30px;
+    margin-right: 5%; /* Ajustar el margen derecho en porcentaje */
   }
   main {
-    padding: 40px;
+    padding: 20px;
   }
   aside {
     padding: 40px;
@@ -791,10 +820,21 @@ turnos {
   }
   .recuadro {
     width: 100%;
-    padding: 40px;
+    padding: 20px;
   }
   .mapa iframe {
     height: 350px;
+  }
+  .alineado-parrafo {
+    font-size: 0.6rem; /* Tamaño de fuente ligeramente reducido */
+  }
+  .galeria h4 {
+    font-size: 22px; /* Tamaño de fuente ajustado */
+    margin-bottom: 15px; /* Margen inferior para separar los elementos */
+  }
+  .galeria p {
+    font-size: 18px; /* Tamaño de fuente ajustado */
+    margin-bottom: 15px; /* Margen inferior para separar los elementos */
   }
 }
 /* Estilos para tabletas como el iPad en modo horizontal y algunas pantallas de ordenador portátil, netbook y de escritorio */
