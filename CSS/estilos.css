@@ -368,4 +368,421 @@ turnos {
   border: #000000; /* Borde de la parte deslizable */
 }
 
+/* Estilos base comunes para todos los dispositivos */
+.logo {
+  width: 40px;
+  height: 20px;
+  margin-top: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-size: 16px;
+}
+
+header {
+  padding: 5px;
+  margin-top: 10px;
+  font-size: 15px;
+  width: 250px;
+}
+
+nav ul {
+  display: block;
+  padding: 0;
+  margin-left: 15px;
+  width: 250px;
+}
+
+nav ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+main {
+  padding: 10px;
+}
+
+aside {
+  padding: 10px;
+}
+
+footer {
+  padding: 10px;
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.recuadro {
+  width: 100%;
+  padding: 15px;
+}
+
+.mapa iframe {
+  height: 100px;
+  width: 250px;
+}
+
+/* Estilos específicos para dispositivos móviles */
+/* dispositivos con un ancho máximo de 320px (modo vertical) */
+@media screen and (max-width: 320px) {
+  .logo {
+    width: 40px;
+    height: 20px;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    text-shadow: blue 0 -1px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 250px;
+  }
+  body {
+    background-color: blue;
+    font-size: 16px;
+    width: 100%;
+  }
+  header, nav, main, aside, footer {
+    width: 100%;
+  }
+  header {
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 15px;
+    width: 250px;
+  }
+  nav ul {
+    display: block;
+    padding: 0;
+    margin-left: 15px;
+    width: 250px;
+  }
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  main {
+    padding: 10px;
+  }
+  aside {
+    padding: 10px;
+  }
+  .descripcion {
+    text-align: center;
+    margin: 0 auto;
+    width: 250px;
+  }
+  .mapa iframe {
+    height: 100px;
+    width: 250px;
+  }
+  video {
+    max-height: 480px;
+    max-width: 320px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer {
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .recuadro {
+    width: 100%;
+    padding: 15px;
+  }
+}
+/* dispositivos con un ancho máximo de 480px (modo horizontal) */
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 50px;
+    height: 30px;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body {
+    font-size: 16px;
+  }
+  header {
+    padding: 10px;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  nav ul li {
+    margin-right: 20px;
+  }
+  main {
+    padding: 20px;
+  }
+  aside {
+    padding: 20px;
+  }
+  video {
+    max-height: 480px;
+    max-width: 480px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer {
+    padding: 20px;
+    width: 480px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .recuadro {
+    width: 100%;
+    padding: 20px;
+  }
+  .mapa iframe {
+    height: 250px;
+  }
+}
+/* Estilos para tabletas pequeñas con una resolución de 600x800 */
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .logo {
+    width: 100px;
+    height: 50px;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body {
+    font-size: 18px;
+  }
+  header {
+    padding: 10px;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  nav ul li {
+    margin-right: 25px;
+  }
+  main {
+    padding: 30px;
+  }
+  aside {
+    padding: 30px;
+  }
+  video {
+    max-height: 800px;
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer {
+    padding: 20px;
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .recuadro {
+    width: 100%;
+    padding: 30px;
+  }
+  .mapa iframe {
+    height: 250px;
+  }
+}
+/* Estilos para tabletas de 600x1024 en modo vertical */
+@media screen and (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
+  .logo {
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  body {
+    font-size: 18px;
+  }
+  header {
+    padding: 10px;
+    margin-top: 50px;
+  }
+  nav ul li {
+    margin-right: 25px;
+  }
+  main {
+    padding: 30px;
+  }
+  aside {
+    padding: 30px;
+  }
+  video {
+    max-height: 1024px;
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer {
+    padding: 20px;
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .recuadro {
+    width: 100%;
+    padding: 30px;
+  }
+  .mapa iframe {
+    height: 300px;
+  }
+}
+/* Estilos para tabletas de 10 pulgadas en modo vertical */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .logo {
+    width: 100px;
+    height: 50px;
+    margin-top: 15px;
+  }
+  body {
+    font-size: 20px;
+  }
+  header {
+    padding: 10px;
+    margin-top: 50px;
+  }
+  nav ul li {
+    margin-right: 30px;
+  }
+  main {
+    padding: 40px;
+  }
+  aside {
+    padding: 40px;
+  }
+  video {
+    max-height: 1024px;
+    max-width: 768px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer {
+    padding: 20px;
+    width: 768px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  footer .redes a {
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+  .recuadro {
+    width: 100%;
+    padding: 40px;
+  }
+  .mapa iframe {
+    height: 350px;
+  }
+}
+/* Estilos para tabletas como el iPad en modo horizontal y algunas pantallas de ordenador portátil, netbook y de escritorio */
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  body {
+    font-size: 20px;
+  }
+  header {
+    padding: 40px;
+  }
+  nav ul li {
+    margin-right: 30px;
+  }
+  main {
+    padding: 40px;
+  }
+  aside {
+    padding: 40px;
+  }
+  footer {
+    padding: 40px;
+  }
+  .recuadro {
+    width: 100%;
+    padding: 40px;
+  }
+  .mapa iframe {
+    height: 350px;
+  }
+}
+/* Estilos para pantallas medianas */
+@media screen and (max-width: 768px) {
+  .grid-item-hijo {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li {
+    margin-right: 15px;
+  }
+  .recuadro {
+    width: 100%;
+  }
+  .mapa iframe {
+    height: 350px;
+  }
+  .Equipo-de-terapeutas {
+    grid-template-columns: 1fr;
+  }
+}
+/* Estilos para pantallas panorámicas de al menos 1200px (principalmente portátiles y de escritorio) */
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+  .header {
+    padding: 30px;
+  }
+  .navbar ul li {
+    margin-right: 30px;
+  }
+  .main-content {
+    padding: 30px;
+  }
+  .sidebar {
+    padding: 30px;
+  }
+  .recuadro {
+    width: 100%;
+  }
+  .mapa iframe {
+    height: 400px;
+  }
+  .footer {
+    padding: 30px;
+  }
+  /* Ejemplo de diseño de cuadrícula */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+  }
+  /* Estilos específicos para elementos de la cuadrícula */
+  .grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
+
 /*# sourceMappingURL=estilos.css.map */
