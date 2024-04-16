@@ -4,25 +4,7 @@
     box-sizing: border-box;
 }
 
-$c1: rgb(13, 110, 253);
-$c2: #000000;
-$c3: rgb(255, 255, 255);
-$c4: green;
-$c5: yellow;
-$c6: rgb(255, 0, 0);
-$c7: #800080;
-$c8: gold;
-$c9: palevioletred;
-$c10: blanchedalmond;
-$c11: rgb(34, 204, 12);
-$c12: #333;
-$c13: #3000b3;
-$centro: center;
-$izq: left;
-$tg: 'Gwendolin';
-$tr: 'Roboto';
-$alto: height;
-$ancho: width;
+
 
 @mixin borde-redondeado($radio) {
     border-radius: $radio;
@@ -38,15 +20,7 @@ img {
     height: 80px;
 }
 
-@font-face {
-    font-family: 'Gwendolin';
-    src: url(/fonts/Gwendolyn-Regular.ttf);
-}
 
-@font-face {
-    font-family: 'Roboto';
-    src: url(/fonts/RobotoSlab-VariableFont_wght.ttf);
-}
 
 body {
     background-color: $c1;

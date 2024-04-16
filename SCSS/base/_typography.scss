@@ -1,0 +1,24 @@
+
+$link-hover-color: red;
+@font-face {
+    font-family: 'Gwendolin';
+    src: url(/fonts/Gwendolyn-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $tr;
+    src: url(/fonts/RobotoSlab-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: $tg, sans-serif;
+}
+
+h1 {
+    font-family: 'Gwendolin', sans-serif;
+}
+

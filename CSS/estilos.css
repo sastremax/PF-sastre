@@ -26,12 +26,13 @@ img {
 body {
   background-color: rgb(13, 110, 253);
 }
+
 body .body-background {
   background-color: rgb(13, 110, 253); /* Color de fondo */
   background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
   background-repeat: no-repeat; /* No repetir la imagen de fondo */
   padding: 20px; /* Espaciado interno */
-  color: rgb(255, 255, 255); /* Color del texto */
+  color: white; /* Color del texto */
 }
 
 header nav ul li a {
@@ -43,11 +44,12 @@ header nav ul li a {
   font-size: 20px; /* Tamaño de fuente */
   text-decoration: none !important; /* Elimina el subrrayado */
 }
+
 header nav ul li a:hover {
   color: green;
 }
 
-.Jumbotromp {
+.Jumbotron {
   background-color: rgb(13, 110, 253); /* color de fondo: negro */
   text-shadow: #000000 -2px; /* Sombra de texto */
   font-size: 16px; /* Tamaño de fuente */
@@ -66,6 +68,7 @@ article {
   padding-top: 15px; /* Espaciado superior */
   padding-right: 10px; /* Espaciado derecho */
 }
+
 article ul li {
   list-style: none; /* Quita los puntos de la lista */
 }
@@ -110,7 +113,7 @@ h4 {
 }
 
 .parrafo-principal {
-  font-size: 20px; /* Tamaño de fuente de 14px */
+  font-size: 14px; /* Tamaño de fuente de 14px */
   text-align: left; /* Alineación del texto a la izquierda */
   padding: 18px; /* Espaciado interno */
 }
@@ -119,7 +122,7 @@ h4 {
   margin-top: 15px; /* Margen superior de 15px */
   margin-bottom: 10px; /* Margen inferior de 10px */
   text-align: center; /* Alineación del texto al centro */
-  color: rgb(255, 255, 255); /* Color del texto */
+  color: white; /* Color del texto */
   text-shadow: dark 0.8; /* Sombra de texto */
 }
 
@@ -140,7 +143,7 @@ video {
 .solicitar-link {
   display: inline-block; /* Establece el elemento como bloque en línea */
   background-color: rgb(13, 110, 253); /* Color de fondo */
-  color: rgb(255, 255, 255); /* Color del texto */
+  color: white; /* Color del texto */
   padding: 10px 20px; /* Relleno */
   text-decoration: none; /* Quita la decoración de enlace */
   border-radius: 5px; /* Borde redondeado */
@@ -150,7 +153,7 @@ video {
   max-width: 20px; /* Ancho máximo */
   display: block; /* Establece el elemento como bloque */
   height: auto; /* Altura automática */
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Margen inferior */
 }
 
 .contenedor-recuadros {
@@ -160,13 +163,13 @@ video {
   max-width: 300px; /* Establece un ancho máximo para el contenedor */
   margin: 0 auto; /* Centra el contenedor horizontalmente */
 }
+
 .contenedor-recuadros .recuadro {
-  height: 150px; /*Alto*/
+  height: 150px;
   width: 150px; /* Ancho */
-  background-color: rgb(255, 255, 255); /* Color de fondo */
+  background-color: white; /* Color de fondo */
   text-align: center; /* Alineación del texto al centro */
-  border-radius: 4px solid #000000;
-  /* Borde sólido con color negro */
+  border: 4px solid #000000; /* Borde sólido con color negro */
   padding: 15px; /* Espaciado interno */
   max-height: 150px; /* Altura máxima */
   overflow: hidden; /* Oculta la barra de desplazamiento */
@@ -177,74 +180,16 @@ video {
   flex-direction: column; /* Dirección de los elementos: en formato columna */
   transition: 0.7s; /* Transición con duración de 0.7 segundos */
 }
+
 .contenedor-recuadros .recuadro a {
   text-decoration: none; /* Elimina el subrayado */
 }
+
 .contenedor-recuadros .recuadro:hover {
   transform: scale(0.7); /* Reduce el tamaño del elemento al 70% */
   background-color: #000000; /* Cambia el color de fondo a negro */
   border-radius: 20px; /* Establece un radio de borde de 20px */
-  color: rgb(255, 255, 255); /* Color del texto */
-}
-@media (max-width: 320px) {
-  .contenedor-recuadros .recuadro {
-    width: 50%; /* ajuste de valor */
-    padding: 10px; /* ajuste de padding  */
-  }
-}
-@media (max-width: 480px) and (orientation: landscape) {
-  .contenedor-recuadros .recuadro {
-    width: 70%; /* ajuste de valor */
-    padding: 12px; /* ajuste de padding  */
-  }
-}
-@media (max-width: 600px) and (max-height: 800px) {
-  .contenedor-recuadros .recuadro {
-    width: 80%;
-    padding: 14px; /* ajuste de padding  */
-  }
-}
-@media (max-width: 600px) and (max-height: 1024px) {
-  .contenedor-recuadros .recuadro {
-    width: 80%;
-    padding: 16px; /* ajuste de padding  */
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .contenedor-recuadros .recuadro {
-    width: 90%;
-    padding: 16px; /* ajuste de padding  */
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
-  .contenedor-recuadros .recuadro {
-    background-color: lightgray;
-    border-radius: 10px;
-  }
-}
-.contenedor-recuadros .recuadroMasPeque {
-  height: 80px; /*Alto*/
-  width: 80px; /* Ancho */
-  background-color: rgb(255, 255, 255); /* Color de fondo */
-  text-align: center; /* Alineación del texto al centro */
-  border: 4px solid #000000; /* Borde sólido con color negro */
-  max-height: 150px; /* Altura máxima */
-  overflow: hidden; /* Oculta la barra de desplazamiento */
-  margin: 15px; /* Margen */
-  text-transform: uppercase;
-  display: flex; /* Establece el contenedor como flexbox */
-  justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del eje principal */
-  flex-direction: column; /* Dirección de los elementos: en formato columna */
-  transition: 0.7s; /* Transición con duración de 0.7 segundos */
-}
-.contenedor-recuadros .recuadroMasPeque a {
-  text-decoration: none; /* Elimina el subrayado */
-}
-.contenedor-recuadros .recuadroMasPeque:hover {
-  transform: scale(0.7); /* Reduce el tamaño del elemento al 70% */
-  background-color: #000000; /* Cambia el color de fondo a negro */
-  border-radius: 20px; /* Establece un radio de borde de 20px */
-  color: rgb(255, 255, 255); /* Color del texto */
+  color: white; /* Color del texto */
 }
 
 .mapa {
@@ -254,6 +199,7 @@ video {
   clear: both; /* Limpia los flotadores anteriores */
   width: 100%; /* Ancho completo del contenedor */
 }
+
 .mapa iframe {
   width: 100%; /* Ancho del mapa */
   height: 300px; /* Ajusta la altura del mapa según sea necesario */
@@ -272,7 +218,7 @@ video {
 
 button {
   background-color: rgb(13, 110, 253); /* Color de fondo */
-  color: rgb(255, 255, 255); /* Color del texto */
+  color: white; /* Color del texto */
   border: none; /* Sin borde */
   padding: 5px 10px; /* Relleno */
   cursor: pointer; /* Cursor al señalar */
@@ -283,106 +229,7 @@ button {
   background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
   background-repeat: no-repeat; /* No repetir la imagen de fondo */
   padding: 20px; /* Espaciado interno */
-  color: rgb(255, 255, 255); /* Color del texto */
-}
-
-aside {
-  text-align: center; /* Alineación del texto al centro */
-  margin-top: 20px; /* Margen superior */
-}
-aside p {
-  display: inline-block; /* Permite centrar el elemento <p> horizontalmente */
-}
-
-.titulo {
-  align-self: top; /* Alinea el título en la parte superior */
-  text-align: top; /* Alineación del texto al tope */
-  font-size: 20px; /* Tamaño de fuente */
-  margin-bottom: 20px; /* Margen inferior */
-}
-
-.terapeutas-container {
-  text-align: left; /* Alineación del texto a la izquierda */
-  padding: 12px; /* Espaciado interno */
-  text-shadow: #3000b3 0 -1px; /* Sombra de texto */
-}
-
-.Equipo-de-terapeutas {
-  display: grid; /* Establece el contenedor como cuadrícula */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr)); /* Columnas automáticas */
-  gap: 10px; /* Espacio entre columnas */
-  margin-top: 25px; /* Margen superior */
-}
-
-.about-grid {
-  display: flex; /* Establece el contenedor como flexbox */
-  grid-template-columns: 1fr; /* tamaño de las columnas en un contenedor de cuadrícula */
-  align-items: center; /* Alinea verticalmente el contenido al centro */
-  justify-content: center; /* Centra horizontalmente el contenido */
-  margin-left: 40px; /* Espacio a la izquierda del elemento */
-}
-
-.service-container {
-  max-width: 800px; /* Ancho máximo del contenedor */
-  width: 100%; /* Ancho completo */
-}
-
-.service-contenido {
-  margin-bottom: 20px; /* Margen inferior */
-}
-
-.aboutGaleria {
-  display: grid; /* Establece el contenedor como una cuadrícula */
-  grid-template-columns: repeat(4, 1fr); /* Define 4 columnas de igual ancho */
-  grid-template-rows: repeat(3, 240px); /* Define 3 filas de 200px de alto cada una */
-  grid-template-areas: "img1 img2 img3 img3" "img1 img4 img5 img6" "img7 img4 img8 img8"; /* Define el área de la cuadrícula para los elementos */
-  grid-gap: 15px; /* Espacio entre las celdas de la cuadrícula */
-  padding: 20px; /* Espacio interno del contenedor */
-}
-
-.item {
-  border: 3px solid #000;
-  background-size: cover;
-  background-position: center;
-  border-radius: 9px;
-  filter: grayscale(20%);
-  transition: all 0.9s;
-}
-.item:hover {
-  filter: grayscale(0%);
-  transform: scale(0.9) rotate(360deg);
-}
-.item.item1 {
-  background-image: url("https://lh5.googleusercontent.com/p/AF1QipMFewmhUT81J5itFkTem-D2Ideq5o1HUlw72nNz=w203-h152-k-no");
-  grid-area: img1;
-}
-.item.item2 {
-  background-image: url("https://lh5.googleusercontent.com/p/AF1QipNzn56ntzIR7nMUlDPIWtxEuye6lURZ68Ui0RWy=w203-h270-k-no");
-  grid-area: img2;
-}
-.item.item3 {
-  background-image: url("https://lh5.googleusercontent.com/p/AF1QipNNGe9wQJvmNRWEElXSuAcrV9RfV7harBlMMF1t=w203-h152-k-no");
-  grid-area: img3;
-}
-.item.item4 {
-  background-image: url("https://lh5.googleusercontent.com/p/AF1QipPPWouPFlybOtiiEDX_TJWo1gIypR9_AUtDud_q=w203-h152-k-no");
-  grid-area: img4;
-}
-.item.item5 {
-  background-image: url("https://lh5.googleusercontent.com/p/AF1QipNPYjPN2nVz8XRZ5EkQKL3Xcfv9vElFwHMY7u9P=w203-h152-k-no");
-  grid-area: img5;
-}
-.item.item6 {
-  background-image: url("https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=12Y5PsnbSq3exUeSXMka8A&cb_client=maps_sv.tactile.gps&w=203&h=100&yaw=243.99649&pitch=0&thumbfov=100");
-  grid-area: img6;
-}
-.item.item7 {
-  background-image: url("https://lh5.googleusercontent.com/p/AF1QipPdDoYh1zDqj8tKePWzyY10uAW15wpRMzrhw7mF=w203-h152-k-no");
-  grid-area: img7;
-}
-.item.item8 {
-  background-image: url("https://lh5.googleusercontent.com/p/AF1QipPJ6NLsm4cwRuv4xwbT7ZQNxB73Qc4n6QcuytvH=w203-h152-k-no");
-  grid-area: img8;
+  color: white; /* Color del texto */
 }
 
 .service-grid {
@@ -392,11 +239,11 @@ aside p {
 
 footer {
   background-color: #000000; /* Color de fondo */
-  color: rgb(255, 255, 255); /* Color del texto */
+  color: white; /* Color del texto */
   text-align: center; /* Alineación del texto al centro */
   padding: 10px; /* Espaciado interno */
-  width: 100%; /* Ancho igual al 100% del contenedor */
 }
+
 footer .redes a {
   color: rgb(13, 110, 253); /* Color del texto azul */
   font-size: 35px; /* Tamaño de fuente de 35px */
@@ -425,7 +272,7 @@ footer .redes a {
   height: 20px; /* Altura del elemento */
   width: 20px; /* Ancho del elemento */
   background-color: #333; /* Color de fondo */
-  color: rgb(255, 255, 255); /* Color del texto */
+  color: white; /* Color del texto */
   position: fixed; /* Posicionamiento fijo */
   border-radius: 50%; /* Forma redondeada */
   text-align: center; /* Alineación del texto */
@@ -442,35 +289,28 @@ input {
   border: 4px #000000; /* Borde */
   font-size: 25px; /* Tamaño del texto */
   box-shadow: inset 0 0 5px; /* Sombra */
-  background-color: rgb(255, 255, 255); /* Color de fondo */
+  background-color: white; /* Color de fondo */
   /* Estilos para diferentes tipos de input */
 }
+
 input[type=text] {
   height: 40px; /* Altura del campo de texto */
   color: rgb(13, 110, 253); /* Color del texto */
   margin: 0; /* Margen */
 }
+
 input[type=number] {
   height: 40px; /* Altura del campo de número */
   color: #3000b3; /* Color del texto */
   margin: 0; /* Margen */
 }
+
 input:focus {
   box-shadow: 0 0 15px 10px yellow; /* Sombra al enfocar */
   border: 5px; /* Borde al enfocar */
 }
 
-.fotoAgrandada img {
-  padding-top: 15px;
-  width: 70%;
-  max-width: 70%;
-  max-height: 50%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.turnos {
+turnos {
   font-size: 30px; /* Tamaño del texto */
 }
 
@@ -483,7 +323,7 @@ input:focus {
 
 .formulario-turnos input:nth-of-type(3) { /* Selecciona el tercer input dentro del formulario de turnos */
   text-align: center; /* Alinea el texto al centro */
-  color: rgb(255, 0, 0); /* Cambia el color del texto a rojo */
+  color: red; /* Cambia el color del texto a rojo */
 }
 
 .formulario-turnos label {
@@ -539,14 +379,62 @@ input:focus {
   border: #000000; /* Borde de la parte deslizable */
 }
 
-.centralizado {
-  display: flex; /* Utiliza el modelo de caja flexible */
-  justify-content: center; /* Centra los elementos horizontalmente */
-  align-items: center; /* Centra los elementos verticalmente */
+/* Estilos base comunes para todos los dispositivos */
+.logo {
+  width: 40px;
+  height: 20px;
+  margin-top: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.table-responsive {
-  overflow-x: auto;
+body {
+  font-size: 16px;
+}
+
+header {
+  padding: 5px;
+  margin-top: 10px;
+  font-size: 15px;
+  width: 250px;
+}
+
+nav ul {
+  display: block;
+  padding: 0;
+  margin-left: 15px;
+  width: 250px;
+}
+
+nav ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+main {
+  padding: 10px;
+}
+
+aside {
+  padding: 10px;
+}
+
+footer {
+  padding: 10px;
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.recuadro {
+  width: 100%;
+  padding: 15px;
+}
+
+.mapa iframe {
+  height: 100px;
+  width: 250px;
 }
 
 /* Estilos específicos para dispositivos móviles */
@@ -568,7 +456,7 @@ input:focus {
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
-    width: 320px;
+    width: 250px;
   }
   body {
     background-color: blue;
@@ -582,18 +470,16 @@ input:focus {
     padding: 5px;
     margin-top: 10px;
     font-size: 15px;
-    width: 320px;
+    width: 250px;
   }
   nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
     padding: 0;
-    margin: 0 auto;
-    width: 100%;
+    margin-left: 15px;
+    width: 250px;
   }
   nav ul li {
-    display: flex;
+    display: block;
     margin-bottom: 10px;
   }
   main {
@@ -605,11 +491,11 @@ input:focus {
   .descripcion {
     text-align: center;
     margin: 0 auto;
-    width: 320px;
+    width: 250px;
   }
   .mapa iframe {
     height: 100px;
-    width: 320px;
+    width: 250px;
   }
   video {
     max-height: 480px;
@@ -619,12 +505,14 @@ input:focus {
     margin-right: auto;
   }
   footer {
-    font-size: 14px;
     padding: 10px;
+    width: 250px;
     text-align: center;
     margin: 0 auto;
-    max-height: 480px;
-    max-width: 320px;
+  }
+  .recuadro {
+    width: 100%;
+    padding: 15px;
   }
 }
 /* dispositivos con un ancho máximo de 480px (modo horizontal) */
@@ -641,22 +529,15 @@ input:focus {
     font-size: 16px;
   }
   header {
-    padding: 5px;
-    margin-top: 10px;
-    font-size: 20px;
-    width: 480px;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0 auto;
+    padding: 10px;
+    margin-top: 50px;
     width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
   }
   nav ul li {
-    display: flex;
-    margin-bottom: 10px;
+    margin-right: 20px;
   }
   main {
     padding: 20px;
@@ -677,6 +558,10 @@ input:focus {
     text-align: center;
     margin: 0 auto;
   }
+  .recuadro {
+    width: 100%;
+    padding: 20px;
+  }
   .mapa iframe {
     height: 250px;
   }
@@ -684,119 +569,96 @@ input:focus {
 /* Estilos para tabletas pequeñas con una resolución de 600x800 */
 @media screen and (min-width: 600px) and (max-width: 800px) {
   .logo {
-    width: 60px;
-    height: 40px;
+    width: 100px;
+    height: 50px;
     margin-top: 30px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
   header {
-    padding: 5px;
-    margin-top: 10px;
-    font-size: 20px;
-    width: 600px;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0 auto;
+    padding: 10px;
+    margin-top: 50px;
     width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
   }
   nav ul li {
-    display: flex;
-    margin-bottom: 10px;
+    margin-right: 25px;
   }
   main {
-    padding: 5%; /* Ajustar el relleno en porcentaje */
+    padding: 30px;
   }
   aside {
-    padding: 5%; /* Ajustar el relleno en porcentaje */
+    padding: 30px;
   }
   video {
-    max-height: 600px;
-    max-width: 90%; /* Ajustar el ancho máximo del video en porcentaje */
+    max-height: 800px;
+    max-width: 600px;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   footer {
-    padding: 5%; /* Ajustar el relleno en porcentaje */
-    width: 90%; /* Ajustar el ancho del footer en porcentaje */
+    padding: 20px;
+    width: 600px;
     text-align: center;
-    margin: 0 auto; /* Ajustar los márgenes en porcentaje */
+    margin: 0 auto;
+  }
+  .recuadro {
+    width: 100%;
+    padding: 30px;
   }
   .mapa iframe {
-    width: 90%; /* Ajustar el ancho del mapa en porcentaje */
-    height: 200px;
-  }
-  .alineado-parrafo {
-    height: 400px;
-  }
-  .galeria {
-    height: 100%;
+    height: 250px;
   }
 }
 /* Estilos para tabletas de 600x1024 en modo vertical */
 @media screen and (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
   .logo {
-    width: 80px; /* Ajustar el ancho del logo */
-    height: 50px; /* Ajustar la altura del logo */
-    margin-top: 15px; /* Ajustar el margen superior */
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  body {
+    font-size: 18px;
   }
   header {
     padding: 10px;
-    margin-top: 50px; /* Ajustar el margen superior */
-    font-size: 20px;
-    width: 90%; /* Ajustar el ancho del encabezado */
-    text-align: center; /* Centrar el texto del encabezado */
-    margin-left: auto;
-    margin-right: auto;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0 auto;
-    width: 100%;
+    margin-top: 50px;
   }
   nav ul li {
-    display: flex;
-    margin-bottom: 10px; /* Ajustar el margen inferior */
+    margin-right: 25px;
   }
   main {
-    padding: 5%; /* Ajustar el relleno en porcentaje */
+    padding: 30px;
   }
   aside {
-    padding: 5%; /* Ajustar el relleno en porcentaje */
+    padding: 30px;
   }
   video {
+    max-height: 1024px;
+    max-width: 600px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 90%; /* Ajustar el ancho máximo del video en porcentaje */
   }
   footer {
-    padding: 5%; /* Ajustar el relleno en porcentaje */
+    padding: 20px;
+    width: 600px;
     text-align: center;
-    margin: 5% auto; /* Ajustar los márgenes en porcentaje */
-    width: 90%; /* Ajustar el ancho del footer en porcentaje */
+    margin: 0 auto;
+  }
+  .recuadro {
+    width: 100%;
+    padding: 30px;
   }
   .mapa iframe {
-    width: 90%; /* Ajustar el ancho del mapa en porcentaje */
-    height: 100%;
-  }
-  .galeria {
-    rows: 480px; /* Define 3 filas de 280px de alto cada una */
+    height: 300px;
   }
 }
 /* Estilos para tabletas de 10 pulgadas en modo vertical */
@@ -807,17 +669,17 @@ input:focus {
     margin-top: 15px;
   }
   body {
-    font-size: 18px;
+    font-size: 20px;
   }
   header {
     padding: 10px;
-    margin-top: 5%; /* Ajustar el margen superior en porcentaje */
+    margin-top: 50px;
   }
   nav ul li {
-    margin-right: 5%; /* Ajustar el margen derecho en porcentaje */
+    margin-right: 30px;
   }
   main {
-    padding: 20px;
+    padding: 40px;
   }
   aside {
     padding: 40px;
@@ -839,19 +701,12 @@ input:focus {
     font-size: 25px;
     letter-spacing: 10px;
   }
+  .recuadro {
+    width: 100%;
+    padding: 40px;
+  }
   .mapa iframe {
     height: 350px;
-  }
-  .alineado-parrafo {
-    font-size: 0.6rem; /* Tamaño de fuente ligeramente reducido */
-  }
-  .galeria h4 {
-    font-size: 22px; /* Tamaño de fuente ajustado */
-    margin-bottom: 15px; /* Margen inferior para separar los elementos */
-  }
-  .galeria p {
-    font-size: 18px; /* Tamaño de fuente ajustado */
-    margin-bottom: 15px; /* Margen inferior para separar los elementos */
   }
 }
 /* Estilos para tabletas como el iPad en modo horizontal y algunas pantallas de ordenador portátil, netbook y de escritorio */
@@ -939,6 +794,6 @@ input:focus {
     padding: 20px;
     border-radius: 10px;
   }
-}
+} 
 
 /*# sourceMappingURL=estilos.css.map */
