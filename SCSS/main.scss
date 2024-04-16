@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+@import './base/reset';         // Importar reset para reiniciar los estilos por defecto del navegador
+@import './base/base';          // Importar el archivo _base.scss que contiene estilos base (elementos HTML, etc.)
+@import './base/typography';    // Importar estilos de tipografía
+@import './layout/footer';      // Importar estilos del pie de página
+@import './layout/header';      // Importar estilos del encabezado
+@import './layout/navigation';  // Importar estilos de navegación
+@import './layout/sidebar';     // Importar estilos de la barra lateral
+@import './utilities/functions'; // Importar funciones útiles
+@import './utilities/helpers';  // Importar helpers para estilos
+@import './utilities/mixins';   // Importar mixins para reutilización de estilos
+@import './utilities/variables'; // Importar variables globales
 
 
 @mixin borde-redondeado($radio) {
@@ -20,8 +31,6 @@ img {
     height: 80px;
 }
 
-
-
 body {
     background-color: $c1;
 
@@ -33,27 +42,6 @@ body {
         color: $c3; /* Color del texto */
     }
 
-}
-
-header {
-
-    $ancho: 750px;
-    $alto: 180px;
-    
-    nav ul li a {
-        text-align: $centro; /* Alineación del texto al centro */
-        list-style: none; /* Quita los puntos de la lista */
-        margin-right: 30px; /* Margen derecho */
-        margin-top: 15px; /* Margen superior */
-        margin-bottom: 10px; /* Margen inferior */
-        font-size: 20px; /* Tamaño de fuente */    
-        text-decoration: none!important; /* Elimina el subrrayado */  
-
-        &:hover {
-            color: $c4;
-        }
-    }
-    
 }
 
 .Jumbotromp{
@@ -89,13 +77,6 @@ main {
     flex-direction: column; /* Dirección de los elementos: columna */
     align-items: $centro; /* Centra los elementos horizontalmente */
     gap: 20px; /* Espacio entre los elementos */
-}
-
-h1 {
-    font-family: $tg; /* Fuente Gwendolin */
-    text-align: $centro; /* Alineación del texto al centro */
-    padding: 18px; /* Espaciado interno */
-    margin-right: 2px; /* Margen superior para separar del icono */
 }
 
 h2 {
@@ -598,7 +579,7 @@ input {
         width: 100%;
     }
 
-    header, nav, main, aside, footer {
+    nav, main, aside, footer {
         width: 100%;
     }
 
@@ -855,10 +836,9 @@ input {
         height: 100%;
     }
 
-    .galeria{        
-        rows: 480px; /* Define 3 filas de 280px de alto cada una */        
+    .galeria {        
+        row: 480px; /* Define filas de 480px de alto */        
     }
-
 }
 
 /* Estilos para tabletas de 10 pulgadas en modo vertical */
