@@ -837,7 +837,8 @@ input {
     }
 
     .galeria {        
-        row: 480px; /* Define filas de 480px de alto */        
+        display: grid;
+        grid-template-rows: 480px; /* Define filas de 480px de alto */
     }
 }
 
