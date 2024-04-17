@@ -398,17 +398,18 @@ header {
   margin-top: 10px;
   font-size: 15px;
   width: 250px;
+  width: 100%;
 }
 
 nav ul {
-  display: block;
-  padding: 0;
-  margin-left: 15px;
+  display: grid;    
+  padding: 5px;
+  margin-left: 220px;
   width: 250px;
 }
 
-nav ul li {
-  display: block;
+nav ul li {   
+  margin-left: 10px;
   margin-bottom: 10px;
 }
 
@@ -425,6 +426,8 @@ footer {
   width: 250px;
   text-align: center;
   margin: 0 auto;
+  display: grid;
+  width: 100%;
 }
 
 .recuadro {
@@ -432,10 +435,7 @@ footer {
   padding: 15px;
 }
 
-.mapa iframe {
-  height: 100px;
-  width: 250px;
-}
+
 
 /* Estilos específicos para dispositivos móviles */
 /* dispositivos con un ancho máximo de 320px (modo vertical) */
@@ -579,6 +579,7 @@ footer {
   body {
     font-size: 18px;
   }
+  
   header {
     padding: 10px;
     margin-top: 50px;
@@ -588,8 +589,9 @@ footer {
     grid-template-columns: 1fr;
   }
   nav ul li {
-    margin-right: 25px;
+    margin-right: 10px;
   }
+
   main {
     padding: 30px;
   }

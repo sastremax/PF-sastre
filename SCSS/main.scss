@@ -156,31 +156,7 @@ video {
             background-color: $c2; /* Cambia el color de fondo a negro */
             border-radius: 20px; /* Establece un radio de borde de 20px */
             color: $c3; /* Color del texto */
-        }
-        @media (max-width: 320px) {
-            width: 50%; /* ajuste de valor */
-            padding: 10px; /* ajuste de padding  */
-        }
-        @media (max-width: 480px) and (orientation: landscape) {
-            width: 70%; /* ajuste de valor */
-            padding: 12px; /* ajuste de padding  */
-        }
-        @media (max-width: 600px) and (max-height: 800px) {
-            width: 80%; // Para pantallas de hasta 480px de ancho en modo horizontal
-            padding: 14px; /* ajuste de padding  */
-        }
-        @media (max-width: 600px) and (max-height: 1024px) {
-            width: 80%; // Para pantallas de hasta 480px de ancho en modo horizontal
-            padding: 16px; /* ajuste de padding  */
-        }
-        @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-            width: 90%; // Para pantallas de hasta 480px de ancho en modo horizontal
-            padding: 16px; /* ajuste de padding  */
-        }
-        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
-            background-color: lightgray;
-            border-radius: 10px;
-        }
+        }      
     }
 
     .recuadroMasPeque {
@@ -197,11 +173,9 @@ video {
         justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del eje principal */
         flex-direction: column; /* Dirección de los elementos: en formato columna */    
         transition: 0.7s; /* Transición con duración de 0.7 segundos */
-
         a {
             text-decoration: none; /* Elimina el subrayado */
         }
-
         &:hover {
             transform: scale(0.7); /* Reduce el tamaño del elemento al 70% */
             background-color: $c2; /* Cambia el color de fondo a negro */
@@ -209,7 +183,7 @@ video {
             color: $c3; /* Color del texto */
         }
     }    
-}
+
 
 .mapa {
     margin-top: 20px; /* Espacio entre los recuadros y el mapa */
@@ -515,6 +489,23 @@ input {
     overflow-x: auto;
 }
 
+footer {
+    background-color: $c2; /* Color de fondo */
+    color: $c3; /* Color del texto */
+    text-align: $centro; /* Alineación del texto al centro */ 
+    padding: 10px;  /* Espaciado interno */
+    width: 100%; /* Ancho igual al 100% del contenedor */
+    
+}
+
+.redes a {   
+    color: $c1; /* Color del texto azul */
+    font-size: 35px; /* Tamaño de fuente de 35px */
+    letter-spacing: 20px; /* Espaciado entre letras de 20px */
+    width: 100%; /* Ancho igual al 100% del contenedor */
+    
+}
+
 
 /* Estilos específicos para dispositivos móviles */
 /* dispositivos con un ancho máximo de 320px (modo vertical) */
@@ -555,15 +546,15 @@ input {
         font-size: 15px;
         width: 320px;
     }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-        margin: 0 auto;
-        width: 100%;
-        li {
+    
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+}
+nav ul li {
             display: flex;
             margin-bottom: 10px;
         }
