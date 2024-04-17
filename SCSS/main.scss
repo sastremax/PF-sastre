@@ -1,20 +1,20 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+// Importar las variables, funciones y mixins primero, porque pueden ser necesitados en otros archivos
+@import './utilities/_functions'; // Importar funciones útiles
+@import './utilities/_helpers';  // Importar helpers para estilos
+@import './utilities/_mixins';   // Importar mixins para reutilización de estilos
+@import './utilities/_variables'; // Importar variables globales
+@import './utilities/_images'; // Importar tamaño de imagenes
 
-@import './base/reset';         // Importar reset para reiniciar los estilos por defecto del navegador
-@import './base/base';          // Importar el archivo _base.scss que contiene estilos base (elementos HTML, etc.)
-@import './base/typography';    // Importar estilos de tipografía
-@import './layout/footer';      // Importar estilos del pie de página
-@import './layout/header';      // Importar estilos del encabezado
-@import './layout/navigation';  // Importar estilos de navegación
-@import './layout/sidebar';     // Importar estilos de la barra lateral
-@import './utilities/functions'; // Importar funciones útiles
-@import './utilities/helpers';  // Importar helpers para estilos
-@import './utilities/mixins';   // Importar mixins para reutilización de estilos
-@import './utilities/variables'; // Importar variables globales
+// Bases generales del sitio
+@import './base/_reset';         // Importar reset para reiniciar los estilos por defecto del navegador
+@import './base/_base';          // Importar el archivo _base.scss que contiene estilos base (elementos HTML, etc.)
+@import './base/_typography';    // Importar estilos de tipografía
+
+// Layouts del sitio
+@import './layout/_footer'; // Importar estilos del pie de página
+@import './layout/_header';      // Importar estilos del encabezado
+@import './layout/_navigation';  // Importar estilos de navegación
+@import './layout/_sidebar';     // Importar estilos de la barra lateral
 
 
 @mixin borde-redondeado($radio) {
@@ -25,31 +25,10 @@
     vertical-align: middle;
 }
 
-img {
-    float: left;
-    width: 80px;
-    height: 80px;
-}
-
 body {
-    background-color: $c1;
-
-    .body-background {
-        background-color: $c1; /* Color de fondo */
-        background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
-        background-repeat: no-repeat; /* No repetir la imagen de fondo */
-        padding: 20px; /* Espaciado interno */
-        color: $c3; /* Color del texto */
-    }
-
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
 }
-
-.Jumbotromp{
-    background-color: $c1; /* color de fondo: negro */
-    text-shadow: $c2 -2px; /* Sombra de texto */
-    font-size: 16px; /* Tamaño de fuente */  
-    text-align: left; /* Alinea el texto a la izquierda */
-} 
 
 section {
     margin: 0; /* Establece el margen exterior a 0 */
@@ -384,19 +363,6 @@ aside {
     justify-content: $centro; /* Centra horizontalmente el contenido */
 }
 
-footer {
-    background-color: $c2; /* Color de fondo */
-    color: $c3; /* Color del texto */
-    text-align: $centro; /* Alineación del texto al centro */ 
-    padding: 10px;  /* Espaciado interno */
-    width: 100%; /* Ancho igual al 100% del contenedor */
-    .redes a {   
-        color: $c1; /* Color del texto azul */
-        font-size: 35px; /* Tamaño de fuente de 35px */
-        letter-spacing: 20px; /* Espaciado entre letras de 20px */
-    }
-}
-
 .whats {
     background-color: $c10; /* Color de fondo */
     color: $c11; /* Color del texto */
@@ -566,7 +532,7 @@ input {
         font-size: 20px;
         text-align: center;
         padding: 10px;
-        text-shadow: blue 0 -1px;
+        text-shadow: $c1 0 -1px;
         display: grid;
         grid-template-columns: 1fr;
         gap: 15px;
@@ -574,7 +540,7 @@ input {
     }
 
     body {
-        background-color: blue;
+        background-color: $c1;
         font-size: 16px;
         width: 100%;
     }
