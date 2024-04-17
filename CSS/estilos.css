@@ -1,59 +1,83 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.favicon {
-  vertical-align: middle;
-}
-
 img {
   float: left;
   width: 80px;
   height: 80px;
 }
 
-@font-face {
-  font-family: "Gwendolin";
-  src: url(/fonts/Gwendolyn-Regular.ttf);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@font-face {
-  font-family: "Roboto";
-  src: url(/fonts/RobotoSlab-VariableFont_wght.ttf);
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
 }
+
 body {
   background-color: rgb(13, 110, 253);
 }
-
 body .body-background {
   background-color: rgb(13, 110, 253); /* Color de fondo */
   background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
   background-repeat: no-repeat; /* No repetir la imagen de fondo */
   padding: 20px; /* Espaciado interno */
-  color: white; /* Color del texto */
+  color: rgb(255, 255, 255); /* Color del texto */
 }
 
-header nav ul li a {
+@font-face {
+  font-family: "Gwendolin";
+  src: url(/fonts/Gwendolyn-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(/fonts/RobotoSlab-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-family: "Gwendolin", sans-serif;
+}
+
+h1 {
+  font-family: "Gwendolin", sans-serif;
+}
+
+footer {
+  background-color: #000000; /* Color de fondo */
+  color: rgb(255, 255, 255); /* Color del texto */
   text-align: center; /* Alineación del texto al centro */
-  list-style: none; /* Quita los puntos de la lista */
-  margin-right: 30px; /* Margen derecho */
-  margin-top: 15px; /* Margen superior */
-  margin-bottom: 10px; /* Margen inferior */
-  font-size: 20px; /* Tamaño de fuente */
-  text-decoration: none !important; /* Elimina el subrrayado */
+  padding: 10px; /* Espaciado interno */
+  width: 100%; /* Ancho igual al 100% del contenedor */
 }
 
-header nav ul li a:hover {
-  color: green;
+.redes a {
+  color: rgb(13, 110, 253); /* Color del texto azul */
+  font-size: 35px; /* Tamaño de fuente de 35px */
+  letter-spacing: 20px; /* Espaciado entre letras de 20px */
 }
 
-.Jumbotron {
-  background-color: rgb(13, 110, 253); /* color de fondo: negro */
-  text-shadow: #000000 -2px; /* Sombra de texto */
-  font-size: 16px; /* Tamaño de fuente */
-  text-align: left; /* Alinea el texto a la izquierda */
+h1 {
+  font-family: "Gwendolin"; /* Fuente Gwendolin */
+  text-align: center; /* Alineación del texto al centro */
+  padding: 18px; /* Espaciado interno */
+  margin-right: 2px; /* Margen superior para separar del icono */
+}
+
+.favicon {
+  vertical-align: middle;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
 }
 
 section {
@@ -68,7 +92,6 @@ article {
   padding-top: 15px; /* Espaciado superior */
   padding-right: 10px; /* Espaciado derecho */
 }
-
 article ul li {
   list-style: none; /* Quita los puntos de la lista */
 }
@@ -82,13 +105,6 @@ main {
   flex-direction: column; /* Dirección de los elementos: columna */
   align-items: center; /* Centra los elementos horizontalmente */
   gap: 20px; /* Espacio entre los elementos */
-}
-
-h1 {
-  font-family: "Gwendolin"; /* Fuente Gwendolin */
-  text-align: center; /* Alineación del texto al centro */
-  padding: 18px; /* Espaciado interno */
-  margin-right: 2px; /* Margen superior para separar del icono */
 }
 
 h2 {
@@ -113,7 +129,7 @@ h4 {
 }
 
 .parrafo-principal {
-  font-size: 14px; /* Tamaño de fuente de 14px */
+  font-size: 20px; /* Tamaño de fuente de 14px */
   text-align: left; /* Alineación del texto a la izquierda */
   padding: 18px; /* Espaciado interno */
 }
@@ -122,7 +138,7 @@ h4 {
   margin-top: 15px; /* Margen superior de 15px */
   margin-bottom: 10px; /* Margen inferior de 10px */
   text-align: center; /* Alineación del texto al centro */
-  color: white; /* Color del texto */
+  color: rgb(255, 255, 255); /* Color del texto */
   text-shadow: dark 0.8; /* Sombra de texto */
 }
 
@@ -143,7 +159,7 @@ video {
 .solicitar-link {
   display: inline-block; /* Establece el elemento como bloque en línea */
   background-color: rgb(13, 110, 253); /* Color de fondo */
-  color: white; /* Color del texto */
+  color: rgb(255, 255, 255); /* Color del texto */
   padding: 10px 20px; /* Relleno */
   text-decoration: none; /* Quita la decoración de enlace */
   border-radius: 5px; /* Borde redondeado */
@@ -153,7 +169,7 @@ video {
   max-width: 20px; /* Ancho máximo */
   display: block; /* Establece el elemento como bloque */
   height: auto; /* Altura automática */
-  margin-bottom: 20px; /* Margen inferior */
+  margin-bottom: 20px;
 }
 
 .contenedor-recuadros {
@@ -162,14 +178,21 @@ video {
   align-items: center; /* Centra los elementos horizontalmente */
   max-width: 300px; /* Establece un ancho máximo para el contenedor */
   margin: 0 auto; /* Centra el contenedor horizontalmente */
+  /* modificar la barra */
+  /* Estilos para la barra de desplazamiento en navegadores WebKit (Chrome, Safari, Opera) */
+  /* Estilos para la barra de desplazamiento en navegadores Firefox */
+  /* Estilos para la barra de desplazamiento en navegadores Internet Explorer */
+  /* Estilos para la barra de desplazamiento en navegadores Opera */
+  /* Estilos específicos para dispositivos móviles */
+  /* dispositivos con un ancho máximo de 320px (modo vertical) */
 }
-
 .contenedor-recuadros .recuadro {
-  height: 150px;
+  height: 150px; /*Alto*/
   width: 150px; /* Ancho */
-  background-color: white; /* Color de fondo */
+  background-color: rgb(255, 255, 255); /* Color de fondo */
   text-align: center; /* Alineación del texto al centro */
-  border: 4px solid #000000; /* Borde sólido con color negro */
+  border-radius: 4px solid #000000;
+  /* Borde sólido con color negro */
   padding: 15px; /* Espaciado interno */
   max-height: 150px; /* Altura máxima */
   overflow: hidden; /* Oculta la barra de desplazamiento */
@@ -180,78 +203,169 @@ video {
   flex-direction: column; /* Dirección de los elementos: en formato columna */
   transition: 0.7s; /* Transición con duración de 0.7 segundos */
 }
-
 .contenedor-recuadros .recuadro a {
   text-decoration: none; /* Elimina el subrayado */
 }
-
 .contenedor-recuadros .recuadro:hover {
   transform: scale(0.7); /* Reduce el tamaño del elemento al 70% */
   background-color: #000000; /* Cambia el color de fondo a negro */
   border-radius: 20px; /* Establece un radio de borde de 20px */
-  color: white; /* Color del texto */
+  color: rgb(255, 255, 255); /* Color del texto */
 }
-
-.mapa {
+.contenedor-recuadros .recuadroMasPeque {
+  height: 80px; /*Alto*/
+  width: 80px; /* Ancho */
+  background-color: rgb(255, 255, 255); /* Color de fondo */
+  text-align: center; /* Alineación del texto al centro */
+  border: 4px solid #000000; /* Borde sólido con color negro */
+  max-height: 150px; /* Altura máxima */
+  overflow: hidden; /* Oculta la barra de desplazamiento */
+  margin: 15px; /* Margen */
+  text-transform: uppercase;
+  display: flex; /* Establece el contenedor como flexbox */
+  justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del eje principal */
+  flex-direction: column; /* Dirección de los elementos: en formato columna */
+  transition: 0.7s; /* Transición con duración de 0.7 segundos */
+}
+.contenedor-recuadros .recuadroMasPeque a {
+  text-decoration: none; /* Elimina el subrayado */
+}
+.contenedor-recuadros .recuadroMasPeque:hover {
+  transform: scale(0.7); /* Reduce el tamaño del elemento al 70% */
+  background-color: #000000; /* Cambia el color de fondo a negro */
+  border-radius: 20px; /* Establece un radio de borde de 20px */
+  color: rgb(255, 255, 255); /* Color del texto */
+}
+.contenedor-recuadros .mapa {
   margin-top: 20px; /* Espacio entre los recuadros y el mapa */
   text-align: center; /* Alinea horizontalmente el contenido del mapa */
   border: 0; /* Sin borde */
   clear: both; /* Limpia los flotadores anteriores */
   width: 100%; /* Ancho completo del contenedor */
 }
-
-.mapa iframe {
+.contenedor-recuadros .mapa iframe {
   width: 100%; /* Ancho del mapa */
   height: 300px; /* Ajusta la altura del mapa según sea necesario */
   display: block; /* Cambia la visualización a bloque para ocupar todo el ancho disponible */
   margin: 20px auto 0; /* Centrado horizontal y margen superior */
   background-color: transparent; /* Elimina el color de fondo del mapa si es necesario */
 }
-
-.spacer {
+.contenedor-recuadros .spacer {
   height: 90px; /* Altura espaciada */
 }
-
-.subrayado {
+.contenedor-recuadros .subrayado {
   text-decoration: underline; /* Subrayado */
 }
-
-button {
+.contenedor-recuadros button {
   background-color: rgb(13, 110, 253); /* Color de fondo */
-  color: white; /* Color del texto */
+  color: rgb(255, 255, 255); /* Color del texto */
   border: none; /* Sin borde */
   padding: 5px 10px; /* Relleno */
   cursor: pointer; /* Cursor al señalar */
 }
-
-.body-background {
+.contenedor-recuadros .body-background {
   background-color: rgb(13, 110, 253); /* Color de fondo */
   background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
   background-repeat: no-repeat; /* No repetir la imagen de fondo */
   padding: 20px; /* Espaciado interno */
-  color: white; /* Color del texto */
+  color: rgb(255, 255, 255); /* Color del texto */
 }
-
-.service-grid {
+.contenedor-recuadros aside {
+  text-align: center; /* Alineación del texto al centro */
+  margin-top: 20px; /* Margen superior */
+}
+.contenedor-recuadros aside p {
+  display: inline-block; /* Permite centrar el elemento <p> horizontalmente */
+}
+.contenedor-recuadros .titulo {
+  align-self: top; /* Alinea el título en la parte superior */
+  text-align: top; /* Alineación del texto al tope */
+  font-size: 20px; /* Tamaño de fuente */
+  margin-bottom: 20px; /* Margen inferior */
+}
+.contenedor-recuadros .terapeutas-container {
+  text-align: left; /* Alineación del texto a la izquierda */
+  padding: 12px; /* Espaciado interno */
+  text-shadow: #3000b3 0 -1px; /* Sombra de texto */
+}
+.contenedor-recuadros .Equipo-de-terapeutas {
+  display: grid; /* Establece el contenedor como cuadrícula */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr)); /* Columnas automáticas */
+  gap: 10px; /* Espacio entre columnas */
+  margin-top: 25px; /* Margen superior */
+}
+.contenedor-recuadros .about-grid {
+  display: flex; /* Establece el contenedor como flexbox */
+  grid-template-columns: 1fr; /* tamaño de las columnas en un contenedor de cuadrícula */
+  align-items: center; /* Alinea verticalmente el contenido al centro */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  margin-left: 40px; /* Espacio a la izquierda del elemento */
+}
+.contenedor-recuadros .service-container {
+  max-width: 800px; /* Ancho máximo del contenedor */
+  width: 100%; /* Ancho completo */
+}
+.contenedor-recuadros .service-contenido {
+  margin-bottom: 20px; /* Margen inferior */
+}
+.contenedor-recuadros .aboutGaleria {
+  display: grid; /* Establece el contenedor como una cuadrícula */
+  grid-template-columns: repeat(4, 1fr); /* Define 4 columnas de igual ancho */
+  grid-template-rows: repeat(3, 240px); /* Define 3 filas de 200px de alto cada una */
+  grid-template-areas: "img1 img2 img3 img3" "img1 img4 img5 img6" "img7 img4 img8 img8"; /* Define el área de la cuadrícula para los elementos */
+  grid-gap: 15px; /* Espacio entre las celdas de la cuadrícula */
+  padding: 20px; /* Espacio interno del contenedor */
+}
+.contenedor-recuadros .item {
+  border: 3px solid #000;
+  background-size: cover;
+  background-position: center;
+  border-radius: 9px;
+  filter: grayscale(20%);
+  transition: all 0.9s;
+}
+.contenedor-recuadros .item:hover {
+  filter: grayscale(0%);
+  transform: scale(0.9) rotate(360deg);
+}
+.contenedor-recuadros .item.item1 {
+  background-image: url("https://lh5.googleusercontent.com/p/AF1QipMFewmhUT81J5itFkTem-D2Ideq5o1HUlw72nNz=w203-h152-k-no");
+  grid-area: img1;
+}
+.contenedor-recuadros .item.item2 {
+  background-image: url("https://lh5.googleusercontent.com/p/AF1QipNzn56ntzIR7nMUlDPIWtxEuye6lURZ68Ui0RWy=w203-h270-k-no");
+  grid-area: img2;
+}
+.contenedor-recuadros .item.item3 {
+  background-image: url("https://lh5.googleusercontent.com/p/AF1QipNNGe9wQJvmNRWEElXSuAcrV9RfV7harBlMMF1t=w203-h152-k-no");
+  grid-area: img3;
+}
+.contenedor-recuadros .item.item4 {
+  background-image: url("https://lh5.googleusercontent.com/p/AF1QipPPWouPFlybOtiiEDX_TJWo1gIypR9_AUtDud_q=w203-h152-k-no");
+  grid-area: img4;
+}
+.contenedor-recuadros .item.item5 {
+  background-image: url("https://lh5.googleusercontent.com/p/AF1QipNPYjPN2nVz8XRZ5EkQKL3Xcfv9vElFwHMY7u9P=w203-h152-k-no");
+  grid-area: img5;
+}
+.contenedor-recuadros .item.item6 {
+  background-image: url("https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=12Y5PsnbSq3exUeSXMka8A&cb_client=maps_sv.tactile.gps&w=203&h=100&yaw=243.99649&pitch=0&thumbfov=100");
+  grid-area: img6;
+}
+.contenedor-recuadros .item.item7 {
+  background-image: url("https://lh5.googleusercontent.com/p/AF1QipPdDoYh1zDqj8tKePWzyY10uAW15wpRMzrhw7mF=w203-h152-k-no");
+  grid-area: img7;
+}
+.contenedor-recuadros .item.item8 {
+  background-image: url("https://lh5.googleusercontent.com/p/AF1QipPJ6NLsm4cwRuv4xwbT7ZQNxB73Qc4n6QcuytvH=w203-h152-k-no");
+  grid-area: img8;
+}
+.contenedor-recuadros .service-grid {
   display: flex; /* Establece el contenedor como flexbox */
   justify-content: center; /* Centra horizontalmente el contenido */
 }
-
-footer {
-  background-color: #000000; /* Color de fondo */
-  color: white; /* Color del texto */
-  text-align: center; /* Alineación del texto al centro */
-  padding: 10px; /* Espaciado interno */
-}
-
-footer .redes a {
-  color: rgb(13, 110, 253); /* Color del texto azul */
-  font-size: 35px; /* Tamaño de fuente de 35px */
-  letter-spacing: 20px; /* Espaciado entre letras de 20px */
-}
-
-.whats {
-  background-color: blanchedalmond; /* Color de fondo */
+.contenedor-recuadros .whats {
+  background-color: rgb(255, 235, 205); /* Color de fondo */
   color: rgb(34, 204, 12); /* Color del texto */
   height: 100px; /* Altura del elemento */
   width: 100px; /* Ancho del elemento */
@@ -260,19 +374,17 @@ footer .redes a {
   right: 40px; /* Distancia desde el borde derecho */
   bottom: 40px; /* Distancia desde el borde inferior */
 }
-
-.contact {
+.contenedor-recuadros .contact {
   display: flex;
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
   padding-top: 20px;
 }
-
-.subir {
+.contenedor-recuadros .subir {
   height: 20px; /* Altura del elemento */
   width: 20px; /* Ancho del elemento */
   background-color: #333; /* Color de fondo */
-  color: white; /* Color del texto */
+  color: rgb(255, 255, 255); /* Color del texto */
   position: fixed; /* Posicionamiento fijo */
   border-radius: 50%; /* Forma redondeada */
   text-align: center; /* Alineación del texto */
@@ -281,159 +393,116 @@ footer .redes a {
   right: 20px; /* Distancia desde el borde derecho del contenedor padre */
   bottom: 100px; /* Distancia desde el borde inferior del contenedor padre */
 }
-
-input {
+.contenedor-recuadros input {
   border-radius: 10px; /* Radio de borde */
   text-align: center; /* Alineación del texto */
   padding: 3px; /* Espaciado interno */
   border: 4px #000000; /* Borde */
   font-size: 25px; /* Tamaño del texto */
   box-shadow: inset 0 0 5px; /* Sombra */
-  background-color: white; /* Color de fondo */
+  background-color: rgb(255, 255, 255); /* Color de fondo */
   /* Estilos para diferentes tipos de input */
 }
-
-input[type=text] {
+.contenedor-recuadros input[type=text] {
   height: 40px; /* Altura del campo de texto */
   color: rgb(13, 110, 253); /* Color del texto */
   margin: 0; /* Margen */
 }
-
-input[type=number] {
+.contenedor-recuadros input[type=number] {
   height: 40px; /* Altura del campo de número */
   color: #3000b3; /* Color del texto */
   margin: 0; /* Margen */
 }
-
-input:focus {
-  box-shadow: 0 0 15px 10px yellow; /* Sombra al enfocar */
+.contenedor-recuadros input:focus {
+  box-shadow: 0 0 15px 10px rgb(255, 255, 0); /* Sombra al enfocar */
   border: 5px; /* Borde al enfocar */
 }
-
-turnos {
+.contenedor-recuadros .fotoAgrandada img {
+  padding-top: 15px;
+  width: 70%;
+  max-width: 70%;
+  max-height: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.contenedor-recuadros .turnos {
   font-size: 30px; /* Tamaño del texto */
 }
-
-.formulario-turnos {
+.contenedor-recuadros .formulario-turnos {
   display: flex; /* Establece el contenedor como un contenedor flexible */
   flex-direction: column; /* Establece la dirección de los elementos como columna */
   justify-content: center; /* Centra verticalmente */
   align-items: center; /* Centra horizontalmente */
 }
-
-.formulario-turnos input:nth-of-type(3) { /* Selecciona el tercer input dentro del formulario de turnos */
+.contenedor-recuadros .formulario-turnos input:nth-of-type(3) { /* Selecciona el tercer input dentro del formulario de turnos */
   text-align: center; /* Alinea el texto al centro */
-  color: red; /* Cambia el color del texto a rojo */
+  color: rgb(255, 0, 0); /* Cambia el color del texto a rojo */
 }
-
-.formulario-turnos label {
+.contenedor-recuadros .formulario-turnos label {
   margin-left: 5px; /* Ajusta el espacio entre el input y la etiqueta */
 }
-
-.formulario-turnos input {
+.contenedor-recuadros .formulario-turnos input {
   margin-bottom: 15px; /* Espacio entre los input */
 }
-
-/* modificar la barra */
-/* Estilos para la barra de desplazamiento en navegadores WebKit (Chrome, Safari, Opera) */
-::-webkit-scrollbar {
+.contenedor-recuadros ::-webkit-scrollbar {
   background-color: #800080; /* Color de fondo de la barra de desplazamiento */
 }
-
-::-webkit-scrollbar-thumb {
-  background-color: gold; /* Color del área deslizable de la barra de desplazamiento */
+.contenedor-recuadros ::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 215, 0); /* Color del área deslizable de la barra de desplazamiento */
   border-radius: 10px; /* Radio de borde para la parte deslizable */
   border: black; /* Borde de la parte deslizable */
 }
-
-/* Estilos para la barra de desplazamiento en navegadores Firefox */
-::-moz-scrollbar {
+.contenedor-recuadros ::-moz-scrollbar {
   background-color: #800080; /* Color de fondo de la barra de desplazamiento */
 }
-
-::-moz-scrollbar-thumb {
-  background-color: gold; /* Color del área deslizable de la barra de desplazamiento */
+.contenedor-recuadros ::-moz-scrollbar-thumb {
+  background-color: rgb(255, 215, 0); /* Color del área deslizable de la barra de desplazamiento */
   border-radius: 10px; /* Radio de borde para la parte deslizable */
   border: #000000; /* Borde de la parte deslizable */
 }
-
-/* Estilos para la barra de desplazamiento en navegadores Internet Explorer */
-::-ms-scrollbar {
+.contenedor-recuadros ::-ms-scrollbar {
   background-color: #800080; /* Color de fondo de la barra de desplazamiento */
 }
-
-::-ms-scrollbar-thumb {
+.contenedor-recuadros ::-ms-scrollbar-thumb {
   background-color: mul; /* Color del área deslizable de la barra de desplazamiento */
   border-radius: 10px; /* Radio de borde para la parte deslizable */
   border: #000000;
 }
-
-/* Estilos para la barra de desplazamiento en navegadores Opera */
-::-o-scrollbar {
+.contenedor-recuadros ::-o-scrollbar {
   background-color: #800080; /* Color de fondo de la barra de desplazamiento */
 }
-
-::-o-scrollbar-thumb {
-  background-color: gold; /* Color del área deslizable de la barra de desplazamiento */
+.contenedor-recuadros ::-o-scrollbar-thumb {
+  background-color: rgb(255, 215, 0); /* Color del área deslizable de la barra de desplazamiento */
   border-radius: 10px; /* Radio de borde para la parte deslizable */
   border: #000000; /* Borde de la parte deslizable */
 }
-
-/* Estilos base comunes para todos los dispositivos */
-
-
-body {
-  font-size: 16px;
+.contenedor-recuadros .centralizado {
+  display: flex; /* Utiliza el modelo de caja flexible */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
 }
-
-header {
-  padding: 5px;
-  margin-top: 10px;
-  font-size: 15px;
-  width: 250px;
-  width: 100%;
+.contenedor-recuadros .table-responsive {
+  overflow-x: auto;
 }
-
-nav ul {
-  display: grid;    
-  padding: 5px;
-  margin-left: 220px;
-  width: 250px;
+.contenedor-recuadros footer {
+  background-color: #000000; /* Color de fondo */
+  color: rgb(255, 255, 255); /* Color del texto */
+  text-align: center; /* Alineación del texto al centro */
+  padding: 10px; /* Espaciado interno */
+  width: 100%; /* Ancho igual al 100% del contenedor */
 }
-
-nav ul li {   
-  margin-left: 10px;
-  margin-bottom: 10px;
+.contenedor-recuadros .redes a {
+  color: rgb(13, 110, 253); /* Color del texto azul */
+  font-size: 35px; /* Tamaño de fuente de 35px */
+  letter-spacing: 20px; /* Espaciado entre letras de 20px */
+  width: 100%; /* Ancho igual al 100% del contenedor */
 }
-
-main {
-  padding: 10px;
+.contenedor-recuadros .logo {
+  width: 100px;
 }
-
-aside {
-  padding: 10px;
-}
-
-footer {
-  padding: 10px;
-  width: 250px;
-  text-align: center;
-  margin: 0 auto;
-  display: grid;
-  width: 100%;
-}
-
-.recuadro {
-  width: 100%;
-  padding: 15px;
-}
-
-
-
-/* Estilos específicos para dispositivos móviles */
-/* dispositivos con un ancho máximo de 320px (modo vertical) */
 @media screen and (max-width: 320px) {
-  .logo {
+  .contenedor-recuadros .logo {
     width: 40px;
     height: 20px;
     margin-top: 30px;
@@ -441,73 +510,73 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
-  section {
+  .contenedor-recuadros section {
     font-size: 20px;
     text-align: center;
     padding: 10px;
-    text-shadow: blue 0 -1px;
+    text-shadow: rgb(13, 110, 253) 0 -1px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
-    width: 250px;
+    width: 320px;
   }
-  body {
-    background-color: blue;
+  .contenedor-recuadros body {
+    background-color: rgb(13, 110, 253);
     font-size: 16px;
     width: 100%;
   }
-  header, nav, main, aside, footer {
+  .contenedor-recuadros nav, .contenedor-recuadros main, .contenedor-recuadros aside, .contenedor-recuadros footer {
     width: 100%;
   }
-  header {
+  .contenedor-recuadros header {
     padding: 5px;
     margin-top: 10px;
     font-size: 15px;
-    width: 250px;
+    width: 320px;
   }
-  nav ul {
-    display: block;
+  .contenedor-recuadros nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 0;
-    margin-left: 15px;
-    width: 250px;
+    margin: 0 auto;
   }
-  nav ul li {
-    display: block;
+  .contenedor-recuadros nav ul li {
+    display: flex;
     margin-bottom: 10px;
   }
-  main {
-    padding: 10px;
-  }
-  aside {
-    padding: 10px;
-  }
-  .descripcion {
-    text-align: center;
-    margin: 0 auto;
-    width: 250px;
-  }
-  .mapa iframe {
-    height: 100px;
-    width: 250px;
-  }
-  video {
-    max-height: 480px;
-    max-width: 320px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  footer {
-    padding: 10px;
-    width: 250px;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .recuadro {
-    width: 100%;
-    padding: 15px;
-  }
 }
+.contenedor-recuadros main {
+  padding: 10px;
+}
+.contenedor-recuadros aside {
+  padding: 10px;
+}
+.contenedor-recuadros .descripcion {
+  text-align: center;
+  margin: 0 auto;
+  width: 320px;
+}
+.contenedor-recuadros .mapa iframe {
+  height: 100px;
+  width: 320px;
+}
+.contenedor-recuadros video {
+  max-height: 480px;
+  max-width: 320px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contenedor-recuadros footer {
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  max-height: 480px;
+  max-width: 320px;
+}
+
 /* dispositivos con un ancho máximo de 480px (modo horizontal) */
 @media screen and (max-width: 480px) {
   .logo {
@@ -522,15 +591,22 @@ footer {
     font-size: 16px;
   }
   header {
-    padding: 10px;
-    margin-top: 50px;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    width: 480px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
     width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
   }
   nav ul li {
-    margin-right: 20px;
+    display: flex;
+    margin-bottom: 10px;
   }
   main {
     padding: 20px;
@@ -551,10 +627,6 @@ footer {
     text-align: center;
     margin: 0 auto;
   }
-  .recuadro {
-    width: 100%;
-    padding: 20px;
-  }
   .mapa iframe {
     height: 250px;
   }
@@ -562,119 +634,141 @@ footer {
 /* Estilos para tabletas pequeñas con una resolución de 600x800 */
 @media screen and (min-width: 600px) and (max-width: 800px) {
   .logo {
-    width: 100px;
-    height: 50px;
+    width: 60px;
+    height: 40px;
     margin-top: 30px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
-  
   header {
-    padding: 10px;
-    margin-top: 50px;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    width: 600px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
     width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
   }
   nav ul li {
-    margin-right: 10px;
+    display: flex;
+    margin-bottom: 10px;
   }
-
   main {
-    padding: 30px;
+    padding: 5%; /* Ajustar el relleno en porcentaje */
   }
   aside {
-    padding: 30px;
+    padding: 5%; /* Ajustar el relleno en porcentaje */
   }
   video {
-    max-height: 800px;
-    max-width: 600px;
+    max-height: 600px;
+    max-width: 90%; /* Ajustar el ancho máximo del video en porcentaje */
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   footer {
-    padding: 20px;
-    width: 600px;
+    padding: 5%; /* Ajustar el relleno en porcentaje */
+    width: 90%; /* Ajustar el ancho del footer en porcentaje */
     text-align: center;
-    margin: 0 auto;
-  }
-  .recuadro {
-    width: 100%;
-    padding: 30px;
+    margin: 0 auto; /* Ajustar los márgenes en porcentaje */
   }
   .mapa iframe {
-    height: 250px;
+    width: 90%; /* Ajustar el ancho del mapa en porcentaje */
+    height: 200px;
+  }
+  .alineado-parrafo {
+    height: 400px;
+  }
+  .galeria {
+    height: 100%;
   }
 }
 /* Estilos para tabletas de 600x1024 en modo vertical */
 @media screen and (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
   .logo {
-    width: 100px;
-    height: 50px;
-    margin-top: 10px;
-  }
-  body {
-    font-size: 18px;
-  }
-  header {
-    padding: 10px;
-    margin-top: 50px;
-  }
-  nav ul li {
-    margin-right: 25px;
-  }
-  main {
-    padding: 30px;
-  }
-  aside {
-    padding: 30px;
-  }
-  video {
-    max-height: 1024px;
-    max-width: 600px;
-    display: block;
+    width: 100px; /* Ajustar el ancho del logo */
+    height: 80px; /* Ajustar la altura del logo */
+    margin-top: 15px; /* Ajustar el margen superior */
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
-  footer {
-    padding: 20px;
-    width: 600px;
-    text-align: center;
-    margin: 0 auto;
+  header {
+    padding: 10px;
+    margin-top: 50px; /* Ajustar el margen superior */
+    font-size: 20px;
+    width: 90%; /* Ajustar el ancho del encabezado */
+    text-align: center; /* Centrar el texto del encabezado */
+    margin-left: auto;
+    margin-right: auto;
   }
-  .recuadro {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
     width: 100%;
-    padding: 30px;
+  }
+  nav ul li {
+    display: flex;
+    margin-bottom: 10px; /* Ajustar el margen inferior */
+  }
+  main {
+    padding: 5%; /* Ajustar el relleno en porcentaje */
+  }
+  aside {
+    padding: 5%; /* Ajustar el relleno en porcentaje */
+  }
+  video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%; /* Ajustar el ancho máximo del video en porcentaje */
+  }
+  footer {
+    padding: 5%; /* Ajustar el relleno en porcentaje */
+    text-align: center;
+    margin: 5% auto; /* Ajustar los márgenes en porcentaje */
+    width: 90%; /* Ajustar el ancho del footer en porcentaje */
   }
   .mapa iframe {
-    height: 300px;
+    width: 90%; /* Ajustar el ancho del mapa en porcentaje */
+    height: 100%;
+  }
+  .galeria {
+    display: grid;
+    grid-template-rows: 480px; /* Define filas de 480px de alto */
   }
 }
 /* Estilos para tabletas de 10 pulgadas en modo vertical */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .logo {
     width: 100px;
-    height: 50px;
+    height: 100px;
     margin-top: 15px;
   }
   body {
-    font-size: 20px;
+    font-size: 18px;
   }
   header {
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 5%; /* Ajustar el margen superior en porcentaje */
   }
   nav ul li {
-    margin-right: 30px;
+    margin-right: 5%; /* Ajustar el margen derecho en porcentaje */
   }
   main {
-    padding: 40px;
+    padding: 20px;
   }
   aside {
     padding: 40px;
@@ -696,12 +790,19 @@ footer {
     font-size: 25px;
     letter-spacing: 10px;
   }
-  .recuadro {
-    width: 100%;
-    padding: 40px;
-  }
   .mapa iframe {
     height: 350px;
+  }
+  .alineado-parrafo {
+    font-size: 0.6rem; /* Tamaño de fuente ligeramente reducido */
+  }
+  .galeria h4 {
+    font-size: 22px; /* Tamaño de fuente ajustado */
+    margin-bottom: 15px; /* Margen inferior para separar los elementos */
+  }
+  .galeria p {
+    font-size: 18px; /* Tamaño de fuente ajustado */
+    margin-bottom: 15px; /* Margen inferior para separar los elementos */
   }
 }
 /* Estilos para tabletas como el iPad en modo horizontal y algunas pantallas de ordenador portátil, netbook y de escritorio */
@@ -789,6 +890,6 @@ footer {
     padding: 20px;
     border-radius: 10px;
   }
-} 
+}
 
 /*# sourceMappingURL=estilos.css.map */
