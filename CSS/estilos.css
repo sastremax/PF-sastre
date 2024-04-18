@@ -21,7 +21,9 @@ ol {
 
 body {
   background-color: rgb(13, 110, 253);
+  
 }
+
 body .body-background {
   background-color: rgb(13, 110, 253); /* Color de fondo */
   background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
@@ -48,6 +50,9 @@ html {
 
 h1 {
   font-family: "Gwendolin", sans-serif;
+  text-align: center; /* Alineación del texto al centro */
+  padding: 18px; /* Espaciado interno */
+  margin-right: 2px; /* Margen superior para separar del icono */
 }
 
 footer {
@@ -62,13 +67,6 @@ footer {
   color: rgb(13, 110, 253); /* Color del texto azul */
   font-size: 35px; /* Tamaño de fuente de 35px */
   letter-spacing: 20px; /* Espaciado entre letras de 20px */
-}
-
-h1 {
-  font-family: "Gwendolin"; /* Fuente Gwendolin */
-  text-align: center; /* Alineación del texto al centro */
-  padding: 18px; /* Espaciado interno */
-  margin-right: 2px; /* Margen superior para separar del icono */
 }
 
 header nav ul li a {
@@ -87,11 +85,6 @@ header nav ul li a:hover {
 
 .favicon {
   vertical-align: middle;
-}
-
-body {
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
 }
 
 section {
@@ -845,10 +838,7 @@ video {
   }
 }
 @media screen and (min-width: 1200px) {
-  .contenedor-recuadros {
-    /* Ejemplo de diseño de cuadrícula */
-    /* Estilos específicos para elementos de la cuadrícula */
-  }
+  
   .contenedor-recuadros body {
     font-size: 16px;
   }
