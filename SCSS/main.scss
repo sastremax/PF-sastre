@@ -229,7 +229,6 @@ button {
 aside {
     text-align: $centro; /* Alineación del texto al centro */
     margin-top: 20px; /* Margen superior */
-
     p {
         display: inline-block; /* Permite centrar el elemento <p> horizontalmente */
     }
@@ -540,7 +539,7 @@ footer {
         width: 100%;
     }
 
-    nav, main, aside, footer {
+    nav, footer {
         width: 100%;
     }
 
@@ -561,14 +560,6 @@ nav ul {
 nav ul li {
             display: flex;
             margin-bottom: 10px;
-}
-
-main {
-        padding: 10px;
-}
-    
-aside {
-        padding: 10px;
 }
 
     .descripcion {
@@ -804,10 +795,7 @@ aside {
     nav ul li {
         margin-right: 5%; /* Ajustar el margen derecho en porcentaje */
     }
-    main {
-        padding: 20px;
-    }
-
+    
     aside {
         padding: 40px;
     }
@@ -863,10 +851,6 @@ aside {
         margin-right: 30px;
     }
 
-    main {
-        padding: 40px;
-    }
-
     aside {
         padding: 40px;
     }
@@ -912,10 +896,6 @@ aside {
 
     .navbar ul li {
         margin-right: 30px;
-    }
-
-    .main-content {
-        padding: 30px;
     }
 
     .sidebar {

@@ -548,7 +548,7 @@ video {
     font-size: 16px;
     width: 100%;
   }
-  .contenedor-recuadros nav, .contenedor-recuadros main, .contenedor-recuadros aside, .contenedor-recuadros footer {
+  .contenedor-recuadros nav, .contenedor-recuadros footer {
     width: 100%;
   }
   .contenedor-recuadros header {
@@ -567,12 +567,6 @@ video {
   .contenedor-recuadros nav ul li {
     display: flex;
     margin-bottom: 10px;
-  }
-  .contenedor-recuadros main {
-    padding: 10px;
-  }
-  .contenedor-recuadros aside {
-    padding: 10px;
   }
   .contenedor-recuadros .descripcion {
     text-align: center;
@@ -770,9 +764,6 @@ video {
   .contenedor-recuadros nav ul li {
     margin-right: 5%; /* Ajustar el margen derecho en porcentaje */
   }
-  .contenedor-recuadros main {
-    padding: 20px;
-  }
   .contenedor-recuadros aside {
     padding: 40px;
   }
@@ -815,9 +806,6 @@ video {
   .contenedor-recuadros nav ul li {
     margin-right: 30px;
   }
-  .contenedor-recuadros main {
-    padding: 40px;
-  }
   .contenedor-recuadros aside {
     padding: 40px;
   }
@@ -857,9 +845,6 @@ video {
   }
   .contenedor-recuadros .navbar ul li {
     margin-right: 30px;
-  }
-  .contenedor-recuadros .main-content {
-    padding: 30px;
   }
   .contenedor-recuadros .sidebar {
     padding: 30px;
