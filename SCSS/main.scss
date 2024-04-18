@@ -184,23 +184,23 @@ video {
         }
     }    
 
-
-.mapa {
-    margin-top: 20px; /* Espacio entre los recuadros y el mapa */
-    text-align: $centro; /* Alinea horizontalmente el contenido del mapa */
-    border: 0; /* Sin borde */
-    clear: both; /* Limpia los flotadores anteriores */
-    width: 100%; /* Ancho completo del contenedor */
-
-    iframe {
-        width: 100%; /* Ancho del mapa */
-        height:300px; /* Ajusta la altura del mapa según sea necesario */
-        display: block; /* Cambia la visualización a bloque para ocupar todo el ancho disponible */
-        margin: 20px auto 0; /* Centrado horizontal y margen superior */
-        background-color: transparent; /* Elimina el color de fondo del mapa si es necesario */
+    .mapa-contenedor {
+        position: relative;
+        width: 100% !important;
+        height: 100% !important;
+        padding-top: 75%; /* Ajusta según sea necesario */
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-}
+    .mapa {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 
 .spacer {
     height: 90px; /* Altura espaciada */
@@ -508,7 +508,6 @@ footer {
 
 .logo {
     width: 100px;
-
 }
 
 
@@ -549,9 +548,9 @@ footer {
         padding: 5px;
         margin-top: 10px;
         font-size: 15px;
-        width: 320px;
+        width: 320px;        
     }
-    
+
 nav ul {
     display: flex;
     flex-direction: column;
@@ -562,16 +561,15 @@ nav ul {
 nav ul li {
             display: flex;
             margin-bottom: 10px;
-        }
-    }
-    
-    main {
+}
+
+main {
         padding: 10px;
-    }
+}
     
-    aside {
+aside {
         padding: 10px;
-    }
+}
 
     .descripcion {
         text-align: center;
@@ -579,11 +577,6 @@ nav ul li {
         width: 320px;
     }
 
-    .mapa iframe {
-        height: 100px;
-        width: 320px;
-    }   
-    
     video {
         max-height: 480px;
         max-width: 320px;
@@ -659,10 +652,7 @@ nav ul li {
         text-align: center;
         margin: 0 auto;
     }
-
-    .mapa iframe {
-        height: 250px;
-    }
+    
 }
 
 /* Estilos para tabletas pequeñas con una resolución de 600x800 */
@@ -722,11 +712,6 @@ nav ul li {
         text-align: center;
         margin: 0 auto; /* Ajustar los márgenes en porcentaje */
     }
-
-    .mapa iframe {
-        width: 90%; /* Ajustar el ancho del mapa en porcentaje */
-        height: 200px;
-    } 
 
     .alineado-parrafo {
         height: 400px;
@@ -793,11 +778,6 @@ nav ul li {
         width: 90%; /* Ajustar el ancho del footer en porcentaje */
     }
 
-    .mapa iframe {
-        width: 90%; /* Ajustar el ancho del mapa en porcentaje */
-        height: 100%;
-    }
-
     .galeria {        
         display: grid;
         grid-template-rows: 480px; /* Define filas de 480px de alto */
@@ -852,9 +832,6 @@ nav ul li {
         letter-spacing: 10px;
     }   
 
-    .mapa iframe {
-        height: 350px;
-    }
 
     .alineado-parrafo {
         font-size: 0.6rem; /* Tamaño de fuente ligeramente reducido */
@@ -903,9 +880,6 @@ nav ul li {
         padding: 40px;
     }
 
-    .mapa iframe {
-        height: 350px;
-    }  
 }
 
 /* Estilos para pantallas medianas */
@@ -920,9 +894,7 @@ nav ul li {
     .recuadro {
         width: 100%;
     }
-    .mapa iframe {
-        height: 350px;
-    }
+    
     .Equipo-de-terapeutas {
         grid-template-columns: 1fr;
     }
@@ -954,25 +926,24 @@ nav ul li {
         width: 100%;
     }
 
-    .mapa iframe {
-        height: 400px;
-    }
-
     .footer {
         padding: 30px;
     }
-    
-    /* Ejemplo de diseño de cuadrícula */
+
+/* Ejemplo de diseño de cuadrícula */
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-gap: 20px;
     }
 
-    /* Estilos específicos para elementos de la cuadrícula */
+/* Estilos específicos para elementos de la cuadrícula */
     .grid-item {
         background-color: #f0f0f0;
         padding: 20px;
         border-radius: 10px;
     }
+
+}
+
 }

@@ -71,6 +71,20 @@ h1 {
   margin-right: 2px; /* Margen superior para separar del icono */
 }
 
+header nav ul li a {
+  text-align: center; /* Alineación del texto al centro */
+  list-style: none; /* Quita los puntos de la lista */
+  margin-right: 30px; /* Margen derecho */
+  margin-top: 15px; /* Margen superior */
+  margin-bottom: 10px; /* Margen inferior */
+  font-size: 20px; /* Tamaño de fuente */
+  text-decoration: none !important; /* Elimina el subrrayado */
+}
+
+header nav ul li a:hover {
+  color: green;
+}
+
 .favicon {
   vertical-align: middle;
 }
@@ -185,6 +199,13 @@ video {
   /* Estilos para la barra de desplazamiento en navegadores Opera */
   /* Estilos específicos para dispositivos móviles */
   /* dispositivos con un ancho máximo de 320px (modo vertical) */
+  /* dispositivos con un ancho máximo de 480px (modo horizontal) */
+  /* Estilos para tabletas pequeñas con una resolución de 600x800 */
+  /* Estilos para tabletas de 600x1024 en modo vertical */
+  /* Estilos para tabletas de 10 pulgadas en modo vertical */
+  /* Estilos para tabletas como el iPad en modo horizontal y algunas pantallas de ordenador portátil, netbook y de escritorio */
+  /* Estilos para pantallas medianas */
+  /* Estilos para pantallas panorámicas de al menos 1200px (principalmente portátiles y de escritorio) */
 }
 .contenedor-recuadros .recuadro {
   height: 150px; /*Alto*/
@@ -236,19 +257,21 @@ video {
   border-radius: 20px; /* Establece un radio de borde de 20px */
   color: rgb(255, 255, 255); /* Color del texto */
 }
-.contenedor-recuadros .mapa {
-  margin-top: 20px; /* Espacio entre los recuadros y el mapa */
-  text-align: center; /* Alinea horizontalmente el contenido del mapa */
-  border: 0; /* Sin borde */
-  clear: both; /* Limpia los flotadores anteriores */
-  width: 100%; /* Ancho completo del contenedor */
+.contenedor-recuadros .mapa-contenedor {
+  position: relative;
+  width: 100% !important;
+  height: 100% !important;
+  padding-top: 75%; /* Ajusta según sea necesario */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.contenedor-recuadros .mapa iframe {
-  width: 100%; /* Ancho del mapa */
-  height: 300px; /* Ajusta la altura del mapa según sea necesario */
-  display: block; /* Cambia la visualización a bloque para ocupar todo el ancho disponible */
-  margin: 20px auto 0; /* Centrado horizontal y margen superior */
-  background-color: transparent; /* Elimina el color de fondo del mapa si es necesario */
+.contenedor-recuadros .mapa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .contenedor-recuadros .spacer {
   height: 90px; /* Altura espaciada */
@@ -545,41 +568,35 @@ video {
     display: flex;
     margin-bottom: 10px;
   }
+  .contenedor-recuadros main {
+    padding: 10px;
+  }
+  .contenedor-recuadros aside {
+    padding: 10px;
+  }
+  .contenedor-recuadros .descripcion {
+    text-align: center;
+    margin: 0 auto;
+    width: 320px;
+  }
+  .contenedor-recuadros video {
+    max-height: 480px;
+    max-width: 320px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contenedor-recuadros footer {
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    max-height: 480px;
+    max-width: 320px;
+  }
 }
-.contenedor-recuadros main {
-  padding: 10px;
-}
-.contenedor-recuadros aside {
-  padding: 10px;
-}
-.contenedor-recuadros .descripcion {
-  text-align: center;
-  margin: 0 auto;
-  width: 320px;
-}
-.contenedor-recuadros .mapa iframe {
-  height: 100px;
-  width: 320px;
-}
-.contenedor-recuadros video {
-  max-height: 480px;
-  max-width: 320px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.contenedor-recuadros footer {
-  font-size: 14px;
-  padding: 10px;
-  text-align: center;
-  margin: 0 auto;
-  max-height: 480px;
-  max-width: 320px;
-}
-
-/* dispositivos con un ancho máximo de 480px (modo horizontal) */
 @media screen and (max-width: 480px) {
-  .logo {
+  .contenedor-recuadros .logo {
     width: 50px;
     height: 30px;
     margin-top: 30px;
@@ -587,16 +604,16 @@ video {
     margin-left: auto;
     margin-right: auto;
   }
-  body {
+  .contenedor-recuadros body {
     font-size: 16px;
   }
-  header {
+  .contenedor-recuadros header {
     padding: 5px;
     margin-top: 10px;
     font-size: 20px;
     width: 480px;
   }
-  nav ul {
+  .contenedor-recuadros nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -604,36 +621,32 @@ video {
     margin: 0 auto;
     width: 100%;
   }
-  nav ul li {
+  .contenedor-recuadros nav ul li {
     display: flex;
     margin-bottom: 10px;
   }
-  main {
+  .contenedor-recuadros main {
     padding: 20px;
   }
-  aside {
+  .contenedor-recuadros aside {
     padding: 20px;
   }
-  video {
+  .contenedor-recuadros video {
     max-height: 480px;
     max-width: 480px;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  footer {
+  .contenedor-recuadros footer {
     padding: 20px;
     width: 480px;
     text-align: center;
     margin: 0 auto;
   }
-  .mapa iframe {
-    height: 250px;
-  }
 }
-/* Estilos para tabletas pequeñas con una resolución de 600x800 */
 @media screen and (min-width: 600px) and (max-width: 800px) {
-  .logo {
+  .contenedor-recuadros .logo {
     width: 60px;
     height: 40px;
     margin-top: 30px;
@@ -641,16 +654,16 @@ video {
     margin-left: auto;
     margin-right: auto;
   }
-  body {
+  .contenedor-recuadros body {
     font-size: 16px;
   }
-  header {
+  .contenedor-recuadros header {
     padding: 5px;
     margin-top: 10px;
     font-size: 20px;
     width: 600px;
   }
-  nav ul {
+  .contenedor-recuadros nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -658,43 +671,38 @@ video {
     margin: 0 auto;
     width: 100%;
   }
-  nav ul li {
+  .contenedor-recuadros nav ul li {
     display: flex;
     margin-bottom: 10px;
   }
-  main {
+  .contenedor-recuadros main {
     padding: 5%; /* Ajustar el relleno en porcentaje */
   }
-  aside {
+  .contenedor-recuadros aside {
     padding: 5%; /* Ajustar el relleno en porcentaje */
   }
-  video {
+  .contenedor-recuadros video {
     max-height: 600px;
     max-width: 90%; /* Ajustar el ancho máximo del video en porcentaje */
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  footer {
+  .contenedor-recuadros footer {
     padding: 5%; /* Ajustar el relleno en porcentaje */
     width: 90%; /* Ajustar el ancho del footer en porcentaje */
     text-align: center;
     margin: 0 auto; /* Ajustar los márgenes en porcentaje */
   }
-  .mapa iframe {
-    width: 90%; /* Ajustar el ancho del mapa en porcentaje */
-    height: 200px;
-  }
-  .alineado-parrafo {
+  .contenedor-recuadros .alineado-parrafo {
     height: 400px;
   }
-  .galeria {
+  .contenedor-recuadros .galeria {
     height: 100%;
   }
 }
-/* Estilos para tabletas de 600x1024 en modo vertical */
 @media screen and (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
-  .logo {
+  .contenedor-recuadros .logo {
     width: 100px; /* Ajustar el ancho del logo */
     height: 80px; /* Ajustar la altura del logo */
     margin-top: 15px; /* Ajustar el margen superior */
@@ -702,7 +710,7 @@ video {
     margin-left: auto;
     margin-right: auto;
   }
-  header {
+  .contenedor-recuadros header {
     padding: 10px;
     margin-top: 50px; /* Ajustar el margen superior */
     font-size: 20px;
@@ -711,7 +719,7 @@ video {
     margin-left: auto;
     margin-right: auto;
   }
-  nav ul {
+  .contenedor-recuadros nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -719,173 +727,155 @@ video {
     margin: 0 auto;
     width: 100%;
   }
-  nav ul li {
+  .contenedor-recuadros nav ul li {
     display: flex;
     margin-bottom: 10px; /* Ajustar el margen inferior */
   }
-  main {
+  .contenedor-recuadros main {
     padding: 5%; /* Ajustar el relleno en porcentaje */
   }
-  aside {
+  .contenedor-recuadros aside {
     padding: 5%; /* Ajustar el relleno en porcentaje */
   }
-  video {
+  .contenedor-recuadros video {
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: 90%; /* Ajustar el ancho máximo del video en porcentaje */
   }
-  footer {
+  .contenedor-recuadros footer {
     padding: 5%; /* Ajustar el relleno en porcentaje */
     text-align: center;
     margin: 5% auto; /* Ajustar los márgenes en porcentaje */
     width: 90%; /* Ajustar el ancho del footer en porcentaje */
   }
-  .mapa iframe {
-    width: 90%; /* Ajustar el ancho del mapa en porcentaje */
-    height: 100%;
-  }
-  .galeria {
+  .contenedor-recuadros .galeria {
     display: grid;
     grid-template-rows: 480px; /* Define filas de 480px de alto */
   }
 }
-/* Estilos para tabletas de 10 pulgadas en modo vertical */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .logo {
+  .contenedor-recuadros .logo {
     width: 100px;
     height: 100px;
     margin-top: 15px;
   }
-  body {
+  .contenedor-recuadros body {
     font-size: 18px;
   }
-  header {
+  .contenedor-recuadros header {
     padding: 10px;
     margin-top: 5%; /* Ajustar el margen superior en porcentaje */
   }
-  nav ul li {
+  .contenedor-recuadros nav ul li {
     margin-right: 5%; /* Ajustar el margen derecho en porcentaje */
   }
-  main {
+  .contenedor-recuadros main {
     padding: 20px;
   }
-  aside {
+  .contenedor-recuadros aside {
     padding: 40px;
   }
-  video {
+  .contenedor-recuadros video {
     max-height: 1024px;
     max-width: 768px;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  footer {
+  .contenedor-recuadros footer {
     padding: 20px;
     width: 768px;
     text-align: center;
     margin: 0 auto;
   }
-  footer .redes a {
+  .contenedor-recuadros footer .redes a {
     font-size: 25px;
     letter-spacing: 10px;
   }
-  .mapa iframe {
-    height: 350px;
-  }
-  .alineado-parrafo {
+  .contenedor-recuadros .alineado-parrafo {
     font-size: 0.6rem; /* Tamaño de fuente ligeramente reducido */
   }
-  .galeria h4 {
+  .contenedor-recuadros .galeria h4 {
     font-size: 22px; /* Tamaño de fuente ajustado */
     margin-bottom: 15px; /* Margen inferior para separar los elementos */
   }
-  .galeria p {
+  .contenedor-recuadros .galeria p {
     font-size: 18px; /* Tamaño de fuente ajustado */
     margin-bottom: 15px; /* Margen inferior para separar los elementos */
   }
 }
-/* Estilos para tabletas como el iPad en modo horizontal y algunas pantallas de ordenador portátil, netbook y de escritorio */
 @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
-  body {
+  .contenedor-recuadros body {
     font-size: 20px;
   }
-  header {
+  .contenedor-recuadros header {
     padding: 40px;
   }
-  nav ul li {
+  .contenedor-recuadros nav ul li {
     margin-right: 30px;
   }
-  main {
+  .contenedor-recuadros main {
     padding: 40px;
   }
-  aside {
+  .contenedor-recuadros aside {
     padding: 40px;
   }
-  footer {
+  .contenedor-recuadros footer {
     padding: 40px;
   }
-  .recuadro {
+  .contenedor-recuadros .recuadro {
     width: 100%;
     padding: 40px;
   }
-  .mapa iframe {
-    height: 350px;
-  }
 }
-/* Estilos para pantallas medianas */
 @media screen and (max-width: 768px) {
-  .grid-item-hijo {
+  .contenedor-recuadros .grid-item-hijo {
     padding: 10px;
     margin-bottom: 10px;
   }
-  nav ul li {
+  .contenedor-recuadros nav ul li {
     margin-right: 15px;
   }
-  .recuadro {
+  .contenedor-recuadros .recuadro {
     width: 100%;
   }
-  .mapa iframe {
-    height: 350px;
-  }
-  .Equipo-de-terapeutas {
+  .contenedor-recuadros .Equipo-de-terapeutas {
     grid-template-columns: 1fr;
   }
 }
-/* Estilos para pantallas panorámicas de al menos 1200px (principalmente portátiles y de escritorio) */
 @media screen and (min-width: 1200px) {
-  body {
+  .contenedor-recuadros {
+    /* Ejemplo de diseño de cuadrícula */
+    /* Estilos específicos para elementos de la cuadrícula */
+  }
+  .contenedor-recuadros body {
     font-size: 16px;
   }
-  .header {
+  .contenedor-recuadros .header {
     padding: 30px;
   }
-  .navbar ul li {
+  .contenedor-recuadros .navbar ul li {
     margin-right: 30px;
   }
-  .main-content {
+  .contenedor-recuadros .main-content {
     padding: 30px;
   }
-  .sidebar {
+  .contenedor-recuadros .sidebar {
     padding: 30px;
   }
-  .recuadro {
+  .contenedor-recuadros .recuadro {
     width: 100%;
   }
-  .mapa iframe {
-    height: 400px;
-  }
-  .footer {
+  .contenedor-recuadros .footer {
     padding: 30px;
   }
-  /* Ejemplo de diseño de cuadrícula */
-  .grid-container {
+  .contenedor-recuadros .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 20px;
   }
-  /* Estilos específicos para elementos de la cuadrícula */
-  .grid-item {
+  .contenedor-recuadros .grid-item {
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 10px;

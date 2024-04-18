@@ -487,8 +487,7 @@ footer {
     width: 250px;
   }
   .mapa iframe {
-    height: 100px;
-    width: 250px;
+    height: 100px;    
   }
   video {
     max-height: 480px;
