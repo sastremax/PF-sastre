@@ -299,35 +299,35 @@ aside {
     }  
     // Estilos específicos para cada elemento de la cuadrícula
     &.item1 {
-      background-image: url("https://lh5.googleusercontent.com/p/AF1QipMFewmhUT81J5itFkTem-D2Ideq5o1HUlw72nNz=w203-h152-k-no"); // URL de la imagen de fondo para item1
+        background-image: url("../assets/images/item1.jpg"); // URL de la imagen de fondo para item1
       grid-area: img1; // Posición en la cuadrícula para item1
     }  
     &.item2 {
-    background-image: url("https://lh5.googleusercontent.com/p/AF1QipNzn56ntzIR7nMUlDPIWtxEuye6lURZ68Ui0RWy=w203-h270-k-no");
+    background-image: url("../assets/images/item2.jpg");
       grid-area: img2; // Posición en la cuadrícula para item2
     }  
     &.item3 {
-    background-image: url("https://lh5.googleusercontent.com/p/AF1QipNNGe9wQJvmNRWEElXSuAcrV9RfV7harBlMMF1t=w203-h152-k-no");
+    background-image: url("../assets/images/item3.jpg");
       grid-area: img3; // Posición en la cuadrícula para item3
     }  
     &.item4 {
-    background-image: url("https://lh5.googleusercontent.com/p/AF1QipPPWouPFlybOtiiEDX_TJWo1gIypR9_AUtDud_q=w203-h152-k-no");
+    background-image: url("../assets/images/item4.jpg");
       grid-area: img4; // Posición en la cuadrícula para item4
     }  
     &.item5 {
-    background-image: url("https://lh5.googleusercontent.com/p/AF1QipNPYjPN2nVz8XRZ5EkQKL3Xcfv9vElFwHMY7u9P=w203-h152-k-no");
+    background-image: url("../assets/images/item5.jpg");
       grid-area: img5; // Posición en la cuadrícula para item5
     }  
     &.item6 {
-    background-image: url("https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=12Y5PsnbSq3exUeSXMka8A&cb_client=maps_sv.tactile.gps&w=203&h=100&yaw=243.99649&pitch=0&thumbfov=100");
+    background-image: url("../assets/images/item6.jpg");
       grid-area: img6; // Posición en la cuadrícula para item6
     }  
     &.item7 {
-    background-image: url("https://lh5.googleusercontent.com/p/AF1QipPdDoYh1zDqj8tKePWzyY10uAW15wpRMzrhw7mF=w203-h152-k-no");
+    background-image: url("../assets/images/item7.jpg");
       grid-area: img7; // Posición en la cuadrícula para item7
     }  
     &.item8 {
-    background-image: url("https://lh5.googleusercontent.com/p/AF1QipPJ6NLsm4cwRuv4xwbT7ZQNxB73Qc4n6QcuytvH=w203-h152-k-no");
+    background-image: url("../assets/images/item8.jpg");
       grid-area: img8; // Posición en la cuadrícula para item8
     }
 }
