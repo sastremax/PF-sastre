@@ -1,3 +1,5 @@
+$c13: 1px 1px 2px rgba(0, 0, 0, 0.1);
+$centro: center;
 // Importar las variables, funciones y mixins primero, porque pueden ser necesitados en otros archivos
 @import './utilities/_functions'; // Importar funciones útiles
 @import './utilities/_helpers';  // Importar helpers para estilos
@@ -119,14 +121,7 @@ video {
     margin-bottom: 20px;  /* Margen inferior de 20px */
 }
 
-/*.contenedor-recuadros {
-
-  flex-wrap: wrap; // Permitir que los elementos se envuelvan a la siguiente línea si no hay suficiente espacio
-
-  .col-3 {
-    flex: 1 0 25%; // Hacer que cada columna ocupe el 25% del ancho del contenedor
-    max-width: 25%; // Asegurarse de que la columna no pueda ser más ancha que el 25%
-
+/*
     .aboutgaleria {
       display: flex; // Usar flexbox para el diseño de la galería
       flex-wrap: wrap; // Permitir que los elementos de la galería se envuelvan a la siguiente línea
@@ -283,7 +278,6 @@ aside {
 
 .about-grid {
     display: flex; /* Establece el contenedor como flexbox */
-    grid-template-columns: 1fr; /* tamaño de las columnas en un contenedor de cuadrícula */
     align-items: $centro; /* Alinea verticalmente el contenido al centro */
     justify-content: $centro; /* Centra horizontalmente el contenido */
     margin-left: 40px; /* Espacio a la izquierda del elemento */
@@ -299,9 +293,11 @@ aside {
 }
 
 .aboutgaleria {
+    height: 400px;
+    width: 100%; /* Ancho del contenedor al 100% */
     display: grid; /* Establece el contenedor como una cuadrícula */
     grid-template-columns: repeat(4,1fr); /* Define 4 columnas de igual ancho */
-    grid-template-rows: repeat(3,240px); /* Define 3 filas de 200px de alto cada una */
+    grid-template-rows: repeat(3,auto); /* Define 3 filas de 200px de alto cada una */
     grid-template-areas: 
     "img1 img2 img3 img3" /* Define el área de la cuadrícula para los elementos */
     "img1 img4 img5 img6" /* Define el área de la cuadrícula para los elementos */
@@ -893,7 +889,7 @@ nav ul li {
 }
 
 /* Estilos para pantallas medianas */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .grid-item-hijo {
         padding: 10px;
         margin-bottom: 10px;
@@ -911,7 +907,7 @@ nav ul li {
 }
 
 /* Estilos para pantallas panorámicas de al menos 1200px (principalmente portátiles y de escritorio) */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1367px) {
     body {
         font-size: 16px;
     }
