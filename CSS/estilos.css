@@ -324,7 +324,7 @@ video {
 .contenedor-recuadros .service-contenido {
   margin-bottom: 20px; /* Margen inferior */
 }
-.contenedor-recuadros .aboutGaleria {
+.contenedor-recuadros .aboutgaleria {
   display: grid; /* Establece el contenedor como una cuadrícula */
   grid-template-columns: repeat(4, 1fr); /* Define 4 columnas de igual ancho */
   grid-template-rows: repeat(3, 240px); /* Define 3 filas de 200px de alto cada una */

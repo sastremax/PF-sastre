@@ -183,7 +183,7 @@ video {
   max-width: 20px; /* Ancho máximo */
   display: block; /* Establece el elemento como bloque */
   height: auto; /* Altura automática */
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Margen inferior de 20px */
 }
 
 .contenedor-recuadros {
@@ -192,6 +192,8 @@ video {
   align-items: center; /* Centra los elementos horizontalmente */
   max-width: 300px; /* Establece un ancho máximo para el contenedor */
   margin: 0 auto; /* Centra el contenedor horizontalmente */
+  /* Estilos para el contenedor del mapa */
+  /* Estilos para el elemento del mapa */
   /* modificar la barra */
   /* Estilos para la barra de desplazamiento en navegadores WebKit (Chrome, Safari, Opera) */
   /* Estilos para la barra de desplazamiento en navegadores Firefox */
@@ -218,7 +220,7 @@ video {
   max-height: 150px; /* Altura máxima */
   overflow: hidden; /* Oculta la barra de desplazamiento */
   margin: 15px; /* Margen */
-  text-transform: uppercase;
+  text-transform: uppercase; /*transformar el texto en mayúsculas*/
   display: flex; /* Establece el contenedor como flexbox */
   justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del eje principal */
   flex-direction: column; /* Dirección de los elementos: en formato columna */
@@ -242,7 +244,7 @@ video {
   max-height: 150px; /* Altura máxima */
   overflow: hidden; /* Oculta la barra de desplazamiento */
   margin: 15px; /* Margen */
-  text-transform: uppercase;
+  text-transform: uppercase; /*transformar el texto en mayúsculas*/
   display: flex; /* Establece el contenedor como flexbox */
   justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del eje principal */
   flex-direction: column; /* Dirección de los elementos: en formato columna */
@@ -258,19 +260,29 @@ video {
   color: rgb(255, 255, 255); /* Color del texto */
 }
 .contenedor-recuadros .mapa-contenedor {
+  /* Establece la posición relativa para que los elementos absolutos se posicionen relativamente a este contenedor */
   position: relative;
+  /* Ancho del contenedor al 100% del ancho de su contenedor padre, importante para ocupar todo el espacio disponible */
   width: 100% !important;
+  /* Altura del contenedor al 100% del alto de su contenedor padre, también importante para ocupar todo el espacio disponible */
   height: 100% !important;
+  /* Establece un relleno en la parte superior del contenedor que mantiene una relación de aspecto de 4:3 (ancho:alto) */
   padding-top: 75%; /* Ajusta según sea necesario */
+  /* Utiliza un modelo de caja flexible para centrar el contenido vertical y horizontalmente */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* Centra verticalmente los elementos secundarios */
+  justify-content: center; /* Centra horizontalmente los elementos secundarios */
 }
 .contenedor-recuadros .mapa {
+  /* Establece la posición absoluta para colocar el mapa dentro del contenedor sin afectar al diseño del resto del contenido */
   position: absolute;
+  /* Coloca el borde superior del mapa en la parte superior del contenedor padre */
   top: 0;
+  /* Coloca el borde izquierdo del mapa en la parte izquierda del contenedor padre */
   left: 0;
+  /* Ancho del mapa al 100% del ancho del contenedor padre */
   width: 100%;
+  /* Altura del mapa al 100% del alto del contenedor padre */
   height: 100%;
 }
 .contenedor-recuadros .spacer {
@@ -295,7 +307,6 @@ video {
 }
 .contenedor-recuadros aside {
   text-align: center; /* Alineación del texto al centro */
-  margin-top: 20px; /* Margen superior */
 }
 .contenedor-recuadros aside p {
   display: inline-block; /* Permite centrar el elemento <p> horizontalmente */
@@ -331,7 +342,7 @@ video {
 .contenedor-recuadros .service-contenido {
   margin-bottom: 20px; /* Margen inferior */
 }
-.contenedor-recuadros .aboutGaleria {
+.contenedor-recuadros .aboutgaleria {
   display: grid; /* Establece el contenedor como una cuadrícula */
   grid-template-columns: repeat(4, 1fr); /* Define 4 columnas de igual ancho */
   grid-template-rows: repeat(3, 240px); /* Define 3 filas de 200px de alto cada una */

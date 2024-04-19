@@ -16,11 +16,6 @@
 @import './layout/_navigation';  // Importar estilos de navegación
 @import './layout/_sidebar';     // Importar estilos de la barra lateral
 
-
-@mixin borde-redondeado($radio) {
-    border-radius: $radio;
-}
-
 .favicon {
     vertical-align: middle;
 }
@@ -121,7 +116,7 @@ video {
     max-width: 20px; /* Ancho máximo */
     display: block; /* Establece el elemento como bloque */
     height: auto; /* Altura automática */
-    margin-bottom: 20px;
+    margin-bottom: 20px;  /* Margen inferior de 20px */
 }
 
 .contenedor-recuadros {
@@ -141,16 +136,14 @@ video {
         max-height: 150px; /* Altura máxima */
         overflow: hidden; /* Oculta la barra de desplazamiento */
         margin: 15px; /* Margen */
-        text-transform: uppercase;
+        text-transform: uppercase; /*transformar el texto en mayúsculas*/
         display: flex; /* Establece el contenedor como flexbox */
         justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del eje principal */
         flex-direction: column; /* Dirección de los elementos: en formato columna */    
         transition: 0.7s; /* Transición con duración de 0.7 segundos */
-
         a {
             text-decoration: none; /* Elimina el subrayado */
         }
-
         &:hover {
             transform: scale(0.7); /* Reduce el tamaño del elemento al 70% */
             background-color: $c2; /* Cambia el color de fondo a negro */
@@ -159,7 +152,7 @@ video {
         }      
     }
 
-    .recuadroMasPeque {
+.recuadroMasPeque {
         height: 80px;  /*Alto*/
         width: 80px; /* Ancho */
         background-color: $c3; /* Color de fondo */
@@ -168,39 +161,51 @@ video {
         max-height: 150px; /* Altura máxima */
         overflow: hidden; /* Oculta la barra de desplazamiento */
         margin: 15px; /* Margen */
-        text-transform: uppercase;
+        text-transform: uppercase;  /*transformar el texto en mayúsculas*/
         display: flex; /* Establece el contenedor como flexbox */
         justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del eje principal */
         flex-direction: column; /* Dirección de los elementos: en formato columna */    
         transition: 0.7s; /* Transición con duración de 0.7 segundos */
-        a {
-            text-decoration: none; /* Elimina el subrayado */
-        }
-        &:hover {
-            transform: scale(0.7); /* Reduce el tamaño del elemento al 70% */
-            background-color: $c2; /* Cambia el color de fondo a negro */
-            border-radius: 20px; /* Establece un radio de borde de 20px */
-            color: $c3; /* Color del texto */
-        }
-    }    
-
-    .mapa-contenedor {
-        position: relative;
-        width: 100% !important;
-        height: 100% !important;
-        padding-top: 75%; /* Ajusta según sea necesario */
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    a {
+        text-decoration: none; /* Elimina el subrayado */
     }
-
-    .mapa {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+    &:hover {
+        transform: scale(0.7); /* Reduce el tamaño del elemento al 70% */
+        background-color: $c2; /* Cambia el color de fondo a negro */
+        border-radius: 20px; /* Establece un radio de borde de 20px */
+        color: $c3; /* Color del texto */
     }
+}    
+
+/* Estilos para el contenedor del mapa */
+.mapa-contenedor {
+    /* Establece la posición relativa para que los elementos absolutos se posicionen relativamente a este contenedor */
+    position: relative;
+    /* Ancho del contenedor al 100% del ancho de su contenedor padre, importante para ocupar todo el espacio disponible */
+    width: 100% !important;
+    /* Altura del contenedor al 100% del alto de su contenedor padre, también importante para ocupar todo el espacio disponible */
+    height: 100% !important;
+    /* Establece un relleno en la parte superior del contenedor que mantiene una relación de aspecto de 4:3 (ancho:alto) */
+    padding-top: 75%; /* Ajusta según sea necesario */
+    /* Utiliza un modelo de caja flexible para centrar el contenido vertical y horizontalmente */
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos secundarios */
+    justify-content: center; /* Centra horizontalmente los elementos secundarios */
+}
+
+/* Estilos para el elemento del mapa */
+.mapa {
+    /* Establece la posición absoluta para colocar el mapa dentro del contenedor sin afectar al diseño del resto del contenido */
+    position: absolute;
+    /* Coloca el borde superior del mapa en la parte superior del contenedor padre */
+    top: 0;
+    /* Coloca el borde izquierdo del mapa en la parte izquierda del contenedor padre */
+    left: 0;
+    /* Ancho del mapa al 100% del ancho del contenedor padre */
+    width: 100%;
+    /* Altura del mapa al 100% del alto del contenedor padre */
+    height: 100%;
+}
 
 .spacer {
     height: 90px; /* Altura espaciada */
@@ -228,13 +233,9 @@ button {
 
 aside {
     text-align: $centro; /* Alineación del texto al centro */
-    margin-top: 20px; /* Margen superior */
-    
-
-}
-
-aside p {
-    display: inline-block; /* Permite centrar el elemento <p> horizontalmente */
+    p {
+        display: inline-block; /* Permite centrar el elemento <p> horizontalmente */
+    }
 }
 
 .titulo {
@@ -274,7 +275,7 @@ aside p {
     margin-bottom: 20px; /* Margen inferior */
 }
 
-.aboutGaleria {
+.aboutgaleria {
     display: grid; /* Establece el contenedor como una cuadrícula */
     grid-template-columns: repeat(4,1fr); /* Define 4 columnas de igual ancho */
     grid-template-rows: repeat(3,240px); /* Define 3 filas de 200px de alto cada una */
