@@ -119,11 +119,33 @@ video {
     margin-bottom: 20px;  /* Margen inferior de 20px */
 }
 
+/*.contenedor-recuadros {
+
+  flex-wrap: wrap; // Permitir que los elementos se envuelvan a la siguiente línea si no hay suficiente espacio
+
+  .col-3 {
+    flex: 1 0 25%; // Hacer que cada columna ocupe el 25% del ancho del contenedor
+    max-width: 25%; // Asegurarse de que la columna no pueda ser más ancha que el 25%
+
+    .aboutgaleria {
+      display: flex; // Usar flexbox para el diseño de la galería
+      flex-wrap: wrap; // Permitir que los elementos de la galería se envuelvan a la siguiente línea
+
+      .item {
+        flex: 1 0 20%; // Hacer que cada elemento ocupe el 20% del ancho de la galería
+        max-width: 20%; // Asegurarse de que el elemento no pueda ser más ancho que el 20%
+      }
+    }
+  }
+}*/
+
+
+
 .contenedor-recuadros {
+    width: 100%; /* Ancho del contenedor al 100% */
     display: flex; /* Establece el contenedor como flexbox */
     flex-direction: column; /* Dirección de los elementos: columna */
-    align-items: $centro; /* Centra los elementos horizontalmente */
-    max-width: 300px; /* Establece un ancho máximo para el contenedor */
+    align-items: $centro; /* Centra los elementos horizontalmente */    
     margin: 0 auto; /* Centra el contenedor horizontalmente */
 
     .recuadro {
@@ -172,6 +194,7 @@ video {
     &:hover {
         transform: scale(0.7); /* Reduce el tamaño del elemento al 70% */
         background-color: $c2; /* Cambia el color de fondo a negro */
+    }
         border-radius: 20px; /* Establece un radio de borde de 20px */
         color: $c3; /* Color del texto */
     }
@@ -926,7 +949,5 @@ nav ul li {
         padding: 20px;
         border-radius: 10px;
     }
-
-}
 
 }
