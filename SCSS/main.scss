@@ -229,10 +229,12 @@ button {
 aside {
     text-align: $centro; /* Alineación del texto al centro */
     margin-top: 20px; /* Margen superior */
-    p {
-        display: inline-block; /* Permite centrar el elemento <p> horizontalmente */
-    }
+    
 
+}
+
+aside p {
+    display: inline-block; /* Permite centrar el elemento <p> horizontalmente */
 }
 
 .titulo {
