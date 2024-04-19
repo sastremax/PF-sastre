@@ -799,19 +799,16 @@ nav ul li {
 
 /* Estilos para tabletas de 10 pulgadas en modo vertical */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    .logo {
+        
+    header {
         width: 100px;
         height: 100px;
         margin-top: 15px;
-    }
+        margin-top: 5%; /* Ajustar el margen superior en porcentaje */
+        padding: 10px;
 
     body {
         font-size: 18px;
-    }
-
-    header {
-        padding: 10px;
-        margin-top: 5%; /* Ajustar el margen superior en porcentaje */
     }
 
     nav ul li {
@@ -881,7 +878,7 @@ nav ul li {
         padding: 40px;
     }
 
-    .recuadro {
+main {
         width: 100%;
         padding: 40px;
     }
@@ -901,7 +898,7 @@ nav ul li {
         width: 100%;
     }
     
-    .Equipo-de-terapeutas {
+nav ul {
         grid-template-columns: 1fr;
     }
 }
@@ -912,23 +909,23 @@ nav ul li {
         font-size: 16px;
     }
 
-    .header {
+header {
         padding: 30px;
     }
 
-    .navbar ul li {
+    nav ul li {
         margin-right: 30px;
     }
 
-    .sidebar {
+    aside {
         padding: 30px;
     }
 
-    .recuadro {
+    main {
         width: 100%;
     }
 
-    .footer {
+    footer {
         padding: 30px;
     }
 
