@@ -51,7 +51,7 @@ article{
 main {
     display: flex; /* Se establece el contenedor principal como flexbox */
     flex-direction: column; /* Dirección de los elementos: columna */
-    align-items: $centro; /* Centra los elementos horizontalmente */
+    align-items: center /* Centra los elementos horizontalmente */
     gap: 20px; /* Espacio entre los elementos */
 }
 
@@ -121,36 +121,21 @@ video {
     margin-bottom: 20px;  /* Margen inferior de 20px */
 }
 
-/*
-    .aboutgaleria {
-      display: flex; // Usar flexbox para el diseño de la galería
-      flex-wrap: wrap; // Permitir que los elementos de la galería se envuelvan a la siguiente línea
-
-      .item {
-        flex: 1 0 20%; // Hacer que cada elemento ocupe el 20% del ancho de la galería
-        max-width: 20%; // Asegurarse de que el elemento no pueda ser más ancho que el 20%
-      }
-    }
-  }
-}*/
-
-
-
 .contenedor-recuadros {
+    height: auto; /* Altura automática basada en el contenido */
+    overflow: auto; /* Permite el desplazamiento si el contenido es más alto que el contenedor */    
     width: 100%; /* Ancho del contenedor al 100% */
     display: flex; /* Establece el contenedor como flexbox */
     flex-direction: column; /* Dirección de los elementos: columna */
     align-items: $centro; /* Centra los elementos horizontalmente */    
     margin: 0 auto; /* Centra el contenedor horizontalmente */
-
     .recuadro {
-        height: 150px;  /*Alto*/
-        width: 150px; /* Ancho */
+        height: 100px;  /*Alto*/
+        width: 100px; /* Ancho */
         background-color: $c3; /* Color de fondo */
-        text-align: $centro; /* Alineación del texto al centro */
+        text-align: center; /* Alineación del texto al centro */
         @include borde-redondeado(4px solid $c2); /* Borde sólido con color negro */
-        padding: 15px; /* Espaciado interno */
-        max-height: 150px; /* Altura máxima */
+        padding: 15px; /* Espaciado interno */        
         overflow: hidden; /* Oculta la barra de desplazamiento */
         margin: 15px; /* Margen */
         text-transform: uppercase; /*transformar el texto en mayúsculas*/
@@ -168,32 +153,80 @@ video {
             color: $c3; /* Color del texto */
         }      
     }
+}
 
-.recuadroMasPeque {
-        height: 80px;  /*Alto*/
-        width: 80px; /* Ancho */
-        background-color: $c3; /* Color de fondo */
-        text-align: $centro; /* Alineación del texto al centro */
-        border: 4px solid $c2; /* Borde sólido con color negro */        
-        max-height: 150px; /* Altura máxima */
-        overflow: hidden; /* Oculta la barra de desplazamiento */
-        margin: 15px; /* Margen */
-        text-transform: uppercase;  /*transformar el texto en mayúsculas*/
-        display: flex; /* Establece el contenedor como flexbox */
-        justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del eje principal */
-        flex-direction: column; /* Dirección de los elementos: en formato columna */    
-        transition: 0.7s; /* Transición con duración de 0.7 segundos */
-    a {
-        text-decoration: none; /* Elimina el subrayado */
-    }
+.aboutgaleria {
+    height: 100%;
+    width: 100%; /* Ancho del contenedor al 100% */
+    display: grid; /* Establece el contenedor como una cuadrícula */
+    grid-template-columns: repeat(4,1fr); /* Define 4 columnas de igual ancho */
+    grid-template-rows: repeat(3,auto); /* Define 3 filas de 200px de alto cada una */
+    grid-template-areas: 
+    "img1 img2 img3 img3" /* Define el área de la cuadrícula para los elementos */
+    "img1 img4 img5 img6" /* Define el área de la cuadrícula para los elementos */
+    "img7 img4 img8 img8"; /* Define el área de la cuadrícula para los elementos */
+    grid-gap: 15px; /* Espacio entre las celdas de la cuadrícula */
+    padding: 20px; /* Espacio interno del contenedor */
+}
+
+.item {
+    border: 3px solid #000; // Borde de 3px sólido negro
+    background-size: cover; // Tamaño del fondo de la imagen cubriendo completamente el elemento
+    background-position: center; // Posición del fondo de la imagen centrado en el elemento
+    border-radius: 9px; // Bordes redondeados de 9px
+    filter: grayscale(20%); // Imagen en escala de grises al 20% por defecto
+    transition: all 0.9s; // Transición suave de todas las propiedades durante 0.9 segundos  
+    // Estilos al pasar el cursor sobre los elementos
     &:hover {
-        transform: scale(0.7); /* Reduce el tamaño del elemento al 70% */
-        background-color: $c2; /* Cambia el color de fondo a negro */
+      filter: grayscale(0%); // Elimina la escala de grises al pasar el cursor
+      transform: scale(0.9) rotate(360deg); // Escala del elemento al 90% de su tamaño original al pasar el cursor
+    }  
+    // Estilos específicos para cada elemento de la cuadrícula
+    &.item1 {
+        background-image: url("../assets/images/item1.jpg"); // URL de la imagen de fondo para item1
+      grid-area: img1; // Posición en la cuadrícula para item1
+    }  
+    &.item2 {
+    background-image: url("../assets/images/item2.jpg");
+      grid-area: img2; // Posición en la cuadrícula para item2
+    }  
+    &.item3 {
+    background-image: url("../assets/images/item3.jpg");
+      grid-area: img3; // Posición en la cuadrícula para item3
+    }  
+    &.item4 {
+    background-image: url("../assets/images/item4.jpg");
+      grid-area: img4; // Posición en la cuadrícula para item4
+    }  
+    &.item5 {
+    background-image: url("../assets/images/item5.jpg");
+      grid-area: img5; // Posición en la cuadrícula para item5
+    }  
+    &.item6 {
+    background-image: url("../assets/images/item6.jpg");
+      grid-area: img6; // Posición en la cuadrícula para item6
+    }  
+    &.item7 {
+    background-image: url("../assets/images/item7.jpg");
+      grid-area: img7; // Posición en la cuadrícula para item7
+    }  
+    &.item8 {
+    background-image: url("../assets/images/item8.jpg");
+      grid-area: img8; // Posición en la cuadrícula para item8
     }
-        border-radius: 20px; /* Establece un radio de borde de 20px */
-        color: $c3; /* Color del texto */
-    }
-}    
+}
+
+.contenedor-recuadros img, .aboutgaleria img {
+    width: 100%; /* Ancho al 100% del contenedor padre */
+    height: auto; /* Altura automática para mantener la proporción de la imagen */
+}
+
+.contenedor-padre {
+    padding-top: 15px;
+    position: relative; /* Establece la posición relativa para que los elementos absolutos se posicionen relativamente a este contenedor */
+    width: 100%; /* Ancho al 100% del ancho de su contenedor padre */
+    height: 100%; /* Altura al 100% del alto de su contenedor padre */
+}
 
 /* Estilos para el contenedor del mapa */
 .mapa-contenedor {
@@ -202,9 +235,8 @@ video {
     /* Ancho del contenedor al 100% del ancho de su contenedor padre, importante para ocupar todo el espacio disponible */
     width: 100% !important;
     /* Altura del contenedor al 100% del alto de su contenedor padre, también importante para ocupar todo el espacio disponible */
-    height: 100% !important;
-    /* Establece un relleno en la parte superior del contenedor que mantiene una relación de aspecto de 4:3 (ancho:alto) */
-    padding-top: 75%; /* Ajusta según sea necesario */
+    height: 100% !important;  
+    
     /* Utiliza un modelo de caja flexible para centrar el contenido vertical y horizontalmente */
     display: flex;
     align-items: center; /* Centra verticalmente los elementos secundarios */
@@ -290,67 +322,6 @@ aside {
 
 .service-contenido {
     margin-bottom: 20px; /* Margen inferior */
-}
-
-.aboutgaleria {
-    height: 400px;
-    width: 100%; /* Ancho del contenedor al 100% */
-    display: grid; /* Establece el contenedor como una cuadrícula */
-    grid-template-columns: repeat(4,1fr); /* Define 4 columnas de igual ancho */
-    grid-template-rows: repeat(3,auto); /* Define 3 filas de 200px de alto cada una */
-    grid-template-areas: 
-    "img1 img2 img3 img3" /* Define el área de la cuadrícula para los elementos */
-    "img1 img4 img5 img6" /* Define el área de la cuadrícula para los elementos */
-    "img7 img4 img8 img8"; /* Define el área de la cuadrícula para los elementos */
-    grid-gap: 15px; /* Espacio entre las celdas de la cuadrícula */
-    padding: 20px; /* Espacio interno del contenedor */
-}
-
-.item {
-    border: 3px solid #000; // Borde de 3px sólido negro
-    background-size: cover; // Tamaño del fondo de la imagen cubriendo completamente el elemento
-    background-position: center; // Posición del fondo de la imagen centrado en el elemento
-    border-radius: 9px; // Bordes redondeados de 9px
-    filter: grayscale(20%); // Imagen en escala de grises al 20% por defecto
-    transition: all 0.9s; // Transición suave de todas las propiedades durante 0.9 segundos  
-    // Estilos al pasar el cursor sobre los elementos
-    &:hover {
-      filter: grayscale(0%); // Elimina la escala de grises al pasar el cursor
-      transform: scale(0.9) rotate(360deg); // Escala del elemento al 90% de su tamaño original al pasar el cursor
-    }  
-    // Estilos específicos para cada elemento de la cuadrícula
-    &.item1 {
-        background-image: url("../assets/images/item1.jpg"); // URL de la imagen de fondo para item1
-      grid-area: img1; // Posición en la cuadrícula para item1
-    }  
-    &.item2 {
-    background-image: url("../assets/images/item2.jpg");
-      grid-area: img2; // Posición en la cuadrícula para item2
-    }  
-    &.item3 {
-    background-image: url("../assets/images/item3.jpg");
-      grid-area: img3; // Posición en la cuadrícula para item3
-    }  
-    &.item4 {
-    background-image: url("../assets/images/item4.jpg");
-      grid-area: img4; // Posición en la cuadrícula para item4
-    }  
-    &.item5 {
-    background-image: url("../assets/images/item5.jpg");
-      grid-area: img5; // Posición en la cuadrícula para item5
-    }  
-    &.item6 {
-    background-image: url("../assets/images/item6.jpg");
-      grid-area: img6; // Posición en la cuadrícula para item6
-    }  
-    &.item7 {
-    background-image: url("../assets/images/item7.jpg");
-      grid-area: img7; // Posición en la cuadrícula para item7
-    }  
-    &.item8 {
-    background-image: url("../assets/images/item8.jpg");
-      grid-area: img8; // Posición en la cuadrícula para item8
-    }
 }
 
 .service-grid {

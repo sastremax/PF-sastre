@@ -1,9 +1,9 @@
-/* Error: expected "}".
- *     ,
- * 946 | }
- *     |  ^
- *     '
- *   preEntrega2-sastre\SCSS\main.scss 946:2  root stylesheet */
+/* Error: expected ";".
+ *    ,
+ * 55 |     gap: 20px; /* Espacio entre los elementos *∕
+ *    |        ^
+ *    '
+ *   preEntrega2-sastre\SCSS\main.scss 55:8  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a     \2577 \a 946 \2502  }\a     \2502   ^\a     \2575 \a   preEntrega2-sastre\\SCSS\\main.scss 946:2  root stylesheet';
+  content: 'Error: expected ";".\a    \2577 \a 55 \2502      gap: 20px; /* Espacio entre los elementos */\d\a    \2502         ^\a    \2575 \a   preEntrega2-sastre\\SCSS\\main.scss 55:8  root stylesheet';
 }
