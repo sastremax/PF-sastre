@@ -74,7 +74,8 @@ h4 {
 .spacer {
     padding-left: 20px;
     margin-left: 20px;
-    margin-bottom: 20px;   /* Margen inferior de 20px */        
+    margin-bottom: 20px;   /* Margen inferior de 20px */ 
+    height: 90px;      /* Altura espaciada */       
 }
 
 .container {
@@ -212,23 +213,15 @@ video {
 .aboutgaleria {
     height: 100%;
     width: 100%;  /* Ancho del contenedor al 100% */   
-    display: grid;
-    /* Establece el contenedor como una cuadrícula */
-    grid-template-columns: repeat(4, 1fr);
-    /* Define 4 columnas de igual ancho */
-    grid-template-rows: repeat(3, auto);
-    /* Define 3 filas de 200px de alto cada una */
+    display: grid;  /* Establece el contenedor como una cuadrícula */    
+    grid-template-columns: repeat(4, 1fr);  /* Define 4 columnas de igual ancho */    
+    grid-template-rows: repeat(3, auto);  /* Define 3 filas de 200px de alto cada una */    
     grid-template-areas:
-        "img1 img2 img3 img3"
-        /* Define el área de la cuadrícula para los elementos */
-        "img1 img4 img5 img6"
-        /* Define el área de la cuadrícula para los elementos */
-        "img7 img4 img8 img8";
-    /* Define el área de la cuadrícula para los elementos */
-    grid-gap: 15px;
-    /* Espacio entre las celdas de la cuadrícula */
-    padding: 20px;
-    /* Espacio interno del contenedor */
+        "img1 img2 img3 img3"   /* Define el área de la cuadrícula para los elementos */
+        "img1 img4 img5 img6"  /* Define el área de la cuadrícula para los elementos */
+        "img7 img4 img8 img8";  /* Define el área de la cuadrícula para los elementos */    
+    grid-gap: 15px;  /* Espacio entre las celdas de la cuadrícula */    
+    padding: 20px;  /* Espacio interno del contenedor */    
 }
 
 .item {
@@ -239,11 +232,12 @@ video {
     background-position: center; // Posición del fondo de la imagen centrado en el elemento
     border-radius: 9px; // Bordes redondeados de 9px
     filter: grayscale(20%); // Imagen en escala de grises al 20% por defecto
-    transition: all 0.9s; // Transición suave de todas las propiedades durante 0.9 segundos
+    transition: all 0.9s; // Transición suave de todas las propiedades durante 0.9 segundos    
     // Estilos al pasar el cursor sobre los elementos
     &:hover {
         filter: grayscale(0%); // Elimina la escala de grises al pasar el cursor
-        transform: scale(2); 
+        transform: scale(1.5); 
+        z-index: 1; /* Asegura que la imagen en escala esté por encima de las otras */
     }
     // Estilos específicos para cada elemento de la cuadrícula
     &.item1 {
@@ -327,11 +321,6 @@ video {
     width: 100%;
     /* Altura del mapa al 100% del alto del contenedor padre */
     height: 100%;
-}
-
-.spacer {
-    height: 90px;
-    /* Altura espaciada */
 }
 
 .subrayado {
@@ -637,6 +626,7 @@ input {
 }
 
 footer {
+    margin-top: 20px;
     background-color: $c2;
     /* Color de fondo */
     color: $c3;

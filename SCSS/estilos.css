@@ -148,6 +148,7 @@ h4 {
   padding-left: 20px;
   margin-left: 20px;
   margin-bottom: 20px; /* Margen inferior de 20px */
+  height: 90px; /* Altura espaciada */
 }
 
 .container {
@@ -283,18 +284,12 @@ video {
 .aboutgaleria {
   height: 100%;
   width: 100%; /* Ancho del contenedor al 100% */
-  display: grid;
-  /* Establece el contenedor como una cuadrícula */
-  grid-template-columns: repeat(4, 1fr);
-  /* Define 4 columnas de igual ancho */
-  grid-template-rows: repeat(3, auto);
-  /* Define 3 filas de 200px de alto cada una */
-  grid-template-areas: "img1 img2 img3 img3" "img1 img4 img5 img6" "img7 img4 img8 img8";
-  /* Define el área de la cuadrícula para los elementos */
-  grid-gap: 15px;
-  /* Espacio entre las celdas de la cuadrícula */
-  padding: 20px;
-  /* Espacio interno del contenedor */
+  display: grid; /* Establece el contenedor como una cuadrícula */
+  grid-template-columns: repeat(4, 1fr); /* Define 4 columnas de igual ancho */
+  grid-template-rows: repeat(3, auto); /* Define 3 filas de 200px de alto cada una */
+  grid-template-areas: "img1 img2 img3 img3" "img1 img4 img5 img6" "img7 img4 img8 img8"; /* Define el área de la cuadrícula para los elementos */
+  grid-gap: 15px; /* Espacio entre las celdas de la cuadrícula */
+  padding: 20px; /* Espacio interno del contenedor */
 }
 
 .item {
@@ -309,7 +304,8 @@ video {
 }
 .item:hover {
   filter: grayscale(0%);
-  transform: scale(2);
+  transform: scale(1.5);
+  z-index: 1; /* Asegura que la imagen en escala esté por encima de las otras */
 }
 .item.item1 {
   background-image: url("../assets/images/item1.jpg");
@@ -390,11 +386,6 @@ video {
   width: 100%;
   /* Altura del mapa al 100% del alto del contenedor padre */
   height: 100%;
-}
-
-.spacer {
-  height: 90px;
-  /* Altura espaciada */
 }
 
 .subrayado {
@@ -692,6 +683,7 @@ input:focus {
 }
 
 footer {
+  margin-top: 20px;
   background-color: #000000;
   /* Color de fondo */
   color: rgb(255, 255, 255);
