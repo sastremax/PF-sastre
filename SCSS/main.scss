@@ -2,171 +2,231 @@ $c13: 1px 1px 2px rgba(0, 0, 0, 0.1);
 $centro: center;
 // Importar las variables, funciones y mixins primero, porque pueden ser necesitados en otros archivos
 @import './utilities/_functions'; // Importar funciones útiles
-@import './utilities/_helpers';  // Importar helpers para estilos
-@import './utilities/_mixins';   // Importar mixins para reutilización de estilos
+@import './utilities/_helpers'; // Importar helpers para estilos
+@import './utilities/_mixins'; // Importar mixins para reutilización de estilos
 @import './utilities/_variables'; // Importar variables globales
 @import './utilities/_images'; // Importar tamaño de imagenes
 
 // Bases generales del sitio
-@import './base/_reset';         // Importar reset para reiniciar los estilos por defecto del navegador
-@import './base/_base';          // Importar el archivo _base.scss que contiene estilos base (elementos HTML, etc.)
-@import './base/_typography';    // Importar estilos de tipografía
+@import './base/_reset'; // Importar reset para reiniciar los estilos por defecto del navegador
+@import './base/_base'; // Importar el archivo _base.scss que contiene estilos base (elementos HTML, etc.)
+@import './base/_typography'; // Importar estilos de tipografía
 
 // Layouts del sitio
 @import './layout/_footer'; // Importar estilos del pie de página
-@import './layout/_header';      // Importar estilos del encabezado
-@import './layout/_navigation';  // Importar estilos de navegación
-@import './layout/_sidebar';     // Importar estilos de la barra lateral
+@import './layout/_header'; // Importar estilos del encabezado
+@import './layout/_navigation'; // Importar estilos de navegación
+@import './layout/_sidebar'; // Importar estilos de la barra lateral
 
 .favicon {
     vertical-align: middle;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-}
+
 
 section {
-    margin: 0; /* Establece el margen exterior a 0 */
-    padding: auto; /* Establece el relleno a automatico */
-    font-size: 20px; /* Tamaño de fuente */  
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;  /* Familia de fuentes primero Arial */
+    margin: 0;
+    /* Establece el margen exterior a 0 */
+    padding: auto;
+    /* Establece el relleno a automatico */
+    font-size: 20px;
+    /* Tamaño de fuente */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    /* Familia de fuentes primero Arial */
 }
 
-article{
-    height: 500px; /* Altura del artículo */
-    padding-top: 15px; /* Espaciado superior */
-    padding-right: 10px; /* Espaciado derecho */    
+article {
+    height: 500px;
+    /* Altura del artículo */
+    padding-top: 15px;
+    /* Espaciado superior */
+    padding-right: 10px;
+    /* Espaciado derecho */
 
     ul li {
-        list-style: none; /* Quita los puntos de la lista */
+        list-style: none;
+        /* Quita los puntos de la lista */
     }
 }
 
-.alineado-parrafo{
-    margin-left: 30px; /* Margen izquierdo para alinear párrafos */
+.alineado-parrafo {
+    margin-left: 30px;  /* Margen izquierdo para alinear párrafos */    
 }
 
 main {
-    display: flex; /* Se establece el contenedor principal como flexbox */
-    flex-direction: column; /* Dirección de los elementos: columna */
-    align-items: center; /* Centra los elementos horizontalmente */
-    gap: 20px; /* Espacio entre los elementos */
+    display: flex;  /* Se establece el contenedor principal como flexbox */    
+    flex-direction: column;   /* Dirección de los elementos: columna */   
+    align-items: center;  /* Centra los elementos horizontalmente */    
+    gap: 20px;  /* Espacio entre los elementos */    
 }
 
 h2 {
-    font-size: 40px;  /* Tamaño de fuente grande */
-    text-align: left; /* Alineación del texto a la izquierda */
+    font-size: 40px;  /* Tamaño de fuente grande */    
+    text-align: left;  /* Alineación del texto a la izquierda */    
 }
 
-h4 {        
-    padding: 18px; /* Espaciado interno */
-    font-size: 36px; /* Tamaño de fuente grande */
-    text-align: left; /* Alineación del texto a la izquierda */
-}
-
-.col-sm-12.col-md-6{
-    background-image: url(https://www.instagram.com/p/CXQ4XParqoi/?igsh=NGc0czF4bHdnYzRk);
-    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
-    background-position: center; /* Centra la imagen */
+h4 {
+    padding: 18px;  /* Espaciado interno */    
+    font-size: 36px;  /* Tamaño de fuente grande */    
+    text-align: left;  /* Alineación del texto a la izquierda */    
 }
 
 .container {
-    padding: 10px; /* Relleno de 10px en todos los lados del contenedor */
+    padding: 10px;  /* Relleno de 10px en todos los lados del contenedor */    
 }
 
-.parrafo-principal{
-    font-size: 20px; /* Tamaño de fuente de 14px */
-    text-align: left; /* Alineación del texto a la izquierda */
-    padding: 18px; /* Espaciado interno */
+.parrafo-principal {
+    font-size: 20px;
+    /* Tamaño de fuente de 14px */
+    text-align: left;
+    /* Alineación del texto a la izquierda */
+    padding: 18px;
+    /* Espaciado interno */
 }
 
 .videosCentrado {
-    margin-top: 15px; /* Margen superior de 15px */
-    margin-bottom: 10px; /* Margen inferior de 10px */
-    text-align: $centro; /* Alineación del texto al centro */
-    color: $c3; /* Color del texto */
-    text-shadow: dark 0.8; /* Sombra de texto */ 
-    
+    margin-top: 15px;
+    /* Margen superior de 15px */
+    margin-bottom: 10px;
+    /* Margen inferior de 10px */
+    text-align: $centro;
+    /* Alineación del texto al centro */
+    color: $c3;
+    /* Color del texto */
+    text-shadow: dark 0.8;
+    /* Sombra de texto */
+
 }
 
-video {    
-    max-height: 500px; /* Establece la altura máxima del video */    
-    max-width: 370px; /* Establece el ancho máximo del video */    
-    display: block; /* Asegura que el video se muestre como un bloque */
-    margin-left: auto; /* Centra el video horizontalmente */
-    margin-right: auto; /* Centra el video horizontalmente */
+video {
+    max-height: 500px;
+    /* Establece la altura máxima del video */
+    max-width: 370px;
+    /* Establece el ancho máximo del video */
+    display: block;
+    /* Asegura que el video se muestre como un bloque */
+    margin-left: auto;
+    /* Centra el video horizontalmente */
+    margin-right: auto;
+    /* Centra el video horizontalmente */
 }
 
 /* Cambia el color del icono de deslizamiento del carrusel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: invert(100%); /* Invierte el color del icono */
+    filter: invert(100%);
+    /* Invierte el color del icono */
 }
 
 .solicitar-link {
-    display: inline-block; /* Establece el elemento como bloque en línea */
-    background-color: $c1; /* Color de fondo */
-    color: $c3; /* Color del texto */
-    padding: 10px 20px; /* Relleno */
-    text-decoration: none; /* Quita la decoración de enlace */
-    border-radius: 5px; /* Borde redondeado */
+    display: inline-block;
+    /* Establece el elemento como bloque en línea */
+    background-color: $c1;
+    /* Color de fondo */
+    color: $c3;
+    /* Color del texto */
+    padding: 10px 20px;
+    /* Relleno */
+    text-decoration: none;
+    /* Quita la decoración de enlace */
+    border-radius: 5px;
+    /* Borde redondeado */
 }
 
 .icono {
-    max-width: 20px; /* Ancho máximo */
-    display: block; /* Establece el elemento como bloque */
-    height: auto; /* Altura automática */
-    margin-bottom: 20px;  /* Margen inferior de 20px */
+    max-width: 20px;
+    /* Ancho máximo */
+    display: block;
+    /* Establece el elemento como bloque */
+    height: auto;
+    /* Altura automática */
+    margin-bottom: 20px;
+    /* Margen inferior de 20px */
 }
 
 .contenedor-recuadros {
-    height: auto; /* Altura automática basada en el contenido */
-    overflow: auto; /* Permite el desplazamiento si el contenido es más alto que el contenedor */    
-    width: 100%; /* Ancho del contenedor al 100% */
-    display: flex; /* Establece el contenedor como flexbox */
-    flex-direction: column; /* Dirección de los elementos: columna */
-    align-items: $centro; /* Centra los elementos horizontalmente */    
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    .recuadro { 
-        height: 100px;  /*Alto*/
-        width: 100px; /* Ancho */
-        background-color: $c3; /* Color de fondo */
-        text-align: center; /* Alineación del texto al centro */
-        @include borde-redondeado(4px solid $c2); /* Borde sólido con color negro */
-        padding: 15px; /* Espaciado interno */        
-        overflow: hidden; /* Oculta la barra de desplazamiento */
-        margin: 15px; /* Margen */
-        text-transform: uppercase; /*transformar el texto en mayúsculas*/
-        display: flex; /* Establece el contenedor como flexbox */
-        justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del eje principal */
-        flex-direction: column; /* Dirección de los elementos: en formato columna */    
-        transition: 0.7s; /* Transición con duración de 0.7 segundos */
+    height: auto;
+    /* Altura automática basada en el contenido */
+    overflow: auto;
+    /* Permite el desplazamiento si el contenido es más alto que el contenedor */
+    width: 100%;
+    /* Ancho del contenedor al 100% */
+    display: flex;
+    /* Establece el contenedor como flexbox */
+    flex-direction: column;
+    /* Dirección de los elementos: columna */
+    align-items: $centro;
+    /* Centra los elementos horizontalmente */
+    margin: 0 auto;
+
+    /* Centra el contenedor horizontalmente */
+    .recuadro {
+        height: 100px;
+        /*Alto*/
+        width: 100px;
+        /* Ancho */
+        background-color: $c3;
+        /* Color de fondo */
+        text-align: center;
+        /* Alineación del texto al centro */
+        @include borde-redondeado(4px solid $c2);
+        /* Borde sólido con color negro */
+        padding: 15px;
+        /* Espaciado interno */
+        overflow: hidden;
+        /* Oculta la barra de desplazamiento */
+        margin: 15px;
+        /* Margen */
+        text-transform: uppercase;
+        /*transformar el texto en mayúsculas*/
+        display: flex;
+        /* Establece el contenedor como flexbox */
+        justify-content: space-between;
+        /* Distribuye los elementos uniformemente a lo largo del eje principal */
+        flex-direction: column;
+        /* Dirección de los elementos: en formato columna */
+        transition: 0.7s;
+
+        /* Transición con duración de 0.7 segundos */
         a {
-            text-decoration: none; /* Elimina el subrayado */
+            text-decoration: none;
+            /* Elimina el subrayado */
         }
+
         &:hover {
-            transform: scale(0.7); /* Reduce el tamaño del elemento al 70% */
-            background-color: $c2; /* Cambia el color de fondo a negro */
-            border-radius: 20px; /* Establece un radio de borde de 20px */
-            color: $c3; /* Color del texto */
-        }      
+            transform: scale(0.7);
+            /* Reduce el tamaño del elemento al 70% */
+            background-color: $c2;
+            /* Cambia el color de fondo a negro */
+            border-radius: 20px;
+            /* Establece un radio de borde de 20px */
+            color: $c3;
+            /* Color del texto */
+        }
     }
 }
 
 .aboutgaleria {
     height: 100%;
-    width: 100%; /* Ancho del contenedor al 100% */
-    display: grid; /* Establece el contenedor como una cuadrícula */
-    grid-template-columns: repeat(4,1fr); /* Define 4 columnas de igual ancho */
-    grid-template-rows: repeat(3,auto); /* Define 3 filas de 200px de alto cada una */
-    grid-template-areas: 
-    "img1 img2 img3 img3" /* Define el área de la cuadrícula para los elementos */
-    "img1 img4 img5 img6" /* Define el área de la cuadrícula para los elementos */
-    "img7 img4 img8 img8"; /* Define el área de la cuadrícula para los elementos */
-    grid-gap: 15px; /* Espacio entre las celdas de la cuadrícula */
-    padding: 20px; /* Espacio interno del contenedor */
+    width: 100%;
+    /* Ancho del contenedor al 100% */
+    display: grid;
+    /* Establece el contenedor como una cuadrícula */
+    grid-template-columns: repeat(4, 1fr);
+    /* Define 4 columnas de igual ancho */
+    grid-template-rows: repeat(3, auto);
+    /* Define 3 filas de 200px de alto cada una */
+    grid-template-areas:
+        "img1 img2 img3 img3"
+        /* Define el área de la cuadrícula para los elementos */
+        "img1 img4 img5 img6"
+        /* Define el área de la cuadrícula para los elementos */
+        "img7 img4 img8 img8";
+    /* Define el área de la cuadrícula para los elementos */
+    grid-gap: 15px;
+    /* Espacio entre las celdas de la cuadrícula */
+    padding: 20px;
+    /* Espacio interno del contenedor */
 }
 
 .item {
@@ -176,56 +236,71 @@ video {
     border-radius: 9px; // Bordes redondeados de 9px
     filter: grayscale(20%); // Imagen en escala de grises al 20% por defecto
     transition: all 0.9s; // Transición suave de todas las propiedades durante 0.9 segundos  
+
     // Estilos al pasar el cursor sobre los elementos
     &:hover {
-      filter: grayscale(0%); // Elimina la escala de grises al pasar el cursor
-      transform: scale(0.9) rotate(360deg); // Escala del elemento al 90% de su tamaño original al pasar el cursor
-    }  
+        filter: grayscale(0%); // Elimina la escala de grises al pasar el cursor
+        transform: scale(0.9) rotate(360deg); // Escala del elemento al 90% de su tamaño original al pasar el cursor
+    }
+
     // Estilos específicos para cada elemento de la cuadrícula
     &.item1 {
         background-image: url("../assets/images/item1.jpg"); // URL de la imagen de fondo para item1
-      grid-area: img1; // Posición en la cuadrícula para item1
-    }  
+        grid-area: img1; // Posición en la cuadrícula para item1
+    }
+
     &.item2 {
-    background-image: url("../assets/images/item2.jpg");
-      grid-area: img2; // Posición en la cuadrícula para item2
-    }  
+        background-image: url("../assets/images/item2.jpg");
+        grid-area: img2; // Posición en la cuadrícula para item2
+    }
+
     &.item3 {
-    background-image: url("../assets/images/item3.jpg");
-      grid-area: img3; // Posición en la cuadrícula para item3
-    }  
+        background-image: url("../assets/images/item3.jpg");
+        grid-area: img3; // Posición en la cuadrícula para item3
+    }
+
     &.item4 {
-    background-image: url("../assets/images/item4.jpg");
-      grid-area: img4; // Posición en la cuadrícula para item4
-    }  
+        background-image: url("../assets/images/item4.jpg");
+        grid-area: img4; // Posición en la cuadrícula para item4
+    }
+
     &.item5 {
-    background-image: url("../assets/images/item5.jpg");
-      grid-area: img5; // Posición en la cuadrícula para item5
-    }  
+        background-image: url("../assets/images/item5.jpg");
+        grid-area: img5; // Posición en la cuadrícula para item5
+    }
+
     &.item6 {
-    background-image: url("../assets/images/item6.jpg");
-      grid-area: img6; // Posición en la cuadrícula para item6
-    }  
+        background-image: url("../assets/images/item6.jpg");
+        grid-area: img6; // Posición en la cuadrícula para item6
+    }
+
     &.item7 {
-    background-image: url("../assets/images/item7.jpg");
-      grid-area: img7; // Posición en la cuadrícula para item7
-    }  
+        background-image: url("../assets/images/item7.jpg");
+        grid-area: img7; // Posición en la cuadrícula para item7
+    }
+
     &.item8 {
-    background-image: url("../assets/images/item8.jpg");
-      grid-area: img8; // Posición en la cuadrícula para item8
+        background-image: url("../assets/images/item8.jpg");
+        grid-area: img8; // Posición en la cuadrícula para item8
     }
 }
 
-.contenedor-recuadros img, .aboutgaleria img {
-    width: 100%; /* Ancho al 100% del contenedor padre */
-    height: auto; /* Altura automática para mantener la proporción de la imagen */
+.contenedor-recuadros img,
+.aboutgaleria img {
+    width: 100%;
+    /* Ancho al 100% del contenedor padre */
+    height: auto;
+    /* Altura automática para mantener la proporción de la imagen */
 }
 
 .contenedor-padre {
     padding-top: 15px;
-    position: relative; /* Establece la posición relativa para que los elementos absolutos se posicionen relativamente a este contenedor */
-    width: 100%; /* Ancho al 100% del ancho de su contenedor padre */
-    height: 100%; /* Altura al 100% del alto de su contenedor padre */
+    position: relative;
+    /* Establece la posición relativa para que los elementos absolutos se posicionen relativamente a este contenedor */
+    width: 100%;
+    /* Ancho al 100% del ancho de su contenedor padre */
+    height: 100%;
+    /* Altura al 100% del alto de su contenedor padre */
 }
 
 /* Estilos para el contenedor del mapa */
@@ -235,12 +310,14 @@ video {
     /* Ancho del contenedor al 100% del ancho de su contenedor padre, importante para ocupar todo el espacio disponible */
     width: 100% !important;
     /* Altura del contenedor al 100% del alto de su contenedor padre, también importante para ocupar todo el espacio disponible */
-    height: 100% !important;  
-    
+    height: 100% !important;
+
     /* Utiliza un modelo de caja flexible para centrar el contenido vertical y horizontalmente */
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos secundarios */
-    justify-content: center; /* Centra horizontalmente los elementos secundarios */
+    align-items: center;
+    /* Centra verticalmente los elementos secundarios */
+    justify-content: center;
+    /* Centra horizontalmente los elementos secundarios */
 }
 
 /* Estilos para el elemento del mapa */
@@ -258,134 +335,192 @@ video {
 }
 
 .spacer {
-    height: 90px; /* Altura espaciada */
+    height: 90px;
+    /* Altura espaciada */
 }
 
 .subrayado {
-    text-decoration: underline; /* Subrayado */
+    text-decoration: underline;
+    /* Subrayado */
 }
 
 button {
-    background-color: $c1; /* Color de fondo */
-    color: $c3; /* Color del texto */
-    border: none; /* Sin borde */
-    padding: 5px 10px; /* Relleno */
-    cursor: pointer; /* Cursor al señalar */
-}
-
-.body-background {
-    background-color: $c1; /* Color de fondo */
-    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
-    background-repeat: no-repeat; /* No repetir la imagen de fondo */
-    padding: 20px; /* Espaciado interno */
-    color: $c3; /* Color del texto */
+    background-color: $c1;
+    /* Color de fondo */
+    color: $c3;
+    /* Color del texto */
+    border: none;
+    /* Sin borde */
+    padding: 5px 10px;
+    /* Relleno */
+    cursor: pointer;
+    /* Cursor al señalar */
 }
 
 aside {
-    text-align: $centro; /* Alineación del texto al centro */
+    text-align: $centro;
+
+    /* Alineación del texto al centro */
     p {
-        display: inline-block; /* Permite centrar el elemento <p> horizontalmente */
+        display: inline-block;
+        /* Permite centrar el elemento <p> horizontalmente */
     }
 }
 
 .titulo {
-    align-self: top; /* Alinea el título en la parte superior */
-    text-align: top; /* Alineación del texto al tope */
-    font-size: 20px; /* Tamaño de fuente */
-    margin-bottom: 20px; /* Margen inferior */
+    align-self: top;
+    /* Alinea el título en la parte superior */
+    text-align: top;
+    /* Alineación del texto al tope */
+    font-size: 20px;
+    /* Tamaño de fuente */
+    margin-bottom: 20px;
+    /* Margen inferior */
 }
 
 .terapeutas-container {
-    text-align: left; /* Alineación del texto a la izquierda */
-    padding: 12px; /* Espaciado interno */  
-    text-shadow: $c13 0 -1px; /* Sombra de texto */  
+    text-align: left;
+    /* Alineación del texto a la izquierda */
+    padding: 12px;
+    /* Espaciado interno */
+    text-shadow: $c13 0 -1px;
+    /* Sombra de texto */
 }
 
 .Equipo-de-terapeutas {
-    display: grid; /* Establece el contenedor como cuadrícula */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr)); /* Columnas automáticas */
-    gap: 10px; /* Espacio entre columnas */
-    margin-top: 25px; /* Margen superior */
+    display: grid;
+    /* Establece el contenedor como cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    /* Columnas automáticas */
+    gap: 10px;
+    /* Espacio entre columnas */
+    margin-top: 25px;
+    /* Margen superior */
 }
 
 .about-grid {
-    display: flex; /* Establece el contenedor como flexbox */
-    align-items: $centro; /* Alinea verticalmente el contenido al centro */
-    justify-content: $centro; /* Centra horizontalmente el contenido */
-    margin-left: 40px; /* Espacio a la izquierda del elemento */
+    display: flex;
+    /* Establece el contenedor como flexbox */
+    align-items: $centro;
+    /* Alinea verticalmente el contenido al centro */
+    justify-content: $centro;
+    /* Centra horizontalmente el contenido */
+    margin-left: 40px;
+    /* Espacio a la izquierda del elemento */
 }
 
 .service-container {
-    max-width: 800px; /* Ancho máximo del contenedor */
-    width: 100%; /* Ancho completo */
+    max-width: 800px;
+    /* Ancho máximo del contenedor */
+    width: 100%;
+    /* Ancho completo */
 }
 
 .service-contenido {
-    margin-bottom: 20px; /* Margen inferior */
+    margin-bottom: 20px;
+    /* Margen inferior */
 }
 
 .service-grid {
-    display: flex; /* Establece el contenedor como flexbox */
-    justify-content: $centro; /* Centra horizontalmente el contenido */
+    display: flex;
+    /* Establece el contenedor como flexbox */
+    justify-content: $centro;
+    /* Centra horizontalmente el contenido */
 }
 
 .whats {
-    background-color: $c10; /* Color de fondo */
-    color: $c11; /* Color del texto */
-    height: 100px; /* Altura del elemento */
-    width: 100px; /* Ancho del elemento */    
-    border: 2px solid; /* Grosor, estilo y color del borde */
-    font-size: 45px; /* Tamaño de la fuente */      
-    right: 40px; /* Distancia desde el borde derecho */
-    bottom: 40px; /* Distancia desde el borde inferior */   
+    background-color: $c10;
+    /* Color de fondo */
+    color: $c11;
+    /* Color del texto */
+    height: 100px;
+    /* Altura del elemento */
+    width: 100px;
+    /* Ancho del elemento */
+    border: 2px solid;
+    /* Grosor, estilo y color del borde */
+    font-size: 45px;
+    /* Tamaño de la fuente */
+    right: 40px;
+    /* Distancia desde el borde derecho */
+    bottom: 40px;
+    /* Distancia desde el borde inferior */
 }
 
-.contact{
+.contact {
     display: flex;
-    justify-content: $centro; /* Centra horizontalmente */
-    align-items: $centro; /* Centra verticalmente */   
+    justify-content: $centro;
+    /* Centra horizontalmente */
+    align-items: $centro;
+    /* Centra verticalmente */
     padding-top: 20px;
 }
 
 .subir {
-    height: 20px; /* Altura del elemento */
-    width: 20px; /* Ancho del elemento */
-    background-color: $c12; /* Color de fondo */
-    color: $c3; /* Color del texto */
-    position: fixed; /* Posicionamiento fijo */
-    border-radius: 50%; /* Forma redondeada */
-    text-align: $centro; /* Alineación del texto */
-    line-height: 20px; /* Altura de línea */
-    font-size: 15px; /* Tamaño del texto */
-    right: 20px; /* Distancia desde el borde derecho del contenedor padre */
-    bottom: 100px; /* Distancia desde el borde inferior del contenedor padre */
+    height: 20px;
+    /* Altura del elemento */
+    width: 20px;
+    /* Ancho del elemento */
+    background-color: $c12;
+    /* Color de fondo */
+    color: $c3;
+    /* Color del texto */
+    position: fixed;
+    /* Posicionamiento fijo */
+    border-radius: 50%;
+    /* Forma redondeada */
+    text-align: $centro;
+    /* Alineación del texto */
+    line-height: 20px;
+    /* Altura de línea */
+    font-size: 15px;
+    /* Tamaño del texto */
+    right: 20px;
+    /* Distancia desde el borde derecho del contenedor padre */
+    bottom: 100px;
+    /* Distancia desde el borde inferior del contenedor padre */
 }
 
 input {
-    border-radius: 10px; /* Radio de borde */
-    text-align: $centro; /* Alineación del texto */
-    padding: 3px; /* Espaciado interno */
-    border: 4px $c2; /* Borde */
-    font-size: 25px; /* Tamaño del texto */
-    box-shadow: inset 0 0 5px; /* Sombra */
-    background-color: $c3; /* Color de fondo */
+    border-radius: 10px;
+    /* Radio de borde */
+    text-align: $centro;
+    /* Alineación del texto */
+    padding: 3px;
+    /* Espaciado interno */
+    border: 4px $c2;
+    /* Borde */
+    font-size: 25px;
+    /* Tamaño del texto */
+    box-shadow: inset 0 0 5px;
+    /* Sombra */
+    background-color: $c3;
+    /* Color de fondo */
 
     /* Estilos para diferentes tipos de input */
     &[type="text"] {
-        height: 40px; /* Altura del campo de texto */
-        color: $c1; /* Color del texto */
-        margin: 0; /* Margen */
+        height: 40px;
+        /* Altura del campo de texto */
+        color: $c1;
+        /* Color del texto */
+        margin: 0;
+        /* Margen */
     }
 
     &[type="number"] {
-        height: 40px; /* Altura del campo de número */
-        color: $c13; /* Color del texto */
-        margin: 0; /* Margen */
+        height: 40px;
+        /* Altura del campo de número */
+        color: $c13;
+        /* Color del texto */
+        margin: 0;
+        /* Margen */
     }
 
     &:focus {
-        box-shadow: 0 0 15px 10px $c5; /* Sombra al enfocar */
-        border: 5px; /* Borde al enfocar */
+        box-shadow: 0 0 15px 10px $c5;
+        /* Sombra al enfocar */
+        border: 5px;
+        /* Borde al enfocar */
     }
 }
 
@@ -402,79 +537,108 @@ input {
 }
 
 .turnos {
-    font-size: 30px; /* Tamaño del texto */
+    font-size: 30px;
+    /* Tamaño del texto */
 }
 
-.formulario-turnos{
-    display: flex; /* Establece el contenedor como un contenedor flexible */
-    flex-direction: column; /* Establece la dirección de los elementos como columna */
-    justify-content: $centro; /* Centra verticalmente */
-    align-items: $centro; /* Centra horizontalmente */
+.formulario-turnos {
+    display: flex;
+    /* Establece el contenedor como un contenedor flexible */
+    flex-direction: column;
+    /* Establece la dirección de los elementos como columna */
+    justify-content: $centro;
+    /* Centra verticalmente */
+    align-items: $centro;
+    /* Centra horizontalmente */
 }
 
-.formulario-turnos input:nth-of-type(3){ /* Selecciona el tercer input dentro del formulario de turnos */
-    text-align: $centro; /* Alinea el texto al centro */
-    color: $c6; /* Cambia el color del texto a rojo */
+.formulario-turnos input:nth-of-type(3) {
+    /* Selecciona el tercer input dentro del formulario de turnos */
+    text-align: $centro;
+    /* Alinea el texto al centro */
+    color: $c6;
+    /* Cambia el color del texto a rojo */
 }
 
 .formulario-turnos label {
-    margin-left: 5px; /* Ajusta el espacio entre el input y la etiqueta */
+    margin-left: 5px;
+    /* Ajusta el espacio entre el input y la etiqueta */
 }
 
 .formulario-turnos input {
-    margin-bottom: 15px; /* Espacio entre los input */
+    margin-bottom: 15px;
+    /* Espacio entre los input */
 }
 
 /* modificar la barra */
 
 /* Estilos para la barra de desplazamiento en navegadores WebKit (Chrome, Safari, Opera) */
-::-webkit-scrollbar{
-    background-color: $c7; /* Color de fondo de la barra de desplazamiento */
+::-webkit-scrollbar {
+    background-color: $c7;
+    /* Color de fondo de la barra de desplazamiento */
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: $c8; /* Color del área deslizable de la barra de desplazamiento */
-    border-radius: 10px; /* Radio de borde para la parte deslizable */
-    border: black; /* Borde de la parte deslizable */
+    background-color: $c8;
+    /* Color del área deslizable de la barra de desplazamiento */
+    border-radius: 10px;
+    /* Radio de borde para la parte deslizable */
+    border: black;
+    /* Borde de la parte deslizable */
 }
 
 /* Estilos para la barra de desplazamiento en navegadores Firefox */
-::-moz-scrollbar{
-    background-color: $c7; /* Color de fondo de la barra de desplazamiento */
+::-moz-scrollbar {
+    background-color: $c7;
+    /* Color de fondo de la barra de desplazamiento */
 }
 
-::-moz-scrollbar-thumb{
-    background-color: $c8; /* Color del área deslizable de la barra de desplazamiento */
-    border-radius: 10px; /* Radio de borde para la parte deslizable */
-    border: $c2; /* Borde de la parte deslizable */
+::-moz-scrollbar-thumb {
+    background-color: $c8;
+    /* Color del área deslizable de la barra de desplazamiento */
+    border-radius: 10px;
+    /* Radio de borde para la parte deslizable */
+    border: $c2;
+    /* Borde de la parte deslizable */
 }
 
 /* Estilos para la barra de desplazamiento en navegadores Internet Explorer */
-::-ms-scrollbar{
-    background-color: $c7; /* Color de fondo de la barra de desplazamiento */
+::-ms-scrollbar {
+    background-color: $c7;
+    /* Color de fondo de la barra de desplazamiento */
 }
 
-::-ms-scrollbar-thumb{
-    background-color: mul; /* Color del área deslizable de la barra de desplazamiento */
-    border-radius: 10px; /* Radio de borde para la parte deslizable */
-    border: $c2/* Borde de la parte deslizable */
+::-ms-scrollbar-thumb {
+    background-color: mul;
+    /* Color del área deslizable de la barra de desplazamiento */
+    border-radius: 10px;
+    /* Radio de borde para la parte deslizable */
+    border: $c2
+        /* Borde de la parte deslizable */
 }
 
 /* Estilos para la barra de desplazamiento en navegadores Opera */
-::-o-scrollbar{
-    background-color: $c7; /* Color de fondo de la barra de desplazamiento */
+::-o-scrollbar {
+    background-color: $c7;
+    /* Color de fondo de la barra de desplazamiento */
 }
 
-::-o-scrollbar-thumb{
-    background-color: $c8; /* Color del área deslizable de la barra de desplazamiento */
-    border-radius: 10px; /* Radio de borde para la parte deslizable */
-    border: $c2; /* Borde de la parte deslizable */
+::-o-scrollbar-thumb {
+    background-color: $c8;
+    /* Color del área deslizable de la barra de desplazamiento */
+    border-radius: 10px;
+    /* Radio de borde para la parte deslizable */
+    border: $c2;
+    /* Borde de la parte deslizable */
 }
 
 .centralizado {
-    display: flex; /* Utiliza el modelo de caja flexible */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
+    display: flex;
+    /* Utiliza el modelo de caja flexible */
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    align-items: center;
+    /* Centra los elementos verticalmente */
 }
 
 .table-responsive {
@@ -482,20 +646,29 @@ input {
 }
 
 footer {
-    background-color: $c2; /* Color de fondo */
-    color: $c3; /* Color del texto */
-    text-align: $centro; /* Alineación del texto al centro */ 
-    padding: 10px;  /* Espaciado interno */
-    width: 100%; /* Ancho igual al 100% del contenedor */
-    
+    background-color: $c2;
+    /* Color de fondo */
+    color: $c3;
+    /* Color del texto */
+    text-align: $centro;
+    /* Alineación del texto al centro */
+    padding: 10px;
+    /* Espaciado interno */
+    width: 100%;
+    /* Ancho igual al 100% del contenedor */
+
 }
 
-.redes a {   
-    color: $c1; /* Color del texto azul */
-    font-size: 35px; /* Tamaño de fuente de 35px */
-    letter-spacing: 20px; /* Espaciado entre letras de 20px */
-    width: 100%; /* Ancho igual al 100% del contenedor */
-    
+.redes a {
+    color: $c1;
+    /* Color del texto azul */
+    font-size: 35px;
+    /* Tamaño de fuente de 35px */
+    letter-spacing: 20px;
+    /* Espaciado entre letras de 20px */
+    width: 100%;
+    /* Ancho igual al 100% del contenedor */
+
 }
 
 .logo {
@@ -532,7 +705,8 @@ footer {
         width: 100%;
     }
 
-    nav, footer {
+    nav,
+    footer {
         width: 100%;
     }
 
@@ -540,20 +714,21 @@ footer {
         padding: 5px;
         margin-top: 10px;
         font-size: 15px;
-        width: 320px;        
+        width: 320px;
     }
 
-nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0 auto;
-}
-nav ul li {
-            display: flex;
-            margin-bottom: 10px;
-}
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    nav ul li {
+        display: flex;
+        margin-bottom: 10px;
+    }
 
     .descripcion {
         text-align: center;
@@ -571,12 +746,12 @@ nav ul li {
 
     footer {
         font-size: 14px;
-        padding: 10px;        
+        padding: 10px;
         text-align: center;
         margin: 0 auto;
         max-height: 480px;
         max-width: 320px;
-    }          
+    }
 }
 
 /* dispositivos con un ancho máximo de 480px (modo horizontal) */
@@ -608,6 +783,7 @@ nav ul li {
         padding: 0;
         margin: 0 auto;
         width: 100%;
+
         li {
             display: flex;
             margin-bottom: 10px;
@@ -636,7 +812,7 @@ nav ul li {
         text-align: center;
         margin: 0 auto;
     }
-    
+
 }
 
 /* Estilos para tabletas pequeñas con una resolución de 600x800 */
@@ -668,33 +844,40 @@ nav ul li {
         padding: 0;
         margin: 0 auto;
         width: 100%;
+
         li {
             display: flex;
             margin-bottom: 10px;
         }
     }
-    
+
     main {
-        padding: 5%; /* Ajustar el relleno en porcentaje */
+        padding: 5%;
+        /* Ajustar el relleno en porcentaje */
     }
 
     aside {
-        padding: 5%; /* Ajustar el relleno en porcentaje */
+        padding: 5%;
+        /* Ajustar el relleno en porcentaje */
     }
 
     video {
         max-height: 600px;
-        max-width: 90%; /* Ajustar el ancho máximo del video en porcentaje */
+        max-width: 90%;
+        /* Ajustar el ancho máximo del video en porcentaje */
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
 
     footer {
-        padding: 5%; /* Ajustar el relleno en porcentaje */
-        width: 90%; /* Ajustar el ancho del footer en porcentaje */
+        padding: 5%;
+        /* Ajustar el relleno en porcentaje */
+        width: 90%;
+        /* Ajustar el ancho del footer en porcentaje */
         text-align: center;
-        margin: 0 auto; /* Ajustar los márgenes en porcentaje */
+        margin: 0 auto;
+        /* Ajustar los márgenes en porcentaje */
     }
 
     .alineado-parrafo {
@@ -709,9 +892,12 @@ nav ul li {
 /* Estilos para tabletas de 600x1024 en modo vertical */
 @media screen and (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
     .logo {
-        width: 100px; /* Ajustar el ancho del logo */
-        height: 80px; /* Ajustar la altura del logo */
-        margin-top: 15px; /* Ajustar el margen superior */
+        width: 100px;
+        /* Ajustar el ancho del logo */
+        height: 80px;
+        /* Ajustar la altura del logo */
+        margin-top: 15px;
+        /* Ajustar el margen superior */
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -719,10 +905,13 @@ nav ul li {
 
     header {
         padding: 10px;
-        margin-top: 50px; /* Ajustar el margen superior */
+        margin-top: 50px;
+        /* Ajustar el margen superior */
         font-size: 20px;
-        width: 90%; /* Ajustar el ancho del encabezado */
-        text-align: center; /* Centrar el texto del encabezado */
+        width: 90%;
+        /* Ajustar el ancho del encabezado */
+        text-align: center;
+        /* Centrar el texto del encabezado */
         margin-left: auto;
         margin-right: auto;
     }
@@ -734,184 +923,229 @@ nav ul li {
         padding: 0;
         margin: 0 auto;
         width: 100%;
+
         li {
             display: flex;
-            margin-bottom: 10px; /* Ajustar el margen inferior */
+            margin-bottom: 10px;
+            /* Ajustar el margen inferior */
         }
     }
 
     main {
-        padding: 5%; /* Ajustar el relleno en porcentaje */
+        padding: 5%;
+        /* Ajustar el relleno en porcentaje */
     }
 
     aside {
-        padding: 5%; /* Ajustar el relleno en porcentaje */
+        padding: 5%;
+        /* Ajustar el relleno en porcentaje */
     }
 
-    video {        
+    video {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        max-width: 90%; /* Ajustar el ancho máximo del video en porcentaje */
+        max-width: 90%;
+        /* Ajustar el ancho máximo del video en porcentaje */
     }
 
     footer {
-        padding: 5%; /* Ajustar el relleno en porcentaje */
+        padding: 5%;
+        /* Ajustar el relleno en porcentaje */
         text-align: center;
-        margin: 5% auto; /* Ajustar los márgenes en porcentaje */
-        width: 90%; /* Ajustar el ancho del footer en porcentaje */
+        margin: 5% auto;
+        /* Ajustar los márgenes en porcentaje */
+        width: 90%;
+        /* Ajustar el ancho del footer en porcentaje */
     }
 
-    .galeria {        
+    .galeria {
         display: grid;
-        grid-template-rows: 480px; /* Define filas de 480px de alto */
+        grid-template-rows: 480px;
+        /* Define filas de 480px de alto */
     }
 }
 
 /* Estilos para tabletas de 10 pulgadas en modo vertical */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-        
+
     header {
         width: 100px;
         height: 100px;
         margin-top: 15px;
-        margin-top: 5%; /* Ajustar el margen superior en porcentaje */
+        margin-top: 5%;
+        /* Ajustar el margen superior en porcentaje */
         padding: 10px;
 
-    body {
-        font-size: 18px;
+        body {
+            height: 500px; /* Altura del 100% de la ventana del navegador */
+            background-color: $c1;
+            background-image: linear-gradient(to right, red, blue); /* Degradado de colores */
+            font-family: $tr;
+            font-size: 16px;          
+            .body-background {      
+                background-color: $c1; /* Color de fondo */      
+                padding: 20px; /* Espaciado interno */
+                color: $c3; /* Color del texto */
+            }
+        }
+
+        nav ul li {
+            margin-right: 5%;
+            /* Ajustar el margen derecho en porcentaje */
+        }
+
+        aside {
+            padding: 40px;
+        }
+
+        video {
+            max-height: 1024px;
+            max-width: 768px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        footer {
+            padding: 20px;
+            width: 768px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        footer .redes a {
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
+
+
+        .alineado-parrafo {
+            font-size: 0.6rem;
+            /* Tamaño de fuente ligeramente reducido */
+        }
+
+        .galeria h4 {
+            font-size: 22px;
+            /* Tamaño de fuente ajustado */
+            margin-bottom: 15px;
+            /* Margen inferior para separar los elementos */
+        }
+
+        .galeria p {
+            font-size: 18px;
+            /* Tamaño de fuente ajustado */
+            margin-bottom: 15px;
+            /* Margen inferior para separar los elementos */
+        }
+
     }
 
-    nav ul li {
-        margin-right: 5%; /* Ajustar el margen derecho en porcentaje */
-    }
-    
-    aside {
-        padding: 40px;
+    /* Estilos para tabletas como el iPad en modo horizontal y algunas pantallas de ordenador portátil, netbook y de escritorio */
+    @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+        body {
+            height: 500px; /* Altura del 100% de la ventana del navegador */
+            background-color: $c1;
+            background-image: linear-gradient(to right, red, blue); /* Degradado de colores */
+            font-family: $tr;
+            font-size: 16px;          
+            .body-background {      
+                background-color: $c1; /* Color de fondo */      
+                padding: 20px; /* Espaciado interno */
+                color: $c3; /* Color del texto */
+            }
+        }
+
+        header {
+            padding: 40px;
+        }
+
+        nav ul li {
+            margin-right: 30px;
+        }
+
+        aside {
+            padding: 40px;
+        }
+
+        footer {
+            padding: 40px;
+        }
+
+        main {
+            width: 100%;
+            padding: 40px;
+        }
+
     }
 
-    video {
-        max-height: 1024px;
-        max-width: 768px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    /* Estilos para pantallas medianas */
+    @media screen and (max-width: 767px) {
+        .grid-item-hijo {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        nav ul li {
+            margin-right: 15px;
+        }
+
+        .recuadro {
+            width: 100%;
+        }
+
+        nav ul {
+            grid-template-columns: 1fr;
+        }
     }
 
-    footer {
-        padding: 20px;
-        width: 768px;
-        text-align: center;
-        margin: 0 auto;
-    }
+    /* Estilos para pantallas panorámicas de al menos 1200px (principalmente portátiles y de escritorio) */
+    @media screen and (min-width: 1367px) {
+        body {
+            height: 500px; /* Altura del 100% de la ventana del navegador */
+            background-color: $c1;
+            background-image: linear-gradient(to right, red, blue); /* Degradado de colores */
+            font-family: $tr;
+            font-size: 16px;          
+            .body-background {      
+                background-color: $c1; /* Color de fondo */      
+                padding: 20px; /* Espaciado interno */
+                color: $c3; /* Color del texto */
+            }
+        }
 
-    footer .redes a {
-        font-size: 25px;
-        letter-spacing: 10px;
-    }   
+        header {
+            padding: 30px;
+        }
 
+        nav ul li {
+            margin-right: 30px;
+        }
 
-    .alineado-parrafo {
-        font-size: 0.6rem; /* Tamaño de fuente ligeramente reducido */
-    }
+        aside {
+            padding: 30px;
+        }
 
-    .galeria h4 {
-        font-size: 22px; /* Tamaño de fuente ajustado */
-        margin-bottom: 15px; /* Margen inferior para separar los elementos */
-    }
-    
-    .galeria p {
-        font-size: 18px; /* Tamaño de fuente ajustado */
-        margin-bottom: 15px; /* Margen inferior para separar los elementos */
-    }
+        main {
+            width: 100%;
+        }
 
-}
+        footer {
+            padding: 30px;
+        }
 
-/* Estilos para tabletas como el iPad en modo horizontal y algunas pantallas de ordenador portátil, netbook y de escritorio */
-@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
-    body {
-        font-size: 20px;
-    }
+        /* Ejemplo de diseño de cuadrícula */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 20px;
+        }
 
-    header {
-        padding: 40px;
+        /* Estilos específicos para elementos de la cuadrícula */
+        .grid-item {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+        }
     }
-
-    nav ul li {
-        margin-right: 30px;
-    }
-
-    aside {
-        padding: 40px;
-    }
-
-    footer {
-        padding: 40px;
-    }
-
-main {
-        width: 100%;
-        padding: 40px;
-    }
-
-}
-
-/* Estilos para pantallas medianas */
-@media screen and (max-width: 767px) {
-    .grid-item-hijo {
-        padding: 10px;
-        margin-bottom: 10px;
-    }
-    nav ul li {
-        margin-right: 15px;
-    }
-    .recuadro {
-        width: 100%;
-    }
-    
-nav ul {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Estilos para pantallas panorámicas de al menos 1200px (principalmente portátiles y de escritorio) */
-@media screen and (min-width: 1367px) {
-    body {
-        font-size: 16px;
-    }
-
-header {
-        padding: 30px;
-    }
-
-    nav ul li {
-        margin-right: 30px;
-    }
-
-    aside {
-        padding: 30px;
-    }
-
-    main {
-        width: 100%;
-    }
-
-    footer {
-        padding: 30px;
-    }
-
-/* Ejemplo de diseño de cuadrícula */
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-gap: 20px;
-    }
-
-/* Estilos específicos para elementos de la cuadrícula */
-    .grid-item {
-        background-color: #f0f0f0;
-        padding: 20px;
-        border-radius: 10px;
-    }
-}
 }
