@@ -527,11 +527,12 @@ input {
         padding-top: 15px;
         width: 70%; // Ajusta el ancho al 70% del contenedor
         max-width: 70%; // Establece el ancho máximo igual al 70% del contenedor
-        max-height: 50%; // Establece la altura máxima al 50% del contenedor
+        max-height: 55%; // Establece la altura máxima al 50% del contenedor
         height: auto; // Mantiene la proporción de aspecto original
         display: block; // Asegura que la imagen sea un elemento de bloque
-        margin: 0 auto; // Centra la imagen horizontalmente
+        margin: auto; // Centra la imagen horizontalmente        
     }
+
 }
 
 .turnos {
