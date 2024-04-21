@@ -338,9 +338,10 @@ button {
 }
 
 aside {
-    text-align: $centro;  /* Alineación del texto al centro */          
+    text-align: $centro;  /* Alineación del texto al centro */ 
+    color: $c3 !important;         
     p {
-        display: inline-block;   /* Permite centrar el elemento <p> horizontalmente */               
+        display: inline-block;   /* Permite centrar el elemento <p> horizontalmente */
     }
 }
 
@@ -504,12 +505,12 @@ input {
 .fotoAgrandada {
     img {
         padding-top: 15px;
-        width: 100%; // Ajusta el ancho al 70% del contenedor
-        height: auto; // Mantiene la proporción de aspecto original
+        width: 80%; // Ajusta el ancho al 70% del contenedor
+        height: 80%; // Mantiene la proporción de aspecto original
         display: block; // Asegura que la imagen sea un elemento de bloque
-        margin: auto; // Centra la imagen horizontalmente        
+        margin-left: auto; /* Centra el video horizontalmente */        
+        margin-right: auto;  /* Centra el video horizontalmente */    
     }
-
 }
 
 .turnos {

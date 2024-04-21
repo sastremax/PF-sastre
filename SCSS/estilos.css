@@ -409,6 +409,7 @@ button {
 
 aside {
   text-align: center; /* Alineación del texto al centro */
+  color: rgb(255, 255, 255) !important;
 }
 aside p {
   display: inline-block; /* Permite centrar el elemento <p> horizontalmente */
@@ -570,10 +571,11 @@ input:focus {
 
 .fotoAgrandada img {
   padding-top: 15px;
-  width: 100%;
-  height: auto;
+  width: 80%;
+  height: 80%;
   display: block;
-  margin: auto;
+  margin-left: auto; /* Centra el video horizontalmente */
+  margin-right: auto; /* Centra el video horizontalmente */
 }
 
 .turnos {
