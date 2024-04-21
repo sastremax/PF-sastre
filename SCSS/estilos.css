@@ -1,38 +1,76 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.favicon {
-  vertical-align: middle;
-}
-
 img {
   float: left;
   width: 80px;
   height: 80px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 500px; /* Altura del 100% de la ventana del navegador */
+  background-color: rgb(13, 110, 253);
+  background-image: linear-gradient(to right, red, blue); /* Degradado de colores */
+  font-family: "Roboto";
+  font-size: 16px;
+}
+body .body-background {
+  background-color: rgb(13, 110, 253); /* Color de fondo */
+  padding: 20px; /* Espaciado interno */
+  color: rgb(255, 255, 255); /* Color del texto */
+}
+
 @font-face {
   font-family: "Gwendolin";
   src: url(/fonts/Gwendolyn-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
   src: url(/fonts/RobotoSlab-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
 }
-body {
-  background-color: rgb(13, 110, 253);
+html {
+  font-family: "Gwendolin", sans-serif;
 }
 
-body .body-background {
-  background-color: rgb(13, 110, 253); /* Color de fondo */
-  background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
-  background-repeat: no-repeat; /* No repetir la imagen de fondo */
-  padding: 20px; /* Espaciado interno */
-  color: white; /* Color del texto */
+h1 {
+  font-family: "Gwendolin", sans-serif;
+}
+
+footer {
+  background-color: #000000; /* Color de fondo */
+  color: rgb(255, 255, 255); /* Color del texto */
+  text-align: center; /* Alineación del texto al centro */
+  padding: 10px; /* Espaciado interno */
+  width: 100%; /* Ancho igual al 100% del contenedor */
+}
+
+.redes a {
+  color: rgb(13, 110, 253); /* Color del texto azul */
+  font-size: 35px; /* Tamaño de fuente de 35px */
+  letter-spacing: 20px; /* Espaciado entre letras de 20px */
+}
+
+h1 {
+  font-family: "Gwendolin"; /* Fuente Gwendolin */
+  text-align: center; /* Alineación del texto al centro */
+  padding: 18px; /* Espaciado interno */
+  margin-right: 2px; /* Margen superior para separar del icono */
 }
 
 header nav ul li a {
@@ -49,28 +87,32 @@ header nav ul li a:hover {
   color: green;
 }
 
-.Jumbotron {
-  background-color: rgb(13, 110, 253); /* color de fondo: negro */
-  text-shadow: #000000 -2px; /* Sombra de texto */
-  font-size: 16px; /* Tamaño de fuente */
-  text-align: left; /* Alinea el texto a la izquierda */
+.favicon {
+  vertical-align: middle;
 }
 
 section {
-  margin: 0; /* Establece el margen exterior a 0 */
-  padding: auto; /* Establece el relleno a automatico */
-  font-size: 20px; /* Tamaño de fuente */
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; /* Familia de fuentes primero Arial */
+  margin: 0;
+  /* Establece el margen exterior a 0 */
+  padding: auto;
+  /* Establece el relleno a automatico */
+  font-size: 20px;
+  /* Tamaño de fuente */
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  /* Familia de fuentes primero Arial */
 }
 
 article {
-  height: 500px; /* Altura del artículo */
-  padding-top: 15px; /* Espaciado superior */
-  padding-right: 10px; /* Espaciado derecho */
+  height: 500px;
+  /* Altura del artículo */
+  padding-top: 15px;
+  /* Espaciado superior */
+  padding-right: 10px;
+  /* Espaciado derecho */
 }
-
 article ul li {
-  list-style: none; /* Quita los puntos de la lista */
+  list-style: none;
+  /* Quita los puntos de la lista */
 }
 
 .alineado-parrafo {
@@ -84,13 +126,6 @@ main {
   gap: 20px; /* Espacio entre los elementos */
 }
 
-h1 {
-  font-family: "Gwendolin"; /* Fuente Gwendolin */
-  text-align: center; /* Alineación del texto al centro */
-  padding: 18px; /* Espaciado interno */
-  margin-right: 2px; /* Margen superior para separar del icono */
-}
-
 h2 {
   font-size: 40px; /* Tamaño de fuente grande */
   text-align: left; /* Alineación del texto a la izquierda */
@@ -102,333 +137,578 @@ h4 {
   text-align: left; /* Alineación del texto a la izquierda */
 }
 
-.col-sm-12.col-md-6 {
-  background-image: url(https://www.instagram.com/p/CXQ4XParqoi/?igsh=NGc0czF4bHdnYzRk);
-  background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
-  background-position: center; /* Centra la imagen */
-}
-
 .container {
   padding: 10px; /* Relleno de 10px en todos los lados del contenedor */
 }
 
 .parrafo-principal {
-  font-size: 14px; /* Tamaño de fuente de 14px */
-  text-align: left; /* Alineación del texto a la izquierda */
-  padding: 18px; /* Espaciado interno */
+  font-size: 20px;
+  /* Tamaño de fuente de 14px */
+  text-align: left;
+  /* Alineación del texto a la izquierda */
+  padding: 18px;
+  /* Espaciado interno */
 }
 
 .videosCentrado {
-  margin-top: 15px; /* Margen superior de 15px */
-  margin-bottom: 10px; /* Margen inferior de 10px */
-  text-align: center; /* Alineación del texto al centro */
-  color: white; /* Color del texto */
-  text-shadow: dark 0.8; /* Sombra de texto */
+  margin-top: 15px;
+  /* Margen superior de 15px */
+  margin-bottom: 10px;
+  /* Margen inferior de 10px */
+  text-align: center;
+  /* Alineación del texto al centro */
+  color: rgb(255, 255, 255);
+  /* Color del texto */
+  text-shadow: dark 0.8;
+  /* Sombra de texto */
 }
 
 video {
-  max-height: 500px; /* Establece la altura máxima del video */
-  max-width: 370px; /* Establece el ancho máximo del video */
-  display: block; /* Asegura que el video se muestre como un bloque */
-  margin-left: auto; /* Centra el video horizontalmente */
-  margin-right: auto; /* Centra el video horizontalmente */
+  max-height: 500px;
+  /* Establece la altura máxima del video */
+  max-width: 370px;
+  /* Establece el ancho máximo del video */
+  display: block;
+  /* Asegura que el video se muestre como un bloque */
+  margin-left: auto;
+  /* Centra el video horizontalmente */
+  margin-right: auto;
+  /* Centra el video horizontalmente */
 }
 
 /* Cambia el color del icono de deslizamiento del carrusel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: invert(100%); /* Invierte el color del icono */
+  filter: invert(100%);
+  /* Invierte el color del icono */
 }
 
 .solicitar-link {
-  display: inline-block; /* Establece el elemento como bloque en línea */
-  background-color: rgb(13, 110, 253); /* Color de fondo */
-  color: white; /* Color del texto */
-  padding: 10px 20px; /* Relleno */
-  text-decoration: none; /* Quita la decoración de enlace */
-  border-radius: 5px; /* Borde redondeado */
+  display: inline-block;
+  /* Establece el elemento como bloque en línea */
+  background-color: rgb(13, 110, 253);
+  /* Color de fondo */
+  color: rgb(255, 255, 255);
+  /* Color del texto */
+  padding: 10px 20px;
+  /* Relleno */
+  text-decoration: none;
+  /* Quita la decoración de enlace */
+  border-radius: 5px;
+  /* Borde redondeado */
 }
 
 .icono {
-  max-width: 20px; /* Ancho máximo */
-  display: block; /* Establece el elemento como bloque */
-  height: auto; /* Altura automática */
-  margin-bottom: 20px; /* Margen inferior */
+  max-width: 20px;
+  /* Ancho máximo */
+  display: block;
+  /* Establece el elemento como bloque */
+  height: auto;
+  /* Altura automática */
+  margin-bottom: 20px;
+  /* Margen inferior de 20px */
 }
 
 .contenedor-recuadros {
-  display: flex; /* Establece el contenedor como flexbox */
-  flex-direction: column; /* Dirección de los elementos: columna */
-  align-items: center; /* Centra los elementos horizontalmente */
-  max-width: 300px; /* Establece un ancho máximo para el contenedor */
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  height: auto;
+  /* Altura automática basada en el contenido */
+  overflow: auto;
+  /* Permite el desplazamiento si el contenido es más alto que el contenedor */
+  width: 100%;
+  /* Ancho del contenedor al 100% */
+  display: flex;
+  /* Establece el contenedor como flexbox */
+  flex-direction: column;
+  /* Dirección de los elementos: columna */
+  align-items: center;
+  /* Centra los elementos horizontalmente */
+  margin: 0 auto;
+  /* Centra el contenedor horizontalmente */
 }
-
 .contenedor-recuadros .recuadro {
-  height: 150px;
-  width: 150px; /* Ancho */
-  background-color: white; /* Color de fondo */
-  text-align: center; /* Alineación del texto al centro */
-  border: 4px solid #000000; /* Borde sólido con color negro */
-  padding: 15px; /* Espaciado interno */
-  max-height: 150px; /* Altura máxima */
-  overflow: hidden; /* Oculta la barra de desplazamiento */
-  margin: 15px; /* Margen */
+  height: 100px;
+  /*Alto*/
+  width: 100px;
+  /* Ancho */
+  background-color: rgb(255, 255, 255);
+  /* Color de fondo */
+  text-align: center;
+  /* Alineación del texto al centro */
+  border-radius: 4px solid #000000;
+  /* Borde sólido con color negro */
+  padding: 15px;
+  /* Espaciado interno */
+  overflow: hidden;
+  /* Oculta la barra de desplazamiento */
+  margin: 15px;
+  /* Margen */
   text-transform: uppercase;
-  display: flex; /* Establece el contenedor como flexbox */
-  justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del eje principal */
-  flex-direction: column; /* Dirección de los elementos: en formato columna */
-  transition: 0.7s; /* Transición con duración de 0.7 segundos */
+  /*transformar el texto en mayúsculas*/
+  display: flex;
+  /* Establece el contenedor como flexbox */
+  justify-content: space-between;
+  /* Distribuye los elementos uniformemente a lo largo del eje principal */
+  flex-direction: column;
+  /* Dirección de los elementos: en formato columna */
+  transition: 0.7s;
+  /* Transición con duración de 0.7 segundos */
 }
-
 .contenedor-recuadros .recuadro a {
-  text-decoration: none; /* Elimina el subrayado */
+  text-decoration: none;
+  /* Elimina el subrayado */
 }
-
 .contenedor-recuadros .recuadro:hover {
-  transform: scale(0.7); /* Reduce el tamaño del elemento al 70% */
-  background-color: #000000; /* Cambia el color de fondo a negro */
-  border-radius: 20px; /* Establece un radio de borde de 20px */
-  color: white; /* Color del texto */
+  transform: scale(0.7);
+  /* Reduce el tamaño del elemento al 70% */
+  background-color: #000000;
+  /* Cambia el color de fondo a negro */
+  border-radius: 20px;
+  /* Establece un radio de borde de 20px */
+  color: rgb(255, 255, 255);
+  /* Color del texto */
 }
 
+.aboutgaleria {
+  height: 100%;
+  width: 100%;
+  /* Ancho del contenedor al 100% */
+  display: grid;
+  /* Establece el contenedor como una cuadrícula */
+  grid-template-columns: repeat(4, 1fr);
+  /* Define 4 columnas de igual ancho */
+  grid-template-rows: repeat(3, auto);
+  /* Define 3 filas de 200px de alto cada una */
+  grid-template-areas: "img1 img2 img3 img3" "img1 img4 img5 img6" "img7 img4 img8 img8";
+  /* Define el área de la cuadrícula para los elementos */
+  grid-gap: 15px;
+  /* Espacio entre las celdas de la cuadrícula */
+  padding: 20px;
+  /* Espacio interno del contenedor */
+}
+
+.item {
+  border: 3px solid #000;
+  background-size: cover;
+  background-position: center;
+  border-radius: 9px;
+  filter: grayscale(20%);
+  transition: all 0.9s;
+}
+.item:hover {
+  filter: grayscale(0%);
+  transform: scale(0.9) rotate(360deg);
+}
+.item.item1 {
+  background-image: url("../assets/images/item1.jpg");
+  grid-area: img1;
+}
+.item.item2 {
+  background-image: url("../assets/images/item2.jpg");
+  grid-area: img2;
+}
+.item.item3 {
+  background-image: url("../assets/images/item3.jpg");
+  grid-area: img3;
+}
+.item.item4 {
+  background-image: url("../assets/images/item4.jpg");
+  grid-area: img4;
+}
+.item.item5 {
+  background-image: url("../assets/images/item5.jpg");
+  grid-area: img5;
+}
+.item.item6 {
+  background-image: url("../assets/images/item6.jpg");
+  grid-area: img6;
+}
+.item.item7 {
+  background-image: url("../assets/images/item7.jpg");
+  grid-area: img7;
+}
+.item.item8 {
+  background-image: url("../assets/images/item8.jpg");
+  grid-area: img8;
+}
+
+.contenedor-recuadros img,
+.aboutgaleria img {
+  width: 100%;
+  /* Ancho al 100% del contenedor padre */
+  height: auto;
+  /* Altura automática para mantener la proporción de la imagen */
+}
+
+.contenedor-padre {
+  padding-top: 15px;
+  position: relative;
+  /* Establece la posición relativa para que los elementos absolutos se posicionen relativamente a este contenedor */
+  width: 100%;
+  /* Ancho al 100% del ancho de su contenedor padre */
+  height: 100%;
+  /* Altura al 100% del alto de su contenedor padre */
+}
+
+/* Estilos para el contenedor del mapa */
+.mapa-contenedor {
+  /* Establece la posición relativa para que los elementos absolutos se posicionen relativamente a este contenedor */
+  position: relative;
+  /* Ancho del contenedor al 100% del ancho de su contenedor padre, importante para ocupar todo el espacio disponible */
+  width: 100% !important;
+  /* Altura del contenedor al 100% del alto de su contenedor padre, también importante para ocupar todo el espacio disponible */
+  height: 100% !important;
+  /* Utiliza un modelo de caja flexible para centrar el contenido vertical y horizontalmente */
+  display: flex;
+  align-items: center;
+  /* Centra verticalmente los elementos secundarios */
+  justify-content: center;
+  /* Centra horizontalmente los elementos secundarios */
+}
+
+/* Estilos para el elemento del mapa */
 .mapa {
-  margin-top: 20px; /* Espacio entre los recuadros y el mapa */
-  text-align: center; /* Alinea horizontalmente el contenido del mapa */
-  border: 0; /* Sin borde */
-  clear: both; /* Limpia los flotadores anteriores */
-  width: 100%; /* Ancho completo del contenedor */
-}
-
-.mapa iframe {
-  width: 100%; /* Ancho del mapa */
-  height: 300px; /* Ajusta la altura del mapa según sea necesario */
-  display: block; /* Cambia la visualización a bloque para ocupar todo el ancho disponible */
-  margin: 20px auto 0; /* Centrado horizontal y margen superior */
-  background-color: transparent; /* Elimina el color de fondo del mapa si es necesario */
+  /* Establece la posición absoluta para colocar el mapa dentro del contenedor sin afectar al diseño del resto del contenido */
+  position: absolute;
+  /* Coloca el borde superior del mapa en la parte superior del contenedor padre */
+  top: 0;
+  /* Coloca el borde izquierdo del mapa en la parte izquierda del contenedor padre */
+  left: 0;
+  /* Ancho del mapa al 100% del ancho del contenedor padre */
+  width: 100%;
+  /* Altura del mapa al 100% del alto del contenedor padre */
+  height: 100%;
 }
 
 .spacer {
-  height: 90px; /* Altura espaciada */
+  height: 90px;
+  /* Altura espaciada */
 }
 
 .subrayado {
-  text-decoration: underline; /* Subrayado */
+  text-decoration: underline;
+  /* Subrayado */
 }
 
 button {
-  background-color: rgb(13, 110, 253); /* Color de fondo */
-  color: white; /* Color del texto */
-  border: none; /* Sin borde */
-  padding: 5px 10px; /* Relleno */
-  cursor: pointer; /* Cursor al señalar */
+  background-color: rgb(13, 110, 253);
+  /* Color de fondo */
+  color: rgb(255, 255, 255);
+  /* Color del texto */
+  border: none;
+  /* Sin borde */
+  padding: 5px 10px;
+  /* Relleno */
+  cursor: pointer;
+  /* Cursor al señalar */
 }
 
-.body-background {
-  background-color: rgb(13, 110, 253); /* Color de fondo */
-  background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
-  background-repeat: no-repeat; /* No repetir la imagen de fondo */
-  padding: 20px; /* Espaciado interno */
-  color: white; /* Color del texto */
+aside {
+  text-align: center;
+  /* Alineación del texto al centro */
+}
+aside p {
+  display: inline-block;
+  /* Permite centrar el elemento <p> horizontalmente */
+}
+
+.titulo {
+  align-self: top;
+  /* Alinea el título en la parte superior */
+  text-align: top;
+  /* Alineación del texto al tope */
+  font-size: 20px;
+  /* Tamaño de fuente */
+  margin-bottom: 20px;
+  /* Margen inferior */
+}
+
+.terapeutas-container {
+  text-align: left;
+  /* Alineación del texto a la izquierda */
+  padding: 12px;
+  /* Espaciado interno */
+  text-shadow: #3000b3 0 -1px;
+  /* Sombra de texto */
+}
+
+.Equipo-de-terapeutas {
+  display: grid;
+  /* Establece el contenedor como cuadrícula */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  /* Columnas automáticas */
+  gap: 10px;
+  /* Espacio entre columnas */
+  margin-top: 25px;
+  /* Margen superior */
+}
+
+.about-grid {
+  display: flex;
+  /* Establece el contenedor como flexbox */
+  align-items: center;
+  /* Alinea verticalmente el contenido al centro */
+  justify-content: center;
+  /* Centra horizontalmente el contenido */
+  margin-left: 40px;
+  /* Espacio a la izquierda del elemento */
+}
+
+.service-container {
+  max-width: 800px;
+  /* Ancho máximo del contenedor */
+  width: 100%;
+  /* Ancho completo */
+}
+
+.service-contenido {
+  margin-bottom: 20px;
+  /* Margen inferior */
 }
 
 .service-grid {
-  display: flex; /* Establece el contenedor como flexbox */
-  justify-content: center; /* Centra horizontalmente el contenido */
-}
-
-footer {
-  background-color: #000000; /* Color de fondo */
-  color: white; /* Color del texto */
-  text-align: center; /* Alineación del texto al centro */
-  padding: 10px; /* Espaciado interno */
-}
-
-footer .redes a {
-  color: rgb(13, 110, 253); /* Color del texto azul */
-  font-size: 35px; /* Tamaño de fuente de 35px */
-  letter-spacing: 20px; /* Espaciado entre letras de 20px */
+  display: flex;
+  /* Establece el contenedor como flexbox */
+  justify-content: center;
+  /* Centra horizontalmente el contenido */
 }
 
 .whats {
-  background-color: blanchedalmond; /* Color de fondo */
-  color: rgb(34, 204, 12); /* Color del texto */
-  height: 100px; /* Altura del elemento */
-  width: 100px; /* Ancho del elemento */
-  border: 2px solid; /* Grosor, estilo y color del borde */
-  font-size: 45px; /* Tamaño de la fuente */
-  right: 40px; /* Distancia desde el borde derecho */
-  bottom: 40px; /* Distancia desde el borde inferior */
+  background-color: rgb(255, 235, 205);
+  /* Color de fondo */
+  color: rgb(34, 204, 12);
+  /* Color del texto */
+  height: 100px;
+  /* Altura del elemento */
+  width: 100px;
+  /* Ancho del elemento */
+  border: 2px solid;
+  /* Grosor, estilo y color del borde */
+  font-size: 45px;
+  /* Tamaño de la fuente */
+  right: 40px;
+  /* Distancia desde el borde derecho */
+  bottom: 40px;
+  /* Distancia desde el borde inferior */
 }
 
 .contact {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente */
   padding-top: 20px;
 }
 
 .subir {
-  height: 20px; /* Altura del elemento */
-  width: 20px; /* Ancho del elemento */
-  background-color: #333; /* Color de fondo */
-  color: white; /* Color del texto */
-  position: fixed; /* Posicionamiento fijo */
-  border-radius: 50%; /* Forma redondeada */
-  text-align: center; /* Alineación del texto */
-  line-height: 20px; /* Altura de línea */
-  font-size: 15px; /* Tamaño del texto */
-  right: 20px; /* Distancia desde el borde derecho del contenedor padre */
-  bottom: 100px; /* Distancia desde el borde inferior del contenedor padre */
+  height: 20px;
+  /* Altura del elemento */
+  width: 20px;
+  /* Ancho del elemento */
+  background-color: #333;
+  /* Color de fondo */
+  color: rgb(255, 255, 255);
+  /* Color del texto */
+  position: fixed;
+  /* Posicionamiento fijo */
+  border-radius: 50%;
+  /* Forma redondeada */
+  text-align: center;
+  /* Alineación del texto */
+  line-height: 20px;
+  /* Altura de línea */
+  font-size: 15px;
+  /* Tamaño del texto */
+  right: 20px;
+  /* Distancia desde el borde derecho del contenedor padre */
+  bottom: 100px;
+  /* Distancia desde el borde inferior del contenedor padre */
 }
 
 input {
-  border-radius: 10px; /* Radio de borde */
-  text-align: center; /* Alineación del texto */
-  padding: 3px; /* Espaciado interno */
-  border: 4px #000000; /* Borde */
-  font-size: 25px; /* Tamaño del texto */
-  box-shadow: inset 0 0 5px; /* Sombra */
-  background-color: white; /* Color de fondo */
+  border-radius: 10px;
+  /* Radio de borde */
+  text-align: center;
+  /* Alineación del texto */
+  padding: 3px;
+  /* Espaciado interno */
+  border: 4px #000000;
+  /* Borde */
+  font-size: 25px;
+  /* Tamaño del texto */
+  box-shadow: inset 0 0 5px;
+  /* Sombra */
+  background-color: rgb(255, 255, 255);
+  /* Color de fondo */
   /* Estilos para diferentes tipos de input */
 }
-
 input[type=text] {
-  height: 40px; /* Altura del campo de texto */
-  color: rgb(13, 110, 253); /* Color del texto */
-  margin: 0; /* Margen */
+  height: 40px;
+  /* Altura del campo de texto */
+  color: rgb(13, 110, 253);
+  /* Color del texto */
+  margin: 0;
+  /* Margen */
 }
-
 input[type=number] {
-  height: 40px; /* Altura del campo de número */
-  color: #3000b3; /* Color del texto */
-  margin: 0; /* Margen */
+  height: 40px;
+  /* Altura del campo de número */
+  color: #3000b3;
+  /* Color del texto */
+  margin: 0;
+  /* Margen */
 }
-
 input:focus {
-  box-shadow: 0 0 15px 10px yellow; /* Sombra al enfocar */
-  border: 5px; /* Borde al enfocar */
+  box-shadow: 0 0 15px 10px rgb(255, 255, 0);
+  /* Sombra al enfocar */
+  border: 5px;
+  /* Borde al enfocar */
 }
 
-turnos {
-  font-size: 30px; /* Tamaño del texto */
+.fotoAgrandada img {
+  padding-top: 15px;
+  width: 70%;
+  max-width: 70%;
+  max-height: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.turnos {
+  font-size: 30px;
+  /* Tamaño del texto */
 }
 
 .formulario-turnos {
-  display: flex; /* Establece el contenedor como un contenedor flexible */
-  flex-direction: column; /* Establece la dirección de los elementos como columna */
-  justify-content: center; /* Centra verticalmente */
-  align-items: center; /* Centra horizontalmente */
+  display: flex;
+  /* Establece el contenedor como un contenedor flexible */
+  flex-direction: column;
+  /* Establece la dirección de los elementos como columna */
+  justify-content: center;
+  /* Centra verticalmente */
+  align-items: center;
+  /* Centra horizontalmente */
 }
 
-.formulario-turnos input:nth-of-type(3) { /* Selecciona el tercer input dentro del formulario de turnos */
-  text-align: center; /* Alinea el texto al centro */
-  color: red; /* Cambia el color del texto a rojo */
+.formulario-turnos input:nth-of-type(3) {
+  /* Selecciona el tercer input dentro del formulario de turnos */
+  text-align: center;
+  /* Alinea el texto al centro */
+  color: rgb(255, 0, 0);
+  /* Cambia el color del texto a rojo */
 }
 
 .formulario-turnos label {
-  margin-left: 5px; /* Ajusta el espacio entre el input y la etiqueta */
+  margin-left: 5px;
+  /* Ajusta el espacio entre el input y la etiqueta */
 }
 
 .formulario-turnos input {
-  margin-bottom: 15px; /* Espacio entre los input */
+  margin-bottom: 15px;
+  /* Espacio entre los input */
 }
 
 /* modificar la barra */
 /* Estilos para la barra de desplazamiento en navegadores WebKit (Chrome, Safari, Opera) */
 ::-webkit-scrollbar {
-  background-color: #800080; /* Color de fondo de la barra de desplazamiento */
+  background-color: #800080;
+  /* Color de fondo de la barra de desplazamiento */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: gold; /* Color del área deslizable de la barra de desplazamiento */
-  border-radius: 10px; /* Radio de borde para la parte deslizable */
-  border: black; /* Borde de la parte deslizable */
+  background-color: rgb(255, 215, 0);
+  /* Color del área deslizable de la barra de desplazamiento */
+  border-radius: 10px;
+  /* Radio de borde para la parte deslizable */
+  border: black;
+  /* Borde de la parte deslizable */
 }
 
 /* Estilos para la barra de desplazamiento en navegadores Firefox */
 ::-moz-scrollbar {
-  background-color: #800080; /* Color de fondo de la barra de desplazamiento */
+  background-color: #800080;
+  /* Color de fondo de la barra de desplazamiento */
 }
 
 ::-moz-scrollbar-thumb {
-  background-color: gold; /* Color del área deslizable de la barra de desplazamiento */
-  border-radius: 10px; /* Radio de borde para la parte deslizable */
-  border: #000000; /* Borde de la parte deslizable */
+  background-color: rgb(255, 215, 0);
+  /* Color del área deslizable de la barra de desplazamiento */
+  border-radius: 10px;
+  /* Radio de borde para la parte deslizable */
+  border: #000000;
+  /* Borde de la parte deslizable */
 }
 
 /* Estilos para la barra de desplazamiento en navegadores Internet Explorer */
 ::-ms-scrollbar {
-  background-color: #800080; /* Color de fondo de la barra de desplazamiento */
+  background-color: #800080;
+  /* Color de fondo de la barra de desplazamiento */
 }
 
 ::-ms-scrollbar-thumb {
-  background-color: mul; /* Color del área deslizable de la barra de desplazamiento */
-  border-radius: 10px; /* Radio de borde para la parte deslizable */
+  background-color: mul;
+  /* Color del área deslizable de la barra de desplazamiento */
+  border-radius: 10px;
+  /* Radio de borde para la parte deslizable */
   border: #000000;
 }
 
 /* Estilos para la barra de desplazamiento en navegadores Opera */
 ::-o-scrollbar {
-  background-color: #800080; /* Color de fondo de la barra de desplazamiento */
+  background-color: #800080;
+  /* Color de fondo de la barra de desplazamiento */
 }
 
 ::-o-scrollbar-thumb {
-  background-color: gold; /* Color del área deslizable de la barra de desplazamiento */
-  border-radius: 10px; /* Radio de borde para la parte deslizable */
-  border: #000000; /* Borde de la parte deslizable */
+  background-color: rgb(255, 215, 0);
+  /* Color del área deslizable de la barra de desplazamiento */
+  border-radius: 10px;
+  /* Radio de borde para la parte deslizable */
+  border: #000000;
+  /* Borde de la parte deslizable */
 }
 
-/* Estilos base comunes para todos los dispositivos */
-
-
-body {
-  font-size: 16px;
+.centralizado {
+  display: flex;
+  /* Utiliza el modelo de caja flexible */
+  justify-content: center;
+  /* Centra los elementos horizontalmente */
+  align-items: center;
+  /* Centra los elementos verticalmente */
 }
 
-header {
-  padding: 5px;
-  margin-top: 10px;
-  font-size: 15px;
-  width: 250px;
-  width: 100%;
-}
-
-nav ul {
-  display: grid;    
-  padding: 5px;
-  margin-left: 220px;
-  width: 250px;
-}
-
-nav ul li {   
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-
-main {
-  padding: 10px;
-}
-
-aside {
-  padding: 10px;
+.table-responsive {
+  overflow-x: auto;
 }
 
 footer {
-  padding: 10px;
-  width: 250px;
+  background-color: #000000;
+  /* Color de fondo */
+  color: rgb(255, 255, 255);
+  /* Color del texto */
   text-align: center;
-  margin: 0 auto;
-  display: grid;
+  /* Alineación del texto al centro */
+  padding: 10px;
+  /* Espaciado interno */
   width: 100%;
+  /* Ancho igual al 100% del contenedor */
 }
 
-.recuadro {
+.redes a {
+  color: rgb(13, 110, 253);
+  /* Color del texto azul */
+  font-size: 35px;
+  /* Tamaño de fuente de 35px */
+  letter-spacing: 20px;
+  /* Espaciado entre letras de 20px */
   width: 100%;
-  padding: 15px;
+  /* Ancho igual al 100% del contenedor */
 }
 
-
+.logo {
+  width: 100px;
+}
 
 /* Estilos específicos para dispositivos móviles */
 /* dispositivos con un ancho máximo de 320px (modo vertical) */
@@ -445,49 +725,42 @@ footer {
     font-size: 20px;
     text-align: center;
     padding: 10px;
-    text-shadow: blue 0 -1px;
+    text-shadow: rgb(13, 110, 253) 0 -1px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
-    width: 250px;
+    width: 320px;
   }
   body {
-    background-color: blue;
+    background-color: rgb(13, 110, 253);
     font-size: 16px;
     width: 100%;
   }
-  header, nav, main, aside, footer {
+  nav,
+  footer {
     width: 100%;
   }
   header {
     padding: 5px;
     margin-top: 10px;
     font-size: 15px;
-    width: 250px;
+    width: 320px;
   }
   nav ul {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 0;
-    margin-left: 15px;
-    width: 250px;
+    margin: 0 auto;
   }
   nav ul li {
-    display: block;
+    display: flex;
     margin-bottom: 10px;
-  }
-  main {
-    padding: 10px;
-  }
-  aside {
-    padding: 10px;
   }
   .descripcion {
     text-align: center;
     margin: 0 auto;
-    width: 250px;
-  }
-  .mapa iframe {
-    height: 100px;    
+    width: 320px;
   }
   video {
     max-height: 480px;
@@ -497,14 +770,12 @@ footer {
     margin-right: auto;
   }
   footer {
+    font-size: 14px;
     padding: 10px;
-    width: 250px;
     text-align: center;
     margin: 0 auto;
-  }
-  .recuadro {
-    width: 100%;
-    padding: 15px;
+    max-height: 480px;
+    max-width: 320px;
   }
 }
 /* dispositivos con un ancho máximo de 480px (modo horizontal) */
@@ -521,15 +792,22 @@ footer {
     font-size: 16px;
   }
   header {
-    padding: 10px;
-    margin-top: 50px;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    width: 480px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
     width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
   }
   nav ul li {
-    margin-right: 20px;
+    display: flex;
+    margin-bottom: 10px;
   }
   main {
     padding: 20px;
@@ -550,163 +828,216 @@ footer {
     text-align: center;
     margin: 0 auto;
   }
-  .recuadro {
-    width: 100%;
-    padding: 20px;
-  }
-  .mapa iframe {
-    height: 250px;
-  }
 }
 /* Estilos para tabletas pequeñas con una resolución de 600x800 */
 @media screen and (min-width: 600px) and (max-width: 800px) {
   .logo {
-    width: 100px;
-    height: 50px;
+    width: 60px;
+    height: 40px;
     margin-top: 30px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
-  
   header {
-    padding: 10px;
-    margin-top: 50px;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    width: 600px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
     width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
   }
   nav ul li {
-    margin-right: 10px;
+    display: flex;
+    margin-bottom: 10px;
   }
-
   main {
-    padding: 30px;
+    padding: 5%;
+    /* Ajustar el relleno en porcentaje */
   }
   aside {
-    padding: 30px;
+    padding: 5%;
+    /* Ajustar el relleno en porcentaje */
   }
   video {
-    max-height: 800px;
-    max-width: 600px;
+    max-height: 600px;
+    max-width: 90%;
+    /* Ajustar el ancho máximo del video en porcentaje */
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   footer {
-    padding: 20px;
-    width: 600px;
+    padding: 5%;
+    /* Ajustar el relleno en porcentaje */
+    width: 90%;
+    /* Ajustar el ancho del footer en porcentaje */
     text-align: center;
     margin: 0 auto;
+    /* Ajustar los márgenes en porcentaje */
   }
-  .recuadro {
-    width: 100%;
-    padding: 30px;
+  .alineado-parrafo {
+    height: 400px;
   }
-  .mapa iframe {
-    height: 250px;
+  .galeria {
+    height: 100%;
   }
 }
 /* Estilos para tabletas de 600x1024 en modo vertical */
 @media screen and (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
   .logo {
     width: 100px;
-    height: 50px;
-    margin-top: 10px;
-  }
-  body {
-    font-size: 18px;
+    /* Ajustar el ancho del logo */
+    height: 80px;
+    /* Ajustar la altura del logo */
+    margin-top: 15px;
+    /* Ajustar el margen superior */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   header {
     padding: 10px;
     margin-top: 50px;
-  }
-  nav ul li {
-    margin-right: 25px;
-  }
-  main {
-    padding: 30px;
-  }
-  aside {
-    padding: 30px;
-  }
-  video {
-    max-height: 1024px;
-    max-width: 600px;
-    display: block;
+    /* Ajustar el margen superior */
+    font-size: 20px;
+    width: 90%;
+    /* Ajustar el ancho del encabezado */
+    text-align: center;
+    /* Centrar el texto del encabezado */
     margin-left: auto;
     margin-right: auto;
   }
-  footer {
-    padding: 20px;
-    width: 600px;
-    text-align: center;
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
     margin: 0 auto;
-  }
-  .recuadro {
     width: 100%;
-    padding: 30px;
   }
-  .mapa iframe {
-    height: 300px;
+  nav ul li {
+    display: flex;
+    margin-bottom: 10px;
+    /* Ajustar el margen inferior */
+  }
+  main {
+    padding: 5%;
+    /* Ajustar el relleno en porcentaje */
+  }
+  aside {
+    padding: 5%;
+    /* Ajustar el relleno en porcentaje */
+  }
+  video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    /* Ajustar el ancho máximo del video en porcentaje */
+  }
+  footer {
+    padding: 5%;
+    /* Ajustar el relleno en porcentaje */
+    text-align: center;
+    margin: 5% auto;
+    /* Ajustar los márgenes en porcentaje */
+    width: 90%;
+    /* Ajustar el ancho del footer en porcentaje */
+  }
+  .galeria {
+    display: grid;
+    grid-template-rows: 480px;
+    /* Define filas de 480px de alto */
   }
 }
 /* Estilos para tabletas de 10 pulgadas en modo vertical */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .logo {
-    width: 100px;
-    height: 50px;
-    margin-top: 15px;
-  }
-  body {
-    font-size: 20px;
-  }
   header {
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+    margin-top: 5%;
+    /* Ajustar el margen superior en porcentaje */
     padding: 10px;
-    margin-top: 50px;
   }
-  nav ul li {
-    margin-right: 30px;
+  header body {
+    height: 500px; /* Altura del 100% de la ventana del navegador */
+    background-color: rgb(13, 110, 253);
+    background-image: linear-gradient(to right, red, blue); /* Degradado de colores */
+    font-family: "Roboto";
+    font-size: 16px;
   }
-  main {
+  header body .body-background {
+    background-color: rgb(13, 110, 253); /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    color: rgb(255, 255, 255); /* Color del texto */
+  }
+  header nav ul li {
+    margin-right: 5%;
+    /* Ajustar el margen derecho en porcentaje */
+  }
+  header aside {
     padding: 40px;
   }
-  aside {
-    padding: 40px;
-  }
-  video {
+  header video {
     max-height: 1024px;
     max-width: 768px;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  footer {
+  header footer {
     padding: 20px;
     width: 768px;
     text-align: center;
     margin: 0 auto;
   }
-  footer .redes a {
+  header footer .redes a {
     font-size: 25px;
     letter-spacing: 10px;
   }
-  .recuadro {
-    width: 100%;
-    padding: 40px;
+  header .alineado-parrafo {
+    font-size: 0.6rem;
+    /* Tamaño de fuente ligeramente reducido */
   }
-  .mapa iframe {
-    height: 350px;
+  header .galeria h4 {
+    font-size: 22px;
+    /* Tamaño de fuente ajustado */
+    margin-bottom: 15px;
+    /* Margen inferior para separar los elementos */
   }
+  header .galeria p {
+    font-size: 18px;
+    /* Tamaño de fuente ajustado */
+    margin-bottom: 15px;
+    /* Margen inferior para separar los elementos */
+  }
+  /* Estilos para tabletas como el iPad en modo horizontal y algunas pantallas de ordenador portátil, netbook y de escritorio */
+  /* Estilos para pantallas medianas */
+  /* Estilos para pantallas panorámicas de al menos 1200px (principalmente portátiles y de escritorio) */
 }
-/* Estilos para tabletas como el iPad en modo horizontal y algunas pantallas de ordenador portátil, netbook y de escritorio */
-@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
   body {
-    font-size: 20px;
+    height: 500px; /* Altura del 100% de la ventana del navegador */
+    background-color: rgb(13, 110, 253);
+    background-image: linear-gradient(to right, red, blue); /* Degradado de colores */
+    font-family: "Roboto";
+    font-size: 16px;
+  }
+  body .body-background {
+    background-color: rgb(13, 110, 253); /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    color: rgb(255, 255, 255); /* Color del texto */
   }
   header {
     padding: 40px;
@@ -714,25 +1045,18 @@ footer {
   nav ul li {
     margin-right: 30px;
   }
-  main {
-    padding: 40px;
-  }
   aside {
     padding: 40px;
   }
   footer {
     padding: 40px;
   }
-  .recuadro {
+  main {
     width: 100%;
     padding: 40px;
   }
-  .mapa iframe {
-    height: 350px;
-  }
 }
-/* Estilos para pantallas medianas */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (max-width: 767px) {
   .grid-item-hijo {
     padding: 10px;
     margin-bottom: 10px;
@@ -743,37 +1067,36 @@ footer {
   .recuadro {
     width: 100%;
   }
-  .mapa iframe {
-    height: 350px;
-  }
-  .Equipo-de-terapeutas {
+  nav ul {
     grid-template-columns: 1fr;
   }
 }
-/* Estilos para pantallas panorámicas de al menos 1200px (principalmente portátiles y de escritorio) */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (min-width: 1367px) {
   body {
+    height: 500px; /* Altura del 100% de la ventana del navegador */
+    background-color: rgb(13, 110, 253);
+    background-image: linear-gradient(to right, red, blue); /* Degradado de colores */
+    font-family: "Roboto";
     font-size: 16px;
   }
-  .header {
+  body .body-background {
+    background-color: rgb(13, 110, 253); /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    color: rgb(255, 255, 255); /* Color del texto */
+  }
+  header {
     padding: 30px;
   }
-  .navbar ul li {
+  nav ul li {
     margin-right: 30px;
   }
-  .main-content {
+  aside {
     padding: 30px;
   }
-  .sidebar {
-    padding: 30px;
-  }
-  .recuadro {
+  main {
     width: 100%;
   }
-  .mapa iframe {
-    height: 400px;
-  }
-  .footer {
+  footer {
     padding: 30px;
   }
   /* Ejemplo de diseño de cuadrícula */
@@ -788,6 +1111,6 @@ footer {
     padding: 20px;
     border-radius: 10px;
   }
-} 
+}
 
 /*# sourceMappingURL=estilos.css.map */
