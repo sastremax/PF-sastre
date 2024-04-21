@@ -22,14 +22,14 @@ ol {
 body {
   height: 500px; /* Altura del 100% de la ventana del navegador */
   background-color: rgb(13, 110, 253);
-  background-image: linear-gradient(to right, rgb(114, 239, 248), blue); /* Degradado de colores */
+  background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff); /* Degradado de colores */
   font-family: "Roboto";
   font-size: 16px;
 }
 
 .body-background {
   background-color: rgb(13, 110, 253); /* Color de fondo */
-  background-image: linear-gradient(to right, rgb(114, 239, 248), blue);
+  background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
   padding: 20px; /* Espaciado interno */
   color: rgb(255, 255, 255); /* Color del texto */
 }
@@ -235,9 +235,9 @@ video {
   /* Centra el contenedor horizontalmente */
 }
 .contenedor-recuadros .recuadro {
-  height: 100px;
+  height: 160px;
   /*Alto*/
-  width: 100px;
+  width: 160px;
   /* Ancho */
   background-color: rgb(255, 255, 255);
   /* Color de fondo */
@@ -413,6 +413,7 @@ button {
 
 aside {
   text-align: center;
+  color: rgb(255, 255, 255);
   /* Alineación del texto al centro */
 }
 aside p {

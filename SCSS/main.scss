@@ -167,9 +167,9 @@ video {
 
     /* Centra el contenedor horizontalmente */
     .recuadro {
-        height: 100px;
+        height: 160px;
         /*Alto*/
-        width: 100px;
+        width: 160px;
         /* Ancho */
         background-color: $c3;
         /* Color de fondo */
@@ -365,7 +365,7 @@ button {
 
 aside {
     text-align: $centro;
-
+    color: $c3;
     /* Alineación del texto al centro */
     p {
         display: inline-block;

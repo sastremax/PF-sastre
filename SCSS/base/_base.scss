@@ -10,13 +10,14 @@ ol {
 body {
   height: 500px; /* Altura del 100% de la ventana del navegador */
   background-color: $c1;
-  background-image: linear-gradient(to right, rgb(114, 239, 248), blue); /* Degradado de colores */
+  background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff); /* Degradado de colores */
   font-family: $tr;
   font-size: 16px;
 }
-  .body-background {      
-      background-color: $c1; /* Color de fondo */   
-      background-image: linear-gradient(to right, rgb(114, 239, 248), blue);   
-      padding: 20px; /* Espaciado interno */
-      color: $c3; /* Color del texto */
-  }
+
+.body-background {      
+  background-color: $c1; /* Color de fondo */ 
+  background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);  
+  padding: 20px; /* Espaciado interno */
+  color: $c3; /* Color del texto */
+}
