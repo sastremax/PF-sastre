@@ -136,6 +136,8 @@ h2 {
   font-size: 40px; /* Tamaño de fuente grande */
   text-align: center; /* Alineación del texto a la izquierda */
   padding: 10px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
 }
 
 h4 {
