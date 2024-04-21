@@ -34,6 +34,10 @@ body {
   color: rgb(255, 255, 255); /* Color del texto */
 }
 
+aside {
+  color: rgb(255, 255, 255); /* Color del texto */
+}
+
 @font-face {
   font-family: "Gwendolin";
   src: url(/fonts/Gwendolyn-Regular.ttf);
@@ -231,8 +235,7 @@ video {
   /* Dirección de los elementos: columna */
   align-items: center;
   /* Centra los elementos horizontalmente */
-  margin: 0 auto;
-  /* Centra el contenedor horizontalmente */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
 }
 .contenedor-recuadros .recuadro {
   height: 160px;
@@ -259,7 +262,7 @@ video {
   /* Distribuye los elementos uniformemente a lo largo del eje principal */
   flex-direction: column;
   /* Dirección de los elementos: en formato columna */
-  transition: 0.7s;
+  transition: 1.7s;
   /* Transición con duración de 0.7 segundos */
 }
 .contenedor-recuadros .recuadro a {
@@ -279,8 +282,7 @@ video {
 
 .aboutgaleria {
   height: 100%;
-  width: 100%;
-  /* Ancho del contenedor al 100% */
+  width: 100%; /* Ancho del contenedor al 100% */
   display: grid;
   /* Establece el contenedor como una cuadrícula */
   grid-template-columns: repeat(4, 1fr);
@@ -296,6 +298,8 @@ video {
 }
 
 .item {
+  width: 200px; /* Ancho de los recuadros */
+  height: 200px; /* Alto de los recuadros */
   border: 3px solid #000;
   background-size: cover;
   background-position: center;
@@ -305,7 +309,7 @@ video {
 }
 .item:hover {
   filter: grayscale(0%);
-  transform: scale(0.9) rotate(360deg);
+  transform: scale(2);
 }
 .item.item1 {
   background-image: url("../assets/images/item1.jpg");
@@ -412,13 +416,10 @@ button {
 }
 
 aside {
-  text-align: center;
-  color: rgb(255, 255, 255);
-  /* Alineación del texto al centro */
+  text-align: center; /* Alineación del texto al centro */
 }
 aside p {
-  display: inline-block;
-  /* Permite centrar el elemento <p> horizontalmente */
+  display: inline-block; /* Permite centrar el elemento <p> horizontalmente */
 }
 
 .titulo {
@@ -577,9 +578,7 @@ input:focus {
 
 .fotoAgrandada img {
   padding-top: 15px;
-  width: 70%;
-  max-width: 70%;
-  max-height: 55%;
+  width: 100%;
   height: auto;
   display: block;
   margin: auto;

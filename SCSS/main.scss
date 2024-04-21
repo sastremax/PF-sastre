@@ -163,9 +163,7 @@ video {
     /* Dirección de los elementos: columna */
     align-items: $centro;
     /* Centra los elementos horizontalmente */
-    margin: 0 auto;
-
-    /* Centra el contenedor horizontalmente */
+    margin: 0 auto;  /* Centra el contenedor horizontalmente */    
     .recuadro {
         height: 160px;
         /*Alto*/
@@ -191,14 +189,12 @@ video {
         /* Distribuye los elementos uniformemente a lo largo del eje principal */
         flex-direction: column;
         /* Dirección de los elementos: en formato columna */
-        transition: 0.7s;
-
+        transition: 1.7s;
         /* Transición con duración de 0.7 segundos */
         a {
             text-decoration: none;
             /* Elimina el subrayado */
         }
-
         &:hover {
             transform: scale(0.7);
             /* Reduce el tamaño del elemento al 70% */
@@ -208,14 +204,14 @@ video {
             /* Establece un radio de borde de 20px */
             color: $c3;
             /* Color del texto */
+            
         }
-    }
+    }  
 }
 
 .aboutgaleria {
     height: 100%;
-    width: 100%;
-    /* Ancho del contenedor al 100% */
+    width: 100%;  /* Ancho del contenedor al 100% */   
     display: grid;
     /* Establece el contenedor como una cuadrícula */
     grid-template-columns: repeat(4, 1fr);
@@ -236,55 +232,48 @@ video {
 }
 
 .item {
+    width: 200px; /* Ancho de los recuadros */
+    height: 200px; /* Alto de los recuadros */
     border: 3px solid #000; // Borde de 3px sólido negro
     background-size: cover; // Tamaño del fondo de la imagen cubriendo completamente el elemento
     background-position: center; // Posición del fondo de la imagen centrado en el elemento
     border-radius: 9px; // Bordes redondeados de 9px
     filter: grayscale(20%); // Imagen en escala de grises al 20% por defecto
-    transition: all 0.9s; // Transición suave de todas las propiedades durante 0.9 segundos  
-
+    transition: all 0.9s; // Transición suave de todas las propiedades durante 0.9 segundos
     // Estilos al pasar el cursor sobre los elementos
     &:hover {
         filter: grayscale(0%); // Elimina la escala de grises al pasar el cursor
-        transform: scale(0.9) rotate(360deg); // Escala del elemento al 90% de su tamaño original al pasar el cursor
+        transform: scale(2); 
     }
-
     // Estilos específicos para cada elemento de la cuadrícula
     &.item1 {
         background-image: url("../assets/images/item1.jpg"); // URL de la imagen de fondo para item1
         grid-area: img1; // Posición en la cuadrícula para item1
     }
-
     &.item2 {
         background-image: url("../assets/images/item2.jpg");
         grid-area: img2; // Posición en la cuadrícula para item2
     }
-
     &.item3 {
         background-image: url("../assets/images/item3.jpg");
         grid-area: img3; // Posición en la cuadrícula para item3
     }
-
     &.item4 {
         background-image: url("../assets/images/item4.jpg");
         grid-area: img4; // Posición en la cuadrícula para item4
     }
-
     &.item5 {
         background-image: url("../assets/images/item5.jpg");
         grid-area: img5; // Posición en la cuadrícula para item5
     }
-
     &.item6 {
         background-image: url("../assets/images/item6.jpg");
         grid-area: img6; // Posición en la cuadrícula para item6
     }
-
     &.item7 {
         background-image: url("../assets/images/item7.jpg");
         grid-area: img7; // Posición en la cuadrícula para item7
     }
-
     &.item8 {
         background-image: url("../assets/images/item8.jpg");
         grid-area: img8; // Posición en la cuadrícula para item8
@@ -364,12 +353,9 @@ button {
 }
 
 aside {
-    text-align: $centro;
-    color: $c3;
-    /* Alineación del texto al centro */
+    text-align: $centro;  /* Alineación del texto al centro */          
     p {
-        display: inline-block;
-        /* Permite centrar el elemento <p> horizontalmente */
+        display: inline-block;   /* Permite centrar el elemento <p> horizontalmente */               
     }
 }
 
@@ -533,9 +519,7 @@ input {
 .fotoAgrandada {
     img {
         padding-top: 15px;
-        width: 70%; // Ajusta el ancho al 70% del contenedor
-        max-width: 70%; // Establece el ancho máximo igual al 70% del contenedor
-        max-height: 55%; // Establece la altura máxima al 50% del contenedor
+        width: 100%; // Ajusta el ancho al 70% del contenedor
         height: auto; // Mantiene la proporción de aspecto original
         display: block; // Asegura que la imagen sea un elemento de bloque
         margin: auto; // Centra la imagen horizontalmente        
