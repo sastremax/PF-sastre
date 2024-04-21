@@ -22,12 +22,14 @@ ol {
 body {
   height: 500px; /* Altura del 100% de la ventana del navegador */
   background-color: rgb(13, 110, 253);
-  background-image: linear-gradient(to right, red, blue); /* Degradado de colores */
+  background-image: linear-gradient(to right, rgb(114, 239, 248), blue); /* Degradado de colores */
   font-family: "Roboto";
   font-size: 16px;
 }
-body .body-background {
+
+.body-background {
   background-color: rgb(13, 110, 253); /* Color de fondo */
+  background-image: linear-gradient(to right, rgb(114, 239, 248), blue);
   padding: 20px; /* Espaciado interno */
   color: rgb(255, 255, 255); /* Color del texto */
 }
