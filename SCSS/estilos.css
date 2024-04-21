@@ -277,13 +277,12 @@ video {
   /* Cambia el color de fondo a negro */
   border-radius: 20px;
   /* Establece un radio de borde de 20px */
-  color: rgb(255, 255, 255);
-  /* Color del texto */
+  color: rgb(255, 255, 255); /* Color del texto */
 }
 
 .aboutgaleria {
-  height: 100%;
-  width: 100%; /* Ancho del contenedor al 100% */
+  height: 90%;
+  width: 90%; /* Ancho del contenedor al 100% */
   display: grid; /* Establece el contenedor como una cuadrícula */
   grid-template-columns: repeat(4, 1fr); /* Define 4 columnas de igual ancho */
   grid-template-rows: repeat(3, auto); /* Define 3 filas de 200px de alto cada una */
@@ -304,7 +303,7 @@ video {
 }
 .item:hover {
   filter: grayscale(0%);
-  transform: scale(1.5);
+  transform: scale(1.2);
   z-index: 1; /* Asegura que la imagen en escala esté por encima de las otras */
 }
 .item.item1 {
