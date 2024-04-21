@@ -128,13 +128,20 @@ main {
 
 h2 {
   font-size: 40px; /* Tamaño de fuente grande */
-  text-align: left; /* Alineación del texto a la izquierda */
+  text-align: center; /* Alineación del texto a la izquierda */
+  padding: 10px;
 }
 
 h4 {
   padding: 18px; /* Espaciado interno */
   font-size: 36px; /* Tamaño de fuente grande */
   text-align: left; /* Alineación del texto a la izquierda */
+}
+
+.spacer {
+  padding-left: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px; /* Margen inferior de 20px */
 }
 
 .container {
