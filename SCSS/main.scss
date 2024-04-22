@@ -1,5 +1,7 @@
 $c13: 1px 1px 2px rgba(0, 0, 0, 0.1);
 $centro: center;
+
+@import "node_modules/bootstrap/scss/bootstrap";
 // Importar las variables, funciones y mixins primero, porque pueden ser necesitados en otros archivos
 @import './utilities/_functions'; // Importar funciones útiles
 @import './utilities/_helpers'; // Importar helpers para estilos
@@ -17,6 +19,7 @@ $centro: center;
 @import './layout/_header'; // Importar estilos del encabezado
 @import './layout/_navigation'; // Importar estilos de navegación
 @import './layout/_sidebar'; // Importar estilos de la barra lateral
+
 
 .favicon {
     vertical-align: middle;
@@ -120,9 +123,9 @@ h4 {
 }
 
 video {
-    max-height: 500px;
+    max-height: 450px;
     /* Establece la altura máxima del video */
-    max-width: 370px;
+    max-width: 95%;
     /* Establece el ancho máximo del video */
     display: block;
     /* Asegura que el video se muestre como un bloque */
@@ -695,6 +698,14 @@ footer {
     width: 100px;
 }
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
 
 /* Estilos específicos para dispositivos móviles */
 /* dispositivos con un ancho máximo de 320px (modo vertical) */
@@ -1138,7 +1149,6 @@ footer {
         background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
         /* Degradado de colores */
         font-family: $tr;
-        font-size: 16px;
     }
 
     .body-background {
