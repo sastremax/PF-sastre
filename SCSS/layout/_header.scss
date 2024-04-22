@@ -1,6 +1,12 @@
+@font-face {
+    font-family: 'Gwendolyn';
+    src: url(/fonts/Gwendolyn-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
 
 h1 {
-    font-family: $tg; /* Fuente Gwendolin */
+    font-family: 'Gwendolyn', Arial, sans-serif;      /* Fuente Gwendolin */
     text-align: $centro; /* Alineación del texto al centro */
     padding: 18px; /* Espaciado interno */
     margin-right: 2px; /* Margen superior para separar del icono */

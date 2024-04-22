@@ -19,46 +19,20 @@ ol {
   padding: 0;
 }
 
-body {
-  height: 500px; /* Altura del 100% de la ventana del navegador */
-  background-color: rgb(13, 110, 253);
-  background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff); /* Degradado de colores */
-  font-family: "Roboto";
-  font-size: 16px;
-}
-
-.body-background {
-  background-color: rgb(13, 110, 253); /* Color de fondo */
-  background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
-  padding: 20px; /* Espaciado interno */
-  color: rgb(255, 255, 255); /* Color del texto */
-}
-
-aside {
-  color: rgb(255, 255, 255); /* Color del texto */
-}
-
 @font-face {
-  font-family: "Gwendolin";
+  font-family: "Gwendolyn";
   src: url(/fonts/Gwendolyn-Regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto Slab";
   src: url(/fonts/RobotoSlab-VariableFont_wght.ttf);
   font-weight: normal;
   font-style: normal;
 }
-html {
-  font-family: "Gwendolin", sans-serif;
-}
-
-h1 {
-  font-family: "Gwendolin", sans-serif;
-}
-
 footer {
+  margin-top: 20px;
   background-color: #000000; /* Color de fondo */
   color: rgb(255, 255, 255); /* Color del texto */
   text-align: center; /* Alineación del texto al centro */
@@ -72,8 +46,14 @@ footer {
   letter-spacing: 20px; /* Espaciado entre letras de 20px */
 }
 
+@font-face {
+  font-family: "Gwendolyn";
+  src: url(/fonts/Gwendolyn-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
 h1 {
-  font-family: "Gwendolin"; /* Fuente Gwendolin */
+  font-family: "Gwendolyn", Arial, sans-serif; /* Fuente Gwendolin */
   text-align: center; /* Alineación del texto al centro */
   padding: 18px; /* Espaciado interno */
   margin-right: 2px; /* Margen superior para separar del icono */
@@ -97,6 +77,21 @@ header nav ul li a:hover {
   vertical-align: middle;
 }
 
+body {
+  height: 500px; /* Altura del 100% de la ventana del navegador */
+  background-color: rgb(13, 110, 253);
+  background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff); /* Degradado de colores */
+  font-family: "Roboto Slab", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.body-background {
+  background-color: rgb(13, 110, 253); /* Color de fondo */
+  background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
+  padding: 20px; /* Espaciado interno */
+  color: rgb(255, 255, 255); /* Color del texto */
+}
+
 section {
   margin: 0;
   /* Establece el margen exterior a 0 */
@@ -104,7 +99,7 @@ section {
   /* Establece el relleno a automatico */
   font-size: 20px;
   /* Tamaño de fuente */
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Roboto Slab", Arial, sans-serif;
   /* Familia de fuentes primero Arial */
 }
 
@@ -436,6 +431,7 @@ aside {
   text-align: center;
   /* Alineación del texto al centro */
 }
+
 aside p {
   display: inline-block;
   /* Permite centrar el elemento <p> horizontalmente */
@@ -712,31 +708,6 @@ input:focus {
 
 .table-responsive {
   overflow-x: auto;
-}
-
-footer {
-  margin-top: 20px;
-  background-color: #000000;
-  /* Color de fondo */
-  color: rgb(255, 255, 255);
-  /* Color del texto */
-  text-align: center;
-  /* Alineación del texto al centro */
-  padding: 10px;
-  /* Espaciado interno */
-  width: 100%;
-  /* Ancho igual al 100% del contenedor */
-}
-
-.redes a {
-  color: rgb(13, 110, 253);
-  /* Color del texto azul */
-  font-size: 35px;
-  /* Tamaño de fuente de 35px */
-  letter-spacing: 20px;
-  /* Espaciado entre letras de 20px */
-  width: 100%;
-  /* Ancho igual al 100% del contenedor */
 }
 
 .logo {
@@ -1076,7 +1047,7 @@ footer {
     background-color: rgb(13, 110, 253);
     background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
     /* Degradado de colores */
-    font-family: "Roboto";
+    font-family: "Roboto Slab", Arial, sans-serif;
     font-size: 16px;
   }
   header body .body-background {
@@ -1117,7 +1088,7 @@ footer {
     background-color: rgb(13, 110, 253);
     background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
     /* Degradado de colores */
-    font-family: "Roboto";
+    font-family: "Roboto Slab", Arial, sans-serif;
   }
   .body-background {
     background-color: rgb(13, 110, 253);
@@ -1161,7 +1132,7 @@ footer {
     background-color: rgb(13, 110, 253);
     background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
     /* Degradado de colores */
-    font-family: "Roboto";
+    font-family: "Roboto Slab", Arial, sans-serif;
     font-size: 16px;
   }
   body .body-background {
@@ -1211,7 +1182,7 @@ footer {
     background-color: rgb(13, 110, 253);
     background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
     /* Degradado de colores */
-    font-family: "Roboto";
+    font-family: "Roboto Slab", Arial, sans-serif;
     font-size: 16px;
   }
   body .body-background {

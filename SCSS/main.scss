@@ -1,6 +1,3 @@
-$c13: 1px 1px 2px rgba(0, 0, 0, 0.1);
-$centro: center;
-
 // Importar las variables, funciones y mixins primero, porque pueden ser necesitados en otros archivos
 @import './utilities/_functions'; // Importar funciones útiles
 @import './utilities/_helpers'; // Importar helpers para estilos
@@ -19,9 +16,23 @@ $centro: center;
 @import './layout/_navigation'; // Importar estilos de navegación
 @import './layout/_sidebar'; // Importar estilos de la barra lateral
 
-
 .favicon {
     vertical-align: middle;
+}
+
+body {
+    height: 500px; /* Altura del 100% de la ventana del navegador */
+    background-color: $c1;
+    background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff); /* Degradado de colores */
+    font-family: 'Roboto Slab', Arial, sans-serif;
+    font-size: 16px;
+}
+
+.body-background {      
+    background-color: $c1; /* Color de fondo */ 
+    background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);  
+    padding: 20px; /* Espaciado interno */
+    color: $c3; /* Color del texto */
 }
 
 section {
@@ -31,7 +42,7 @@ section {
     /* Establece el relleno a automatico */
     font-size: 20px;
     /* Tamaño de fuente */
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Roboto Slab', Arial, sans-serif;
     /* Familia de fuentes primero Arial */
 }
 
@@ -380,11 +391,13 @@ aside {
     text-align: $centro;
 
     /* Alineación del texto al centro */
-    p {
-        display: inline-block;
-        /* Permite centrar el elemento <p> horizontalmente */
-        background-color: $c3;
-    }
+    
+}
+
+aside p {
+    display: inline-block;
+    /* Permite centrar el elemento <p> horizontalmente */
+    background-color: $c3;
 }
 
 .titulo {
@@ -666,46 +679,11 @@ input {
     overflow-x: auto;
 }
 
-footer {
-    margin-top: 20px;
-    background-color: $c2;
-    /* Color de fondo */
-    color: $c3;
-    /* Color del texto */
-    text-align: $centro;
-    /* Alineación del texto al centro */
-    padding: 10px;
-    /* Espaciado interno */
-    width: 100%;
-    /* Ancho igual al 100% del contenedor */
-
-}
-
-.redes a {
-    color: $c1;
-    /* Color del texto azul */
-    font-size: 35px;
-    /* Tamaño de fuente de 35px */
-    letter-spacing: 20px;
-    /* Espaciado entre letras de 20px */
-    width: 100%;
-    /* Ancho igual al 100% del contenedor */
-
-}
-
 .logo {
     width: 100px;  // Ajusta el ancho de la imagen
     height: auto;  // Ajusta la altura automáticamente para mantener la proporción
 }
 
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-);
 
 /* Estilos específicos para dispositivos móviles */
 /* dispositivos con un ancho máximo de 320px (modo vertical) */
@@ -1097,7 +1075,7 @@ $grid-breakpoints: (
             background-color: $c1;
             background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
             /* Degradado de colores */
-            font-family: $tr;
+            font-family: 'Roboto Slab', Arial, sans-serif;
             font-size: 16px;
 
             .body-background {
@@ -1148,7 +1126,7 @@ $grid-breakpoints: (
         background-color: $c1;
         background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
         /* Degradado de colores */
-        font-family: $tr;
+        font-family: 'Roboto Slab', Arial, sans-serif;
     }
 
     .body-background {
@@ -1198,7 +1176,7 @@ $grid-breakpoints: (
             background-color: $c1;
             background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
             /* Degradado de colores */
-            font-family: $tr;
+            font-family: 'Roboto Slab', Arial, sans-serif;
             font-size: 16px;
 
             .body-background {
@@ -1262,7 +1240,7 @@ $grid-breakpoints: (
             background-color: $c1;
             background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
             /* Degradado de colores */
-            font-family: $tr;
+            font-family: 'Roboto Slab', Arial, sans-serif;
             font-size: 16px;
 
             .body-background {
