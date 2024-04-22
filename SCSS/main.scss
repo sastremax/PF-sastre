@@ -1,38 +1,43 @@
-// Importar las variables, funciones y mixins primero, porque pueden ser necesitados en otros archivos
-@import './utilities/_functions'; // Importar funciones útiles
-@import './utilities/_helpers'; // Importar helpers para estilos
-@import './utilities/_mixins'; // Importar mixins para reutilización de estilos
-@import './utilities/_variables'; // Importar variables globales
-@import './utilities/_images'; // Importar tamaño de imagenes
+// Importar las variables, funciones y mixins primero, porque pueden ser necesitados en otros archivos //
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 // Bases generales del sitio
-@import './base/_reset'; // Importar reset para reiniciar los estilos por defecto del navegador
+//@import './base/reset';  // Importar reset para reiniciar los estilos por defecto del navegador
 @import './base/_base'; // Importar el archivo _base.scss que contiene estilos base (elementos HTML, etc.)
 @import './base/_typography'; // Importar estilos de tipografía
-
-// Layouts del sitio
+@import './utilities/_variables'; // Importar variables globales
+@import './utilities/_mixins'; // Importar mixins para reutilización de estilos
+@import './utilities/_boxes'; // Importar mixins para reutilización de estilos
+@import './utilities/_images'; // Importar tamaño de imagenes
 @import './layout/_footer'; // Importar estilos del pie de página
 @import './layout/_header'; // Importar estilos del encabezado
-@import './layout/_navigation'; // Importar estilos de navegación
-@import './layout/_sidebar'; // Importar estilos de la barra lateral
 
 .favicon {
     vertical-align: middle;
 }
 
 body {
-    height: 500px; /* Altura del 100% de la ventana del navegador */
+    height: 500px;
+    /* Altura del 100% de la ventana del navegador */
     background-color: $c1;
-    background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff); /* Degradado de colores */
+    background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
+    /* Degradado de colores */
     font-family: 'Roboto Slab', Arial, sans-serif;
     font-size: 16px;
 }
 
-.body-background {      
-    background-color: $c1; /* Color de fondo */ 
-    background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);  
-    padding: 20px; /* Espaciado interno */
-    color: $c3; /* Color del texto */
+.body-background {
+    background-color: $c1;
+    /* Color de fondo */
+    background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
+    padding: 20px;
+    /* Espaciado interno */
+    color: $c3;
+    /* Color del texto */
 }
 
 section {
@@ -391,7 +396,7 @@ aside {
     text-align: $centro;
 
     /* Alineación del texto al centro */
-    
+
 }
 
 aside p {
@@ -563,9 +568,9 @@ input {
         width: 50%; // Ajusta el ancho al % del contenedor
         height: 50%; // Mantiene la proporción de aspecto original
         display: grid; // Asegura que la imagen sea un elemento de bloque
-        margin-left: 15px;        
-        margin-right: 15px;  
-        
+        margin-left: 15px;
+        margin-right: 15px;
+
     }
 }
 
@@ -679,12 +684,12 @@ input {
 }
 
 .logo {
-    width: 100px;  // Ajusta el ancho de la imagen
-    height: auto;  // Ajusta la altura automáticamente para mantener la proporción
+    width: 100px; // Ajusta el ancho de la imagen
+    height: auto; // Ajusta la altura automáticamente para mantener la proporción
 }
 
 .row {
-    display: flex;    
+    display: flex;
     height: 50%;
     width: 100%;
 }
@@ -917,7 +922,7 @@ input {
         max-width: 600px;
     }
 
-    .contenedor-recuadros{
+    .contenedor-recuadros {
         height: 70%;
         width: 70%;
     }
@@ -976,7 +981,8 @@ input {
 .galeria.container-fluid {
     max-width: 600px;
     max-height: 800px;
-    overflow: auto; /* Añade un scroll si el contenido es más grande */
+    overflow: auto;
+    /* Añade un scroll si el contenido es más grande */
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -1292,6 +1298,5 @@ input {
             border-radius: 10px;
         }
     }
-    
 
 }

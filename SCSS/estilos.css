@@ -1,10 +1,4 @@
 @charset "UTF-8";
-img {
-  float: left;
-  width: 80px;
-  height: 80px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +25,19 @@ ol {
   font-weight: normal;
   font-style: normal;
 }
+.Jumbotromp {
+  background-color: rgb(13, 110, 253); /* color de fondo: negro */
+  text-shadow: #000000 -2px; /* Sombra de texto */
+  font-size: 16px; /* Tamaño de fuente */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+img {
+  float: left;
+  width: 80px;
+  height: 80px;
+}
+
 footer {
   margin-top: 20px;
   background-color: #000000; /* Color de fondo */
@@ -78,18 +85,23 @@ header nav ul li a:hover {
 }
 
 body {
-  height: 500px; /* Altura del 100% de la ventana del navegador */
+  height: 500px;
+  /* Altura del 100% de la ventana del navegador */
   background-color: rgb(13, 110, 253);
-  background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff); /* Degradado de colores */
+  background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
+  /* Degradado de colores */
   font-family: "Roboto Slab", Arial, sans-serif;
   font-size: 16px;
 }
 
 .body-background {
-  background-color: rgb(13, 110, 253); /* Color de fondo */
+  background-color: rgb(13, 110, 253);
+  /* Color de fondo */
   background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
-  padding: 20px; /* Espaciado interno */
-  color: rgb(255, 255, 255); /* Color del texto */
+  padding: 20px;
+  /* Espaciado interno */
+  color: rgb(255, 255, 255);
+  /* Color del texto */
 }
 
 section {
@@ -956,7 +968,8 @@ input:focus {
 .galeria.container-fluid {
   max-width: 600px;
   max-height: 800px;
-  overflow: auto; /* Añade un scroll si el contenido es más grande */
+  overflow: auto;
+  /* Añade un scroll si el contenido es más grande */
   padding-left: 5px;
   padding-right: 5px;
 }
