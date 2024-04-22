@@ -4,13 +4,9 @@
 @import './utilities/_mixins'; // Importar mixins para reutilización de estilos
 @import './utilities/_variables'; // Importar variables globales
 @import './utilities/_images'; // Importar tamaño de imagenes
-
-// Bases generales del sitio
 @import './base/_reset'; // Importar reset para reiniciar los estilos por defecto del navegador
 @import './base/_base'; // Importar el archivo _base.scss que contiene estilos base (elementos HTML, etc.)
 @import './base/_typography'; // Importar estilos de tipografía
-
-// Layouts del sitio
 @import './layout/_footer'; // Importar estilos del pie de página
 @import './layout/_header'; // Importar estilos del encabezado
 @import './layout/_navigation'; // Importar estilos de navegación
