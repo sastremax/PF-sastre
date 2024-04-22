@@ -784,56 +784,78 @@ footer {
 }
 /* dispositivos con un ancho máximo de 480px (modo horizontal) */
 @media screen and (max-width: 480px) {
-  .logo {
-    width: 50px;
-    height: 30px;
-    margin-top: 30px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  body {
+  section {
     font-size: 16px;
   }
-  header {
-    padding: 5px;
-    margin-top: 10px;
-    font-size: 20px;
-    width: 480px;
+  article {
+    height: auto;
+    padding-right: 0;
   }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0 auto;
+  h4 {
+    font-size: 24px;
+  }
+  .videosCentrado {
+    font-size: 18px;
+  }
+  .icono {
+    max-width: 16px;
+  }
+  .aboutgaleria {
+    height: auto;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+  }
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5 {
+    background-size: cover;
+    background-position: center;
+  }
+  .titulo {
+    font-size: 16px;
+  }
+  .terapeutas-container {
+    padding: 8px;
+  }
+  .Equipo-de-terapeutas {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .about-grid {
+    margin-left: 20px;
+  }
+  .service-container {
+    max-width: 480px;
+  }
+  .whats {
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    right: 20px;
+  }
+  .formulario-turnos label {
+    margin-left: 0;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+  }
+  .logo {
+    width: 80px;
+    height: 60px;
+    margin-top: 20px;
+  }
+  header {
+    font-size: 12px;
     width: 100%;
   }
-  nav ul li {
-    display: flex;
-    margin-bottom: 10px;
-  }
-  main {
-    padding: 20px;
-  }
-  aside {
-    padding: 20px;
-  }
   video {
-    max-height: 480px;
-    max-width: 480px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  footer {
-    padding: 20px;
-    width: 480px;
-    text-align: center;
-    margin: 0 auto;
+    max-height: 360px;
+    max-width: 100%;
   }
 }
-/* Estilos para tabletas pequeñas con una resolución de 600x800 */
+/* Styles for small tablets with a resolution of 600x800 */
 @media screen and (min-width: 600px) and (max-width: 800px) {
   .logo {
     width: 60px;
@@ -865,12 +887,11 @@ footer {
     margin-bottom: 10px;
   }
   main {
-    padding: 5%;
-    /* Ajustar el relleno en porcentaje */
+    padding: 5%; /* Ajustar el relleno en porcentaje */
   }
   aside {
     padding: 5%;
-    /* Ajustar el relleno en porcentaje */
+    /* Adjust padding in percentage */
   }
   video {
     max-height: 600px;
@@ -973,11 +994,12 @@ footer {
     margin-top: 5%;
     /* Ajustar el margen superior en porcentaje */
     padding: 10px;
+    letter-spacing: 10px;
   }
   header body {
     height: 500px; /* Altura del 100% de la ventana del navegador */
     background-color: rgb(13, 110, 253);
-    background-image: linear-gradient(to right, red, blue); /* Degradado de colores */
+    background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff); /* Degradado de colores */
     font-family: "Roboto";
     font-size: 16px;
   }
@@ -993,6 +1015,9 @@ footer {
   header aside {
     padding: 40px;
   }
+  header footer .redes a {
+    font-size: 25px;
+  }
   header video {
     max-height: 1024px;
     max-width: 768px;
@@ -1006,21 +1031,40 @@ footer {
     text-align: center;
     margin: 0 auto;
   }
-  header footer .redes a {
-    font-size: 25px;
-    letter-spacing: 10px;
-  }
-  header .alineado-parrafo {
-    font-size: 0.6rem;
-    /* Tamaño de fuente ligeramente reducido */
-  }
-  header .galeria h4 {
+  .galeria h4 {
     font-size: 22px;
     /* Tamaño de fuente ajustado */
     margin-bottom: 15px;
-    /* Margen inferior para separar los elementos */
+    background-color: rgb(13, 110, 253);
+    background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff); /* Degradado de colores */
+    font-family: "Roboto";
+    font-size: 16px;
   }
-  header .galeria p {
+  .body-background {
+    background-color: rgb(13, 110, 253); /* Color de fondo */
+  }
+  aside {
+    padding: 40px;
+  }
+  main {
+    width: 100%;
+    padding: 40px;
+  }
+  .alineado-parrafo {
+    font-size: 0.6rem;
+    /* Tamaño de fuente ligeramente reducido */
+  }
+  .alineado-parrafo .grid-item-hijo {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .alineado-parrafo nav ul li {
+    margin-right: 15px;
+  }
+  .alineado-parrafo .recuadro {
+    width: 100%;
+  }
+  .alineado-parrafo .galeria p {
     font-size: 18px;
     /* Tamaño de fuente ajustado */
     margin-bottom: 15px;
@@ -1034,7 +1078,7 @@ footer {
   body {
     height: 500px; /* Altura del 100% de la ventana del navegador */
     background-color: rgb(13, 110, 253);
-    background-image: linear-gradient(to right, red, blue); /* Degradado de colores */
+    background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff); /* Degradado de colores */
     font-family: "Roboto";
     font-size: 16px;
   }
@@ -1079,7 +1123,7 @@ footer {
   body {
     height: 500px; /* Altura del 100% de la ventana del navegador */
     background-color: rgb(13, 110, 253);
-    background-image: linear-gradient(to right, red, blue); /* Degradado de colores */
+    background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff); /* Degradado de colores */
     font-family: "Roboto";
     font-size: 16px;
   }
