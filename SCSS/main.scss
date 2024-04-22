@@ -694,7 +694,8 @@ footer {
 }
 
 .logo {
-    width: 100px;
+    width: 100px;  // Ajusta el ancho de la imagen
+    height: auto;  // Ajusta la altura automáticamente para mantener la proporción
 }
 
 $grid-breakpoints: (

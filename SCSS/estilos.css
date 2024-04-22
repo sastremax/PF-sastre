@@ -741,6 +741,7 @@ footer {
 
 .logo {
   width: 100px;
+  height: auto;
 }
 
 /* Estilos específicos para dispositivos móviles */
