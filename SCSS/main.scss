@@ -338,10 +338,10 @@ button {
 }
 
 aside {
-    text-align: $centro;  /* Alineación del texto al centro */ 
-    color: $c3 !important;         
+    text-align: $centro;  /* Alineación del texto al centro */      
     p {
         display: inline-block;   /* Permite centrar el elemento <p> horizontalmente */
+        background-color: $c3; 
     }
 }
 

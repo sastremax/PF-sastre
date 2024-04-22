@@ -409,10 +409,10 @@ button {
 
 aside {
   text-align: center; /* Alineación del texto al centro */
-  color: rgb(255, 255, 255) !important;
 }
 aside p {
   display: inline-block; /* Permite centrar el elemento <p> horizontalmente */
+  background-color: rgb(255, 255, 255);
 }
 
 .titulo {
