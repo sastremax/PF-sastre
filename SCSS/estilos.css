@@ -175,7 +175,7 @@ h4 {
 }
 
 .videosCentrado {
-  margin-top: 15px;
+  margin-top: 40px;
   /* Margen superior de 15px */
   margin-bottom: 10px;
   /* Margen inferior de 10px */
@@ -594,8 +594,8 @@ input:focus {
 
 .fotoAgrandada img {
   padding-top: 15px;
-  width: 35%;
-  height: 35%;
+  width: 50%;
+  height: 50%;
   display: grid;
   margin-left: 15px;
   margin-right: 15px;

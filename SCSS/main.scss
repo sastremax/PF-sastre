@@ -119,7 +119,7 @@ h4 {
 }
 
 .videosCentrado {
-    margin-top: 15px;
+    margin-top: 40px;
     /* Margen superior de 15px */
     margin-bottom: 10px;
     /* Margen inferior de 10px */
@@ -560,8 +560,8 @@ input {
 .fotoAgrandada {
     img {
         padding-top: 15px;
-        width: 35%; // Ajusta el ancho al % del contenedor
-        height: 35%; // Mantiene la proporción de aspecto original
+        width: 50%; // Ajusta el ancho al % del contenedor
+        height: 50%; // Mantiene la proporción de aspecto original
         display: grid; // Asegura que la imagen sea un elemento de bloque
         margin-left: 15px;        
         margin-right: 15px;  
@@ -1293,4 +1293,5 @@ input {
         }
     }
     
+
 }
