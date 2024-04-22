@@ -122,39 +122,52 @@ article ul li {
 }
 
 .alineado-parrafo {
-  margin-left: 30px; /* Margen izquierdo para alinear párrafos */
+  margin-left: 30px;
+  /* Margen izquierdo para alinear párrafos */
 }
 
 main {
-  display: flex; /* Se establece el contenedor principal como flexbox */
-  flex-direction: column; /* Dirección de los elementos: columna */
-  align-items: center; /* Centra los elementos horizontalmente */
-  gap: 20px; /* Espacio entre los elementos */
+  display: flex;
+  /* Se establece el contenedor principal como flexbox */
+  flex-direction: column;
+  /* Dirección de los elementos: columna */
+  align-items: center;
+  /* Centra los elementos horizontalmente */
+  gap: 20px;
+  /* Espacio entre los elementos */
 }
 
 h2 {
-  font-size: 40px; /* Tamaño de fuente grande */
-  text-align: center; /* Alineación del texto a la izquierda */
+  font-size: 40px;
+  /* Tamaño de fuente grande */
+  text-align: center;
+  /* Alineación del texto a la izquierda */
   padding: 10px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
 
 h4 {
-  padding: 18px; /* Espaciado interno */
-  font-size: 36px; /* Tamaño de fuente grande */
-  text-align: left; /* Alineación del texto a la izquierda */
+  padding: 18px;
+  /* Espaciado interno */
+  font-size: 36px;
+  /* Tamaño de fuente grande */
+  text-align: left;
+  /* Alineación del texto a la izquierda */
 }
 
 .spacer {
   padding-left: 20px;
   margin-left: 20px;
-  margin-bottom: 20px; /* Margen inferior de 20px */
-  height: 90px; /* Altura espaciada */
+  margin-bottom: 20px;
+  /* Margen inferior de 20px */
+  height: 90px;
+  /* Altura espaciada */
 }
 
 .container {
-  padding: 10px; /* Relleno de 10px en todos los lados del contenedor */
+  padding: 10px;
+  /* Relleno de 10px en todos los lados del contenedor */
 }
 
 .parrafo-principal {
@@ -238,7 +251,8 @@ video {
   /* Dirección de los elementos: columna */
   align-items: center;
   /* Centra los elementos horizontalmente */
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  margin: 0 auto;
+  /* Centra el contenedor horizontalmente */
 }
 .contenedor-recuadros .recuadro {
   height: 160px;
@@ -279,23 +293,33 @@ video {
   /* Cambia el color de fondo a negro */
   border-radius: 20px;
   /* Establece un radio de borde de 20px */
-  color: rgb(255, 255, 255); /* Color del texto */
+  color: rgb(255, 255, 255);
+  /* Color del texto */
 }
 
 .aboutgaleria {
   height: 90%;
-  width: 90%; /* Ancho del contenedor al 100% */
-  display: grid; /* Establece el contenedor como una cuadrícula */
-  grid-template-columns: repeat(4, 1fr); /* Define 4 columnas de igual ancho */
-  grid-template-rows: repeat(3, auto); /* Define 3 filas de 200px de alto cada una */
-  grid-template-areas: "img1 img2 img3 img3" "img1 img4 img5 img6" "img7 img4 img8 img8"; /* Define el área de la cuadrícula para los elementos */
-  grid-gap: 15px; /* Espacio entre las celdas de la cuadrícula */
-  padding: 20px; /* Espacio interno del contenedor */
+  width: 90%;
+  /* Ancho del contenedor al 100% */
+  display: grid;
+  /* Establece el contenedor como una cuadrícula */
+  grid-template-columns: repeat(4, 1fr);
+  /* Define 4 columnas de igual ancho */
+  grid-template-rows: repeat(3, auto);
+  /* Define 3 filas de 200px de alto cada una */
+  grid-template-areas: "img1 img2 img3 img3" "img1 img4 img5 img6" "img7 img4 img8 img8";
+  /* Define el área de la cuadrícula para los elementos */
+  grid-gap: 15px;
+  /* Espacio entre las celdas de la cuadrícula */
+  padding: 20px;
+  /* Espacio interno del contenedor */
 }
 
 .item {
-  width: 200px; /* Ancho de los recuadros */
-  height: 200px; /* Alto de los recuadros */
+  width: 200px;
+  /* Ancho de los recuadros */
+  height: 200px;
+  /* Alto de los recuadros */
   border: 3px solid #000;
   background-size: cover;
   background-position: center;
@@ -306,7 +330,8 @@ video {
 .item:hover {
   filter: grayscale(0%);
   transform: scale(1.2);
-  z-index: 1; /* Asegura que la imagen en escala esté por encima de las otras */
+  z-index: 1;
+  /* Asegura que la imagen en escala esté por encima de las otras */
 }
 .item.item1 {
   background-image: url("../assets/images/item1.jpg");
@@ -408,10 +433,12 @@ button {
 }
 
 aside {
-  text-align: center; /* Alineación del texto al centro */
+  text-align: center;
+  /* Alineación del texto al centro */
 }
 aside p {
-  display: inline-block; /* Permite centrar el elemento <p> horizontalmente */
+  display: inline-block;
+  /* Permite centrar el elemento <p> horizontalmente */
   background-color: rgb(255, 255, 255);
 }
 
@@ -574,8 +601,10 @@ input:focus {
   width: 80%;
   height: 80%;
   display: block;
-  margin-left: auto; /* Centra el video horizontalmente */
-  margin-right: auto; /* Centra el video horizontalmente */
+  margin-left: auto;
+  /* Centra el video horizontalmente */
+  margin-right: auto;
+  /* Centra el video horizontalmente */
 }
 
 .turnos {
@@ -855,68 +884,112 @@ footer {
     max-width: 100%;
   }
 }
-/* Styles for small tablets with a resolution of 600x800 */
 @media screen and (min-width: 600px) and (max-width: 800px) {
-  .logo {
-    width: 60px;
-    height: 40px;
-    margin-top: 30px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  section {
+    font-size: 14px;
   }
-  body {
+  article {
+    height: auto;
+    padding-right: 0;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  .videosCentrado {
     font-size: 16px;
   }
-  header {
-    padding: 5px;
-    margin-top: 10px;
-    font-size: 20px;
-    width: 600px;
+  .icono {
+    max-width: 14px;
   }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0 auto;
+  .aboutgaleria {
+    height: auto;
     width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
   }
-  nav ul li {
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5 {
+    background-size: cover;
+    background-position: center;
+  }
+  .titulo {
+    font-size: 14px;
+  }
+  .terapeutas-container {
+    padding: 8px;
+  }
+  .Equipo-de-terapeutas {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .about-grid {
+    margin-left: 18px;
+  }
+  .service-container {
+    max-width: 600px;
+  }
+  .contenedor-recuadros {
+    height: 70%;
+    width: 70%;
+  }
+  .contenedor-padre {
+    margin-left: 12px;
+    width: 95%;
+    height: 50%;
     display: flex;
-    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
   }
-  main {
-    padding: 5%; /* Ajustar el relleno en porcentaje */
-  }
-  aside {
-    padding: 5%;
-    /* Adjust padding in percentage */
-  }
-  video {
-    max-height: 600px;
-    max-width: 90%;
-    /* Ajustar el ancho máximo del video en porcentaje */
+  .fotoAgrandada img {
+    padding-top: 10px;
+    width: 70%;
+    height: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  footer {
-    padding: 5%;
-    /* Ajustar el relleno en porcentaje */
-    width: 90%;
-    /* Ajustar el ancho del footer en porcentaje */
-    text-align: center;
-    margin: 0 auto;
-    /* Ajustar los márgenes en porcentaje */
+  .whats {
+    height: 56px;
+    width: 56px;
+    font-size: 28px;
+    right: 18px;
   }
-  .alineado-parrafo {
-    height: 400px;
+  .formulario-turnos label {
+    margin-left: 0;
   }
-  .galeria {
-    height: 100%;
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+  }
+  .logo {
+    width: 70px;
+    height: 50px;
+    margin-top: 18px;
+  }
+  header {
+    font-size: 12px;
+    width: 100%;
+  }
+  video {
+    padding-top: 10px;
+    max-width: 100%;
+    max-height: 100%;
   }
 }
+.galeria.container-fluid {
+  max-width: 600px;
+  max-height: 800px;
+  overflow: auto; /* Añade un scroll si el contenido es más grande */
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.galeria .col-sm-12 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 /* Estilos para tabletas de 600x1024 en modo vertical */
 @media screen and (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
   .logo {
@@ -976,7 +1049,7 @@ footer {
     text-align: center;
     margin: 5% auto;
     /* Ajustar los márgenes en porcentaje */
-    width: 90%;
+    width: 95%;
     /* Ajustar el ancho del footer en porcentaje */
   }
   .galeria {
@@ -997,16 +1070,21 @@ footer {
     letter-spacing: 10px;
   }
   header body {
-    height: 500px; /* Altura del 100% de la ventana del navegador */
+    height: 500px;
+    /* Altura del 100% de la ventana del navegador */
     background-color: rgb(13, 110, 253);
-    background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff); /* Degradado de colores */
+    background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
+    /* Degradado de colores */
     font-family: "Roboto";
     font-size: 16px;
   }
   header body .body-background {
-    background-color: rgb(13, 110, 253); /* Color de fondo */
-    padding: 20px; /* Espaciado interno */
-    color: rgb(255, 255, 255); /* Color del texto */
+    background-color: rgb(13, 110, 253);
+    /* Color de fondo */
+    padding: 20px;
+    /* Espaciado interno */
+    color: rgb(255, 255, 255);
+    /* Color del texto */
   }
   header nav ul li {
     margin-right: 5%;
@@ -1036,12 +1114,14 @@ footer {
     /* Tamaño de fuente ajustado */
     margin-bottom: 15px;
     background-color: rgb(13, 110, 253);
-    background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff); /* Degradado de colores */
+    background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
+    /* Degradado de colores */
     font-family: "Roboto";
     font-size: 16px;
   }
   .body-background {
-    background-color: rgb(13, 110, 253); /* Color de fondo */
+    background-color: rgb(13, 110, 253);
+    /* Color de fondo */
   }
   aside {
     padding: 40px;
@@ -1076,16 +1156,21 @@ footer {
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
   body {
-    height: 500px; /* Altura del 100% de la ventana del navegador */
+    height: 500px;
+    /* Altura del 100% de la ventana del navegador */
     background-color: rgb(13, 110, 253);
-    background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff); /* Degradado de colores */
+    background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
+    /* Degradado de colores */
     font-family: "Roboto";
     font-size: 16px;
   }
   body .body-background {
-    background-color: rgb(13, 110, 253); /* Color de fondo */
-    padding: 20px; /* Espaciado interno */
-    color: rgb(255, 255, 255); /* Color del texto */
+    background-color: rgb(13, 110, 253);
+    /* Color de fondo */
+    padding: 20px;
+    /* Espaciado interno */
+    color: rgb(255, 255, 255);
+    /* Color del texto */
   }
   header {
     padding: 40px;
@@ -1121,16 +1206,21 @@ footer {
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (min-width: 1367px) {
   body {
-    height: 500px; /* Altura del 100% de la ventana del navegador */
+    height: 500px;
+    /* Altura del 100% de la ventana del navegador */
     background-color: rgb(13, 110, 253);
-    background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff); /* Degradado de colores */
+    background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
+    /* Degradado de colores */
     font-family: "Roboto";
     font-size: 16px;
   }
   body .body-background {
-    background-color: rgb(13, 110, 253); /* Color de fondo */
-    padding: 20px; /* Espaciado interno */
-    color: rgb(255, 255, 255); /* Color del texto */
+    background-color: rgb(13, 110, 253);
+    /* Color de fondo */
+    padding: 20px;
+    /* Espaciado interno */
+    color: rgb(255, 255, 255);
+    /* Color del texto */
   }
   header {
     padding: 30px;

@@ -48,39 +48,52 @@ article {
 }
 
 .alineado-parrafo {
-    margin-left: 30px;  /* Margen izquierdo para alinear párrafos */    
+    margin-left: 30px;
+    /* Margen izquierdo para alinear párrafos */
 }
 
 main {
-    display: flex;  /* Se establece el contenedor principal como flexbox */    
-    flex-direction: column;   /* Dirección de los elementos: columna */   
-    align-items: center;  /* Centra los elementos horizontalmente */    
-    gap: 20px;  /* Espacio entre los elementos */    
+    display: flex;
+    /* Se establece el contenedor principal como flexbox */
+    flex-direction: column;
+    /* Dirección de los elementos: columna */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    gap: 20px;
+    /* Espacio entre los elementos */
 }
 
 h2 {
-    font-size: 40px;  /* Tamaño de fuente grande */    
-    text-align: center;  /* Alineación del texto a la izquierda */
-    padding: 10px;    
+    font-size: 40px;
+    /* Tamaño de fuente grande */
+    text-align: center;
+    /* Alineación del texto a la izquierda */
+    padding: 10px;
     font-weight: bold;
     color: $c3;
 }
 
 h4 {
-    padding: 18px;  /* Espaciado interno */    
-    font-size: 36px;  /* Tamaño de fuente grande */    
-    text-align: left;  /* Alineación del texto a la izquierda */    
+    padding: 18px;
+    /* Espaciado interno */
+    font-size: 36px;
+    /* Tamaño de fuente grande */
+    text-align: left;
+    /* Alineación del texto a la izquierda */
 }
 
 .spacer {
     padding-left: 20px;
     margin-left: 20px;
-    margin-bottom: 20px;   /* Margen inferior de 20px */ 
-    height: 90px;      /* Altura espaciada */       
+    margin-bottom: 20px;
+    /* Margen inferior de 20px */
+    height: 90px;
+    /* Altura espaciada */
 }
 
 .container {
-    padding: 10px;  /* Relleno de 10px en todos los lados del contenedor */    
+    padding: 10px;
+    /* Relleno de 10px en todos los lados del contenedor */
 }
 
 .parrafo-principal {
@@ -165,7 +178,9 @@ video {
     /* Dirección de los elementos: columna */
     align-items: $centro;
     /* Centra los elementos horizontalmente */
-    margin: 0 auto;  /* Centra el contenedor horizontalmente */    
+    margin: 0 auto;
+
+    /* Centra el contenedor horizontalmente */
     .recuadro {
         height: 160px;
         /*Alto*/
@@ -192,11 +207,13 @@ video {
         flex-direction: column;
         /* Dirección de los elementos: en formato columna */
         transition: 1.7s;
+
         /* Transición con duración de 0.7 segundos */
         a {
             text-decoration: none;
             /* Elimina el subrayado */
         }
+
         &:hover {
             transform: scale(0.7);
             /* Reduce el tamaño del elemento al 70% */
@@ -204,66 +221,86 @@ video {
             /* Cambia el color de fondo a negro */
             border-radius: 20px;
             /* Establece un radio de borde de 20px */
-            color: $c3;     /* Color del texto */            
+            color: $c3;
+            /* Color del texto */
         }
-    }  
+    }
 }
 
 .aboutgaleria {
     height: 90%;
-    width: 90%;  /* Ancho del contenedor al 100% */   
-    display: grid;  /* Establece el contenedor como una cuadrícula */    
-    grid-template-columns: repeat(4, 1fr);  /* Define 4 columnas de igual ancho */    
-    grid-template-rows: repeat(3, auto);  /* Define 3 filas de 200px de alto cada una */    
-    grid-template-areas: "img1 img2 img3 img3" "img1 img4 img5 img6" "img7 img4 img8 img8";  /* Define el área de la cuadrícula para los elementos */    
-    grid-gap: 15px;  /* Espacio entre las celdas de la cuadrícula */    
-    padding: 20px;  /* Espacio interno del contenedor */    
+    width: 90%;
+    /* Ancho del contenedor al 100% */
+    display: grid;
+    /* Establece el contenedor como una cuadrícula */
+    grid-template-columns: repeat(4, 1fr);
+    /* Define 4 columnas de igual ancho */
+    grid-template-rows: repeat(3, auto);
+    /* Define 3 filas de 200px de alto cada una */
+    grid-template-areas: "img1 img2 img3 img3" "img1 img4 img5 img6" "img7 img4 img8 img8";
+    /* Define el área de la cuadrícula para los elementos */
+    grid-gap: 15px;
+    /* Espacio entre las celdas de la cuadrícula */
+    padding: 20px;
+    /* Espacio interno del contenedor */
 }
 
 .item {
-    width: 200px; /* Ancho de los recuadros */
-    height: 200px; /* Alto de los recuadros */
+    width: 200px;
+    /* Ancho de los recuadros */
+    height: 200px;
+    /* Alto de los recuadros */
     border: 3px solid #000; // Borde de 3px sólido negro
     background-size: cover; // Tamaño del fondo de la imagen cubriendo completamente el elemento
     background-position: center; // Posición del fondo de la imagen centrado en el elemento
     border-radius: 9px; // Bordes redondeados de 9px
     filter: grayscale(20%); // Imagen en escala de grises al 20% por defecto
     transition: all 0.9s; // Transición suave de todas las propiedades durante 0.9 segundos    
+
     // Estilos al pasar el cursor sobre los elementos
     &:hover {
         filter: grayscale(0%); // Elimina la escala de grises al pasar el cursor
-        transform: scale(1.2); 
-        z-index: 1; /* Asegura que la imagen en escala esté por encima de las otras */
+        transform: scale(1.2);
+        z-index: 1;
+        /* Asegura que la imagen en escala esté por encima de las otras */
     }
+
     // Estilos específicos para cada elemento de la cuadrícula
     &.item1 {
         background-image: url("../assets/images/item1.jpg"); // URL de la imagen de fondo para item1
         grid-area: img1; // Posición en la cuadrícula para item1
     }
+
     &.item2 {
         background-image: url("../assets/images/item2.jpg");
         grid-area: img2; // Posición en la cuadrícula para item2
     }
+
     &.item3 {
         background-image: url("../assets/images/item3.jpg");
         grid-area: img3; // Posición en la cuadrícula para item3
     }
+
     &.item4 {
         background-image: url("../assets/images/item4.jpg");
         grid-area: img4; // Posición en la cuadrícula para item4
     }
+
     &.item5 {
         background-image: url("../assets/images/item5.jpg");
         grid-area: img5; // Posición en la cuadrícula para item5
     }
+
     &.item6 {
         background-image: url("../assets/images/item6.jpg");
         grid-area: img6; // Posición en la cuadrícula para item6
     }
+
     &.item7 {
         background-image: url("../assets/images/item7.jpg");
         grid-area: img7; // Posición en la cuadrícula para item7
     }
+
     &.item8 {
         background-image: url("../assets/images/item8.jpg");
         grid-area: img8; // Posición en la cuadrícula para item8
@@ -338,10 +375,13 @@ button {
 }
 
 aside {
-    text-align: $centro;  /* Alineación del texto al centro */      
+    text-align: $centro;
+
+    /* Alineación del texto al centro */
     p {
-        display: inline-block;   /* Permite centrar el elemento <p> horizontalmente */
-        background-color: $c3; 
+        display: inline-block;
+        /* Permite centrar el elemento <p> horizontalmente */
+        background-color: $c3;
     }
 }
 
@@ -508,8 +548,10 @@ input {
         width: 80%; // Ajusta el ancho al 70% del contenedor
         height: 80%; // Mantiene la proporción de aspecto original
         display: block; // Asegura que la imagen sea un elemento de bloque
-        margin-left: auto; /* Centra el video horizontalmente */        
-        margin-right: auto;  /* Centra el video horizontalmente */    
+        margin-left: auto;
+        /* Centra el video horizontalmente */
+        margin-right: auto;
+        /* Centra el video horizontalmente */
     }
 }
 
@@ -823,78 +865,131 @@ footer {
     }
 }
 
-/* Styles for small tablets with a resolution of 600x800 */
-
 @media screen and (min-width: 600px) and (max-width: 800px) {
-    .logo {
-        width: 60px;
-        height: 40px;
-        margin-top: 30px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+    section {
+        font-size: 14px;
     }
 
-    body {
+    article {
+        height: auto;
+        padding-right: 0;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    .videosCentrado {
         font-size: 16px;
     }
 
-    header {
-        padding: 5px;
-        margin-top: 10px;
-        font-size: 20px;
-        width: 600px;
+    .icono {
+        max-width: 14px;
     }
 
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-        margin: 0 auto;
+    .aboutgaleria {
+        height: auto;
         width: 100%;
-
-        li {
-            display: flex;
-            margin-bottom: 10px;
-        }
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, auto);
     }
 
-    main {
-        padding: 5%;  /* Ajustar el relleno en porcentaje */ 
+    .item1,
+    .item2,
+    .item3,
+    .item4,
+    .item5 {
+        background-size: cover;
+        background-position: center;
     }
 
-    aside {
-        padding: 5%;
-        /* Adjust padding in percentage */
+    .titulo {
+        font-size: 14px;
     }
 
-    video {
-        max-height: 600px;
-        max-width: 90%;
-        /* Ajustar el ancho máximo del video en porcentaje */
+    .terapeutas-container {
+        padding: 8px;
+    }
+
+    .Equipo-de-terapeutas {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .about-grid {
+        margin-left: 18px;
+    }
+
+    .service-container {
+        max-width: 600px;
+    }
+
+    .contenedor-recuadros{
+        height: 70%;
+        width: 70%;
+    }
+
+    .contenedor-padre {
+        margin-left: 12px;
+        width: 95%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fotoAgrandada img {
+        padding-top: 10px;
+        width: 70%;
+        height: 70%;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
 
-    footer {
-        padding: 5%;
-        /* Ajustar el relleno en porcentaje */
-        width: 90%;
-        /* Ajustar el ancho del footer en porcentaje */
-        text-align: center;
-        margin: 0 auto;
-        /* Ajustar los márgenes en porcentaje */
+    .whats {
+        height: 56px;
+        width: 56px;
+        font-size: 28px;
+        right: 18px;
     }
 
-    .alineado-parrafo {
-        height: 400px;
+    .formulario-turnos label {
+        margin-left: 0;
     }
 
-    .galeria {
-        height: 100%;
+    ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
     }
+
+    .logo {
+        width: 70px;
+        height: 50px;
+        margin-top: 18px;
+    }
+
+    header {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    video {
+        padding-top: 10px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.galeria.container-fluid {
+    max-width: 600px;
+    max-height: 800px;
+    overflow: auto; /* Añade un scroll si el contenido es más grande */
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.galeria .col-sm-12 {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 /* Estilos para tabletas de 600x1024 en modo vertical */
@@ -963,7 +1058,7 @@ footer {
         text-align: center;
         margin: 5% auto;
         /* Ajustar los márgenes en porcentaje */
-        width: 90%;
+        width: 95%;
         /* Ajustar el ancho del footer en porcentaje */
     }
 
@@ -986,28 +1081,35 @@ footer {
         padding: 10px;
 
         body {
-            height: 500px; /* Altura del 100% de la ventana del navegador */
+            height: 500px;
+            /* Altura del 100% de la ventana del navegador */
             background-color: $c1;
-            background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff); /* Degradado de colores */
+            background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
+            /* Degradado de colores */
             font-family: $tr;
-            font-size: 16px;          
-            .body-background {      
-                background-color: $c1; /* Color de fondo */      
-                padding: 20px; /* Espaciado interno */
-                color: $c3; /* Color del texto */
+            font-size: 16px;
+
+            .body-background {
+                background-color: $c1;
+                /* Color de fondo */
+                padding: 20px;
+                /* Espaciado interno */
+                color: $c3;
+                /* Color del texto */
             }
         }
 
-        nav ul li {        margin-right: 5%;
-        /* Ajustar el margen derecho en porcentaje */
-    }
+        nav ul li {
+            margin-right: 5%;
+            /* Ajustar el margen derecho en porcentaje */
+        }
 
-    aside {
-        padding: 40px;
-    }
+        aside {
+            padding: 40px;
+        }
 
-    footer .redes a {
-        font-size: 25px;
+        footer .redes a {
+            font-size: 25px;
         }
 
         video {
@@ -1023,7 +1125,9 @@ footer {
             width: 768px;
             text-align: center;
             margin: 0 auto;
-        }        letter-spacing: 10px;
+        }
+
+        letter-spacing: 10px;
     }
 
     .galeria h4 {
@@ -1031,13 +1135,15 @@ footer {
         /* Tamaño de fuente ajustado */
         margin-bottom: 15px;
         background-color: $c1;
-        background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff); /* Degradado de colores */
+        background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
+        /* Degradado de colores */
         font-family: $tr;
         font-size: 16px;
     }
 
     .body-background {
-        background-color: $c1; /* Color de fondo */
+        background-color: $c1;
+        /* Color de fondo */
     }
 
     aside {
@@ -1049,41 +1155,49 @@ footer {
         padding: 40px;
     }
 
-        .alineado-parrafo {
-            font-size: 0.6rem;
-            /* Tamaño de fuente ligeramente reducido */    .grid-item-hijo {
-        padding: 10px;
-        margin-bottom: 10px;
-    }
+    .alineado-parrafo {
+        font-size: 0.6rem;
 
-    nav ul li {
-        margin-right: 15px;
-    }
+        /* Tamaño de fuente ligeramente reducido */
+        .grid-item-hijo {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
 
-    .recuadro {
-        width: 100%;
-    }
+        nav ul li {
+            margin-right: 15px;
+        }
 
-    .galeria p {
-        font-size: 18px;
-        /* Tamaño de fuente ajustado */
-        margin-bottom: 15px;
-        /* Margen inferior para separar los elementos */
+        .recuadro {
+            width: 100%;
+        }
+
+        .galeria p {
+            font-size: 18px;
+            /* Tamaño de fuente ajustado */
+            margin-bottom: 15px;
+            /* Margen inferior para separar los elementos */
+        }
     }
-}
 
     /* Estilos para tabletas como el iPad en modo horizontal y algunas pantallas de ordenador portátil, netbook y de escritorio */
     @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
         body {
-            height: 500px; /* Altura del 100% de la ventana del navegador */
+            height: 500px;
+            /* Altura del 100% de la ventana del navegador */
             background-color: $c1;
-            background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff); /* Degradado de colores */
+            background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
+            /* Degradado de colores */
             font-family: $tr;
-            font-size: 16px;          
-            .body-background {      
-                background-color: $c1; /* Color de fondo */      
-                padding: 20px; /* Espaciado interno */
-                color: $c3; /* Color del texto */
+            font-size: 16px;
+
+            .body-background {
+                background-color: $c1;
+                /* Color de fondo */
+                padding: 20px;
+                /* Espaciado interno */
+                color: $c3;
+                /* Color del texto */
             }
         }
 
@@ -1133,15 +1247,21 @@ footer {
     /* Estilos para pantallas panorámicas de al menos 1200px (principalmente portátiles y de escritorio) */
     @media screen and (min-width: 1367px) {
         body {
-            height: 500px; /* Altura del 100% de la ventana del navegador */
+            height: 500px;
+            /* Altura del 100% de la ventana del navegador */
             background-color: $c1;
-            background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff); /* Degradado de colores */
+            background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
+            /* Degradado de colores */
             font-family: $tr;
-            font-size: 16px;          
-            .body-background {      
-                background-color: $c1; /* Color de fondo */      
-                padding: 20px; /* Espaciado interno */
-                color: $c3; /* Color del texto */
+            font-size: 16px;
+
+            .body-background {
+                background-color: $c1;
+                /* Color de fondo */
+                padding: 20px;
+                /* Espaciado interno */
+                color: $c3;
+                /* Color del texto */
             }
         }
 
