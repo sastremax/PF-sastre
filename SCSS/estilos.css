@@ -102,7 +102,7 @@ body {
 }
 
 section {
-  margin: 0px;
+  margin: 0;
   /* Establece el margen exterior a 0 */
   padding: auto;
   /* Establece el relleno a automatico */
