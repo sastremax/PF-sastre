@@ -777,14 +777,6 @@ input:focus {
     max-width: 320px;
   }
 }
-.contenedor-recuadros {
-  height: 160px;
-}
-
-.aboutgaleria {
-  height: auto; /* Para evitar que la clase .aboutgaleria tenga una altura fija */
-}
-
 /* dispositivos con un ancho máximo de 480px (modo horizontal) */
 @media screen and (max-width: 480px) {
   section {
