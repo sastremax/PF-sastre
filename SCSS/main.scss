@@ -41,7 +41,7 @@ body {
 }
 
 section {
-    margin: 0;
+    margin: 0px;
     /* Establece el margen exterior a 0 */
     padding: auto;
     /* Establece el relleno a automatico */
@@ -49,6 +49,11 @@ section {
     /* Tamaño de fuente */
     font-family: 'Roboto Slab', Arial, sans-serif;
     /* Familia de fuentes primero Arial */
+}
+
+.espaciador {
+    padding: 50px;
+    /* Espaciado interno */
 }
 
 article {
@@ -65,8 +70,22 @@ article {
     }
 }
 
+.about {
+    padding: 20px; /* Ajusta el valor del relleno según tus necesidades */
+    height: 100%; /* Asegura que el artículo ocupe todo el espacio disponible */
+    box-sizing: border-box; /* Incluye el relleno dentro del tamaño total del artículo */
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+
 .alineado-parrafo {
     margin-left: 30px;
+    padding-bottom: 40px;
     /* Margen izquierdo para alinear párrafos */
 }
 
@@ -184,7 +203,7 @@ video {
 }
 
 .Jumbotromp {
-    background-image: url('../assets/images/habilidades.jpg');
+    background-image: url('../assets/images/fiesta.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -660,12 +679,7 @@ input {
     height: auto; // Ajusta la altura automáticamente para mantener la proporción
 }
 
-.row {
-    display: flex;
-    height: 800px;
-    width: 100%;
-    padding-left: 14px;
-}
+sec
 
 .row-about {
     display: flex;
@@ -751,6 +765,14 @@ input {
         max-width: 320px;
     }
 }
+
+.fotoencuadrada {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 
 /* dispositivos con un ancho máximo de 480px (modo horizontal) */
 @media screen and (max-width: 480px) {
