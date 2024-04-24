@@ -124,6 +124,7 @@ article {
   /* Espaciado superior */
   padding-right: 10px;
   /* Espaciado derecho */
+  padding-bottom: 15px;
 }
 article ul li {
   list-style: none;
@@ -495,9 +496,13 @@ aside p {
 
 .service-grid {
   display: flex;
-  /* Establece el contenedor como flexbox */
+  width: 100%;
+  max-height: 1200px;
   justify-content: center;
-  /* Centra horizontalmente el contenido */
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 10px;
 }
 
 .whats {
@@ -719,6 +724,10 @@ sec .row-about {
   height: 500px;
   width: 100%;
   padding-left: 14px;
+}
+
+.row-servicio {
+  display: flex;
 }
 
 /* Estilos específicos para dispositivos móviles */
@@ -969,6 +978,17 @@ sec .row-about {
   max-height: 1200px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.container-servicios {
+  display: flex;
+  width: 100%;
+  height: 1000px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
 }
 
 .galeria .col-sm-12 {
