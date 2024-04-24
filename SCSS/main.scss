@@ -52,7 +52,7 @@ section {
 }
 
 article {
-    height: 500px;
+    height: 600px;
     /* Altura del artículo */
     padding-top: 15px;
     /* Espaciado superior */
@@ -138,9 +138,9 @@ h4 {
 }
 
 video {
-    max-height: 450px;
+    max-height: 720px;
     /* Establece la altura máxima del video */
-    max-width: 95%;
+    max-width: 100%;
     /* Establece el ancho máximo del video */
     display: block;
     /* Asegura que el video se muestre como un bloque */
@@ -183,12 +183,16 @@ video {
     /* Margen inferior de 20px */
 }
 
+.Jumbotromp {
+    background-image: url('../assets/images/equipo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 .contenedor-recuadros {
     height: auto;
     /* Altura automática basada en el contenido */
-    overflow: auto;
-    /* Permite el desplazamiento si el contenido es más alto que el contenedor */
-    width: 100%;
+    width: 800px;
     /* Ancho del contenedor al 100% */
     display: flex;
     /* Establece el contenedor como flexbox */
@@ -246,9 +250,8 @@ video {
 }
 
 .aboutgaleria {
-    height: 90%;
-    width: 90%;
-    /* Ancho del contenedor al 100% */
+    height: 100%;
+    width: 100%;    
     display: grid;
     /* Establece el contenedor como una cuadrícula */
     grid-template-columns: repeat(4, 1fr);
@@ -327,9 +330,9 @@ video {
 
 .contenedor-recuadros img,
 .aboutgaleria img {
-    width: 100%;
+    width: 1200px;
     /* Ancho al 100% del contenedor padre */
-    height: auto;
+    height: 800px;
     /* Altura automática para mantener la proporción de la imagen */
 }
 
@@ -341,37 +344,6 @@ video {
     /* Ancho al 100% del ancho de su contenedor padre */
     height: 100%;
     /* Altura al 100% del alto de su contenedor padre */
-}
-
-/* Estilos para el contenedor del mapa */
-.mapa-contenedor {
-    /* Establece la posición relativa para que los elementos absolutos se posicionen relativamente a este contenedor */
-    position: relative;
-    /* Ancho del contenedor al 100% del ancho de su contenedor padre, importante para ocupar todo el espacio disponible */
-    width: 100% !important;
-    /* Altura del contenedor al 100% del alto de su contenedor padre, también importante para ocupar todo el espacio disponible */
-    height: 100% !important;
-
-    /* Utiliza un modelo de caja flexible para centrar el contenido vertical y horizontalmente */
-    display: flex;
-    align-items: center;
-    /* Centra verticalmente los elementos secundarios */
-    justify-content: center;
-    /* Centra horizontalmente los elementos secundarios */
-}
-
-/* Estilos para el elemento del mapa */
-.mapa {
-    /* Establece la posición absoluta para colocar el mapa dentro del contenedor sin afectar al diseño del resto del contenido */
-    position: absolute;
-    /* Coloca el borde superior del mapa en la parte superior del contenedor padre */
-    top: 0;
-    /* Coloca el borde izquierdo del mapa en la parte izquierda del contenedor padre */
-    left: 0;
-    /* Ancho del mapa al 100% del ancho del contenedor padre */
-    width: 100%;
-    /* Altura del mapa al 100% del alto del contenedor padre */
-    height: 100%;
 }
 
 .subrayado {
@@ -690,10 +662,17 @@ input {
 
 .row {
     display: flex;
-    height: 50%;
+    height: 800px;
     width: 100%;
+    padding-left: 14px;
 }
 
+.row-about {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    padding-left: 14px;
+}
 
 /* Estilos específicos para dispositivos móviles */
 /* dispositivos con un ancho máximo de 320px (modo vertical) */
@@ -923,8 +902,8 @@ input {
     }
 
     .contenedor-recuadros {
-        height: 70%;
-        width: 70%;
+        height: 1200px;
+        width: 800px;
     }
 
     .contenedor-padre {
@@ -979,17 +958,21 @@ input {
 }
 
 .galeria.container-fluid {
-    max-width: 600px;
-    max-height: 800px;
-    overflow: auto;
-    /* Añade un scroll si el contenido es más grande */
-    padding-left: 5px;
-    padding-right: 5px;
+    background-color: #000;
+    padding-top: 5px;
+    width: 100%;
+    max-height: 1200px;    
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .galeria .col-sm-12 {
     padding-left: 5px;
     padding-right: 5px;
+    width: 100%;
+        /* Ajustar el ancho del logo */
+    height: 100%;
+        /* Ajustar la altura del logo */
 }
 
 /* Estilos para tabletas de 600x1024 en modo vertical */
@@ -1081,7 +1064,7 @@ input {
         padding: 10px;
 
         body {
-            height: 500px;
+            
             /* Altura del 100% de la ventana del navegador */
             background-color: $c1;
             background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
