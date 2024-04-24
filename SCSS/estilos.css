@@ -642,64 +642,21 @@ input:focus {
   /* Espacio entre los input */
 }
 
-/* modificar la barra */
-/* Estilos para la barra de desplazamiento en navegadores WebKit (Chrome, Safari, Opera) */
-::-webkit-scrollbar {
-  background-color: #800080;
-  /* Color de fondo de la barra de desplazamiento */
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 215, 0);
-  /* Color del área deslizable de la barra de desplazamiento */
-  border-radius: 10px;
-  /* Radio de borde para la parte deslizable */
-  border: black;
-  /* Borde de la parte deslizable */
-}
-
-/* Estilos para la barra de desplazamiento en navegadores Firefox */
-::-moz-scrollbar {
-  background-color: #800080;
-  /* Color de fondo de la barra de desplazamiento */
-}
-
-::-moz-scrollbar-thumb {
-  background-color: rgb(255, 215, 0);
-  /* Color del área deslizable de la barra de desplazamiento */
-  border-radius: 10px;
-  /* Radio de borde para la parte deslizable */
-  border: #000000;
-  /* Borde de la parte deslizable */
-}
-
-/* Estilos para la barra de desplazamiento en navegadores Internet Explorer */
-::-ms-scrollbar {
-  background-color: #800080;
-  /* Color de fondo de la barra de desplazamiento */
-}
-
-::-ms-scrollbar-thumb {
-  background-color: mul;
-  /* Color del área deslizable de la barra de desplazamiento */
-  border-radius: 10px;
-  /* Radio de borde para la parte deslizable */
-  border: #000000;
-}
-
-/* Estilos para la barra de desplazamiento en navegadores Opera */
+::-webkit-scrollbar,
+::-moz-scrollbar,
+::-ms-scrollbar,
 ::-o-scrollbar {
-  background-color: #800080;
-  /* Color de fondo de la barra de desplazamiento */
+  background-color: #800080; /* Color de fondo de la barra de desplazamiento */
 }
 
+/* Estilos para el área deslizable de la barra de desplazamiento */
+::-webkit-scrollbar-thumb,
+::-moz-scrollbar-thumb,
+::-ms-scrollbar-thumb,
 ::-o-scrollbar-thumb {
-  background-color: rgb(255, 215, 0);
-  /* Color del área deslizable de la barra de desplazamiento */
-  border-radius: 10px;
-  /* Radio de borde para la parte deslizable */
-  border: #000000;
-  /* Borde de la parte deslizable */
+  background-color: rgb(255, 215, 0); /* Color del área deslizable de la barra de desplazamiento */
+  border-radius: 10px; /* Radio de borde para la parte deslizable */
+  border: 1px solid #000000; /* Borde de la parte deslizable */
 }
 
 .centralizado {
