@@ -672,11 +672,6 @@ input:focus {
   overflow-x: auto;
 }
 
-.logo {
-  width: 100px;
-  height: auto;
-}
-
 sec .row-about {
   display: flex;
   height: 500px;
