@@ -87,7 +87,7 @@ body {
   background-color: rgb(13, 110, 253);
   background-image: linear-gradient(to right, rgb(114, 239, 248), #0000ff);
   /* Degradado de colores */
-  font-family: "Roboto Slab", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 16px;
 }
 
