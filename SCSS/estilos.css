@@ -64,6 +64,7 @@ h1 {
 }
 
 header nav ul li a {
+  color: #000000; /* Color del texto */
   text-align: center; /* Alineación del texto al centro */
   list-style: none; /* Quita los puntos de la lista */
   margin-right: 30px; /* Margen derecho */
@@ -1256,6 +1257,11 @@ sec .row-about {
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .navbar {
+    color: #000000;
   }
 }
 
