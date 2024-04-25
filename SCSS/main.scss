@@ -147,6 +147,7 @@ h4 {
     /* Alineación del texto a la izquierda */
     padding: 18px;
     /* Espaciado interno */
+    text-shadow: $c2(0, 0, 0, 0.4);
 }
 
 .videosCentrado {
@@ -220,8 +221,8 @@ video {
     /* Altura automática basada en el contenido */
     width: 200px;
     /* Ancho del contenedor al 100% */
-    display: flex;
-    /* Establece el contenedor como flexbox */
+    display: grid;
+    /* Establece el contenedor como grid */
     flex-direction: column;
     /* Dirección de los elementos: columna */
     align-items: $centro;
@@ -275,90 +276,86 @@ video {
     }
 }
 
-.aboutgaleria {
-    height: auto;  /* Altura automática basada en el contenido */
-    width: 100%;      /* Ancho al 100% del contenedor */
-    display: grid; /* Establece el contenedor como una cuadrícula */
-    /* Establece el contenedor como una cuadrícula */
-    grid-template-columns: repeat(4, 1fr);
-    /* Define 4 columnas de igual ancho */
-    grid-template-rows: repeat(3, auto);
-    /* Define 3 filas de 200px de alto cada una */
-    grid-template-areas: "img1 img2 img3 img3" "img1 img4 img5 img6" "img7 img4 img8 img8";
-    /* Define el área de la cuadrícula para los elementos */
-    grid-gap: 15px;
-    /* Espacio entre las celdas de la cuadrícula */
-    padding: 20px;
-    /* Espacio interno del contenedor */
-}
+.contenedor-imagenes-cuadradas {
+    width: 100%;    /* ancho*/
+    height: 900px; /* Altura */
+    
 
-.item {
-    width: 200px;
-    /* Ancho de los recuadros */
-    height: auto;
-    /* Alto de los recuadros */
-    border: 3px solid #000; // Borde de 3px sólido negro
-    background-size: cover; // Tamaño del fondo de la imagen cubriendo completamente el elemento
-    background-position: center; // Posición del fondo de la imagen centrado en el elemento
-    border-radius: 9px; // Bordes redondeados de 9px
-    filter: grayscale(20%); // Imagen en escala de grises al 20% por defecto
-    transition: all 0.9s; // Transición suave de todas las propiedades durante 0.9 segundos    
+    .aboutgaleria {
+        width: 100%;    /* ancho*/
+        height: 100vh; /* Altura */
+        gap: 30px; /* Espacio entre cada cuadrícula */ 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 180px);
+        grid-template-areas: "img1 img2 img3" "img4 img5 img3" "img4 img8 img7" "img6 img6 img7" ;
+        padding: 30px;    
+        .item {           
+            border: 5px solid $c2; /* Cambiar el ancho del borde a 5px y el color a negro */
+            border-radius: 9px; // Bordes redondeados de 9px
+            background-size: cover; // Tamaño del fondo de la imagen cubriendo completamente el elemento
+            background-position: center; // Posición del fondo de la imagen centrado en el elemento
+            filter: grayscale(30%); // Imagen en escala de grises al 20% por defecto
+            transition: all 0.9s; // Transición suave de todas las propiedades durante 0.9 segundos    
+            padding: 15px;            
+            &:hover {
+                // Estilos al pasar el cursor sobre los elementos
+                filter: grayscale(0%); // Elimina la escala de grises al pasar el cursor
+                transform: scale(1.2);
+                z-index: 1;
+                /* Asegura que la imagen en escala esté por encima de las otras */
+            }
 
-    // Estilos al pasar el cursor sobre los elementos
-    &:hover {
-        filter: grayscale(0%); // Elimina la escala de grises al pasar el cursor
-        transform: scale(1.2);
-        z-index: 1;
-        /* Asegura que la imagen en escala esté por encima de las otras */
-    }
+            // Estilos específicos para cada elemento de la cuadrícula
+            &.item1 {
+                background-image: url("../assets/images/item1.jpg"); // URL de la imagen de fondo para item1
+                grid-area: img1; // Posición en la cuadrícula para item1           
 
-    // Estilos específicos para cada elemento de la cuadrícula
-    &.item1 {
-        background-image: url("../assets/images/item1.jpg"); // URL de la imagen de fondo para item1
-        grid-area: img1; // Posición en la cuadrícula para item1
-    }
+            }
 
-    &.item2 {
-        background-image: url("../assets/images/item2.jpg");
-        grid-area: img2; // Posición en la cuadrícula para item2
-    }
+            &.item2 {
+                background-image: url("../assets/images/item2.jpg");
+                grid-area: img2; // Posición en la cuadrícula para item2
+            }
 
-    &.item3 {
-        background-image: url("../assets/images/item3.jpg");
-        grid-area: img3; // Posición en la cuadrícula para item3
-    }
+            &.item3 {
+                background-image: url("../assets/images/item3.jpg");
+                grid-area: img3; // Posición en la cuadrícula para item3
+            }
 
-    &.item4 {
-        background-image: url("../assets/images/item4.jpg");
-        grid-area: img4; // Posición en la cuadrícula para item4
-    }
+            &.item4 {
+                background-image: url("../assets/images/item4.jpg");
+                grid-area: img4; // Posición en la cuadrícula para item4
+            }
 
-    &.item5 {
-        background-image: url("../assets/images/item5.jpg");
-        grid-area: img5; // Posición en la cuadrícula para item5
-    }
+            &.item5 {
+                background-image: url("../assets/images/item5.jpg");
+                grid-area: img5; // Posición en la cuadrícula para item5
+            }
 
-    &.item6 {
-        background-image: url("../assets/images/item6.jpg");
-        grid-area: img6; // Posición en la cuadrícula para item6
-    }
+            &.item6 {
+                background-image: url("../assets/images/item6.jpg");
+                grid-area: img6; // Posición en la cuadrícula para item6
+            }
 
-    &.item7 {
-        background-image: url("../assets/images/item7.jpg");
-        grid-area: img7; // Posición en la cuadrícula para item7
-    }
+            &.item7 {
+                background-image: url("../assets/images/item7.jpg");
+                grid-area: img7; // Posición en la cuadrícula para item7
+            }
 
-    &.item8 {
-        background-image: url("../assets/images/item8.jpg");
-        grid-area: img8; // Posición en la cuadrícula para item8
+            &.item8 {
+                background-image: url("../assets/images/item8.jpg");
+                grid-area: img8; // Posición en la cuadrícula para item8
+            }
+        }
     }
 }
 
 .contenedor-recuadros img,
 .aboutgaleria img {
-    width: 1200px;
+    width: auto;
     /* Ancho al 100% del contenedor padre */
-    height: 800px;
+    height: auto;
     /* Altura automática para mantener la proporción de la imagen */
 }
 
@@ -731,12 +728,9 @@ sec
     }
 
     .contenedor-recuadros {
-        width: 320px !important;/* Ancho deseado para dispositivos con un ancho máximo de 320px */
-        height: auto;
-        display: flex;
-        /* Establece el contenedor como flexbox */
-        flex-direction: column;
-        /* Dirección de los elementos: columna */
+        width: 300px !important;/* Ancho deseado para dispositivos con un ancho máximo de 320px */
+        height: auto; /* Altura automática basada en el contenido */        
+        flex-direction: column;   /* Dirección de los elementos: columna */
         align-items: center;
         /* Centra los elementos horizontalmente */
         margin: 0 auto; /* Centra el contenedor en la página */
@@ -759,21 +753,6 @@ sec
     border-radius: 10px;
 }
 
-.item {
-    width: 70px;
-    height: 70px;
-}
-
-.item1,
-.item2,
-.item3,
-.item4,
-.item5 {
-    width: 70px;
-    height: 70px;
-    background-position: center;
-
-}
 
 /* dispositivos con un ancho máximo de 480px (modo horizontal) */
 @media screen and (max-width: 480px) {
@@ -804,27 +783,6 @@ sec
 
     .icono {
         max-width: 16px;
-    }
-
-    .aboutgaleria {
-        height: auto;
-        width: 100%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, auto);
-    }
-
-    .item {
-        width: 90px;
-        height: 90px;
-    }
-
-    .item1,
-    .item2,
-    .item3,
-    .item4,
-    .item5 {
-        background-size: cover;
-        background-position: center;
     }
 
     .titulo {
@@ -912,26 +870,7 @@ sec
         max-width: 14px;
     }
 
-    .aboutgaleria {
-        height: auto;
-        width: 100%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, auto);
-    }
-
-    .item {
-        width: 180px;
-        height: 180px;
-    }
-
-    .item1,
-    .item2,
-    .item3,
-    .item4,
-    .item5 {
-        background-size: cover;
-        background-position: center;
-    }
+    
 
     .titulo {
         font-size: 14px;
@@ -1017,8 +956,6 @@ sec
     padding-left: 10px;
     padding-right: 10px;
 }
-
-
 
 .container-servicios {
     display: flex;
@@ -1112,10 +1049,6 @@ sec
         /* Define filas de 480px de alto */
     }
 
-    .item {
-        width: 200px;
-        height: 200px;
-    }
 
 }
 
@@ -1229,7 +1162,8 @@ sec
         }
     }
 
-    /* Estilos para tabletas como el iPad en modo horizontal y algunas pantallas de ordenador portátil, netbook y de escritorio */
+
+/* Estilos para tabletas como el iPad en modo horizontal y algunas pantallas de ordenador portátil, netbook y de escritorio */
     @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
         body {
             height: 500px;

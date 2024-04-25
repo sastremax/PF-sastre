@@ -210,6 +210,7 @@ h4 {
   /* Alineación del texto a la izquierda */
   padding: 18px;
   /* Espaciado interno */
+  text-shadow: #000000 0, 0, 0, 0.4;
 }
 
 .videosCentrado {
@@ -282,8 +283,8 @@ video {
   /* Altura automática basada en el contenido */
   width: 200px;
   /* Ancho del contenedor al 100% */
-  display: flex;
-  /* Establece el contenedor como flexbox */
+  display: grid;
+  /* Establece el contenedor como grid */
   flex-direction: column;
   /* Dirección de los elementos: columna */
   align-items: center;
@@ -334,79 +335,73 @@ video {
   /* Color del texto */
 }
 
-.aboutgaleria {
-  height: auto; /* Altura automática basada en el contenido */
-  width: 100%; /* Ancho al 100% del contenedor */
-  display: grid; /* Establece el contenedor como una cuadrícula */
-  /* Establece el contenedor como una cuadrícula */
-  grid-template-columns: repeat(4, 1fr);
-  /* Define 4 columnas de igual ancho */
-  grid-template-rows: repeat(3, auto);
-  /* Define 3 filas de 200px de alto cada una */
-  grid-template-areas: "img1 img2 img3 img3" "img1 img4 img5 img6" "img7 img4 img8 img8";
-  /* Define el área de la cuadrícula para los elementos */
-  grid-gap: 15px;
-  /* Espacio entre las celdas de la cuadrícula */
-  padding: 20px;
-  /* Espacio interno del contenedor */
+.contenedor-imagenes-cuadradas {
+  width: 100%; /* ancho*/
+  height: 900px; /* Altura */
 }
-
-.item {
-  width: 200px;
-  /* Ancho de los recuadros */
-  height: auto;
-  /* Alto de los recuadros */
-  border: 3px solid #000;
+.contenedor-imagenes-cuadradas .aboutgaleria {
+  width: 100%; /* ancho*/
+  height: 100vh; /* Altura */
+  gap: 30px; /* Espacio entre cada cuadrícula */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 180px);
+  grid-template-areas: "img1 img2 img3" "img4 img5 img3" "img4 img8 img7" "img6 img6 img7";
+  padding: 30px;
+}
+.contenedor-imagenes-cuadradas .aboutgaleria .item {
+  border: 5px solid #000000; /* Cambiar el ancho del borde a 5px y el color a negro */
+  border-radius: 9px;
   background-size: cover;
   background-position: center;
-  border-radius: 9px;
-  filter: grayscale(20%);
+  filter: grayscale(30%);
   transition: all 0.9s;
+  padding: 15px;
 }
-.item:hover {
+.contenedor-imagenes-cuadradas .aboutgaleria .item:hover {
   filter: grayscale(0%);
   transform: scale(1.2);
   z-index: 1;
   /* Asegura que la imagen en escala esté por encima de las otras */
 }
-.item.item1 {
+.contenedor-imagenes-cuadradas .aboutgaleria .item.item1 {
   background-image: url("../assets/images/item1.jpg");
   grid-area: img1;
 }
-.item.item2 {
+.contenedor-imagenes-cuadradas .aboutgaleria .item.item2 {
   background-image: url("../assets/images/item2.jpg");
   grid-area: img2;
 }
-.item.item3 {
+.contenedor-imagenes-cuadradas .aboutgaleria .item.item3 {
   background-image: url("../assets/images/item3.jpg");
   grid-area: img3;
 }
-.item.item4 {
+.contenedor-imagenes-cuadradas .aboutgaleria .item.item4 {
   background-image: url("../assets/images/item4.jpg");
   grid-area: img4;
 }
-.item.item5 {
+.contenedor-imagenes-cuadradas .aboutgaleria .item.item5 {
   background-image: url("../assets/images/item5.jpg");
   grid-area: img5;
 }
-.item.item6 {
+.contenedor-imagenes-cuadradas .aboutgaleria .item.item6 {
   background-image: url("../assets/images/item6.jpg");
   grid-area: img6;
 }
-.item.item7 {
+.contenedor-imagenes-cuadradas .aboutgaleria .item.item7 {
   background-image: url("../assets/images/item7.jpg");
   grid-area: img7;
 }
-.item.item8 {
+.contenedor-imagenes-cuadradas .aboutgaleria .item.item8 {
   background-image: url("../assets/images/item8.jpg");
   grid-area: img8;
 }
 
 .contenedor-recuadros img,
 .aboutgaleria img {
-  width: 1200px;
+  width: auto;
   /* Ancho al 100% del contenedor padre */
-  height: 800px;
+  height: auto;
   /* Altura automática para mantener la proporción de la imagen */
 }
 
@@ -758,12 +753,9 @@ sec .row-about {
     margin-right: auto;
   }
   .contenedor-recuadros {
-    width: 320px !important; /* Ancho deseado para dispositivos con un ancho máximo de 320px */
-    height: auto;
-    display: flex;
-    /* Establece el contenedor como flexbox */
-    flex-direction: column;
-    /* Dirección de los elementos: columna */
+    width: 300px !important; /* Ancho deseado para dispositivos con un ancho máximo de 320px */
+    height: auto; /* Altura automática basada en el contenido */
+    flex-direction: column; /* Dirección de los elementos: columna */
     align-items: center;
     /* Centra los elementos horizontalmente */
     margin: 0 auto; /* Centra el contenedor en la página */
@@ -782,21 +774,6 @@ sec .row-about {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
-}
-
-.item {
-  width: 70px;
-  height: 70px;
-}
-
-.item1,
-.item2,
-.item3,
-.item4,
-.item5 {
-  width: 70px;
-  height: 70px;
-  background-position: center;
 }
 
 /* dispositivos con un ancho máximo de 480px (modo horizontal) */
@@ -823,24 +800,6 @@ sec .row-about {
   }
   .icono {
     max-width: 16px;
-  }
-  .aboutgaleria {
-    height: auto;
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, auto);
-  }
-  .item {
-    width: 90px;
-    height: 90px;
-  }
-  .item1,
-  .item2,
-  .item3,
-  .item4,
-  .item5 {
-    background-size: cover;
-    background-position: center;
   }
   .titulo {
     font-size: 16px;
@@ -908,24 +867,6 @@ sec .row-about {
   }
   .icono {
     max-width: 14px;
-  }
-  .aboutgaleria {
-    height: auto;
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, auto);
-  }
-  .item {
-    width: 180px;
-    height: 180px;
-  }
-  .item1,
-  .item2,
-  .item3,
-  .item4,
-  .item5 {
-    background-size: cover;
-    background-position: center;
   }
   .titulo {
     font-size: 14px;
@@ -1080,10 +1021,6 @@ sec .row-about {
     display: grid;
     grid-template-rows: 480px;
     /* Define filas de 480px de alto */
-  }
-  .item {
-    width: 200px;
-    height: 200px;
   }
 }
 /* Estilos para tabletas de 10 pulgadas en modo vertical */
