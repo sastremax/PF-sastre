@@ -695,8 +695,8 @@ sec .row-about {
 /* dispositivos con un ancho máximo de 320px (modo vertical) */
 @media screen and (max-width: 320px) {
   .logo {
-    width: 40px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     margin-top: 30px;
     text-align: center;
     margin-left: auto;
@@ -870,8 +870,8 @@ sec .row-about {
     border-radius: 5px;
   }
   .logo {
-    width: 80px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     margin-top: 20px;
   }
   header {
@@ -976,7 +976,7 @@ sec .row-about {
   }
   .logo {
     width: 70px;
-    height: 50px;
+    height: 70px;
     margin-top: 18px;
   }
   header {
@@ -1021,10 +1021,6 @@ sec .row-about {
 /* Estilos para tabletas de 600x1024 en modo vertical */
 @media screen and (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
   .logo {
-    width: 100px;
-    /* Ajustar el ancho del logo */
-    height: 80px;
-    /* Ajustar la altura del logo */
     margin-top: 15px;
     /* Ajustar el margen superior */
     text-align: center;
