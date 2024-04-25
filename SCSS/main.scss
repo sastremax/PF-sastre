@@ -354,7 +354,7 @@ video {
     }
 }
 
-.contenedor-fotoequipo {
+.contenedor-fotoequipo {    
     text-align: center;
     display: flex;
     justify-content: center;
@@ -362,8 +362,8 @@ video {
     padding-bottom: 25px;
 }
 
-.fotoequipo {
-    width: auto;
+.fotoequipo {    
+    width: auto;    
     height: 800px;
     transform: rotate(-10deg);
 }
