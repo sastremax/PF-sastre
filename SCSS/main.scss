@@ -16,6 +16,13 @@
 @import './layout/_footer'; // Importar estilos del pie de página
 @import './layout/_header'; // Importar estilos del encabezado
 
+@font-face {
+    font-family: 'Gwendolyn';
+    src: url(/fonts/Gwendolyn-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 .favicon {
     vertical-align: middle;
 }

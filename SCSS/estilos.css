@@ -78,6 +78,12 @@ header nav ul li a:hover {
   color: green;
 }
 
+@font-face {
+  font-family: "Gwendolyn";
+  src: url(/fonts/Gwendolyn-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
 .favicon {
   vertical-align: middle;
 }
