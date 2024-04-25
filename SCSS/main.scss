@@ -209,6 +209,16 @@ video {
     /* Margen inferior de 20px */
 }
 
+.preload-image {
+    background-image: url('../assets/images/parque.avif');
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 .Jumbotromp {
     background-image: url('../assets/images/parque.avif');
     background-size: cover;
