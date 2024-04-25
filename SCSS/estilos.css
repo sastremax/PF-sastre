@@ -360,7 +360,7 @@ video {
 }
 
 .item {
-  width: auto;
+  width: 200px;
   /* Ancho de los recuadros */
   height: auto;
   /* Alto de los recuadros */
