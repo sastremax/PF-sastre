@@ -228,7 +228,7 @@ video {
 .contenedor-recuadros {
     height: auto;
     /* Altura automática basada en el contenido */
-    width: 800px;
+    width: 200px;
     /* Ancho del contenedor al 100% */
     display: flex;
     /* Establece el contenedor como flexbox */
@@ -286,9 +286,9 @@ video {
 }
 
 .aboutgaleria {
-    height: 100%;
-    width: 100%;    
-    display: grid;
+    height: auto;  /* Altura automática basada en el contenido */
+    width: 100%;      /* Ancho al 100% del contenedor */
+    display: grid; /* Establece el contenedor como una cuadrícula */
     /* Establece el contenedor como una cuadrícula */
     grid-template-columns: repeat(4, 1fr);
     /* Define 4 columnas de igual ancho */
@@ -303,9 +303,9 @@ video {
 }
 
 .item {
-    width: 200px;
+    width: auto;
     /* Ancho de los recuadros */
-    height: 200px;
+    height: auto;
     /* Alto de los recuadros */
     border: 3px solid #000; // Borde de 3px sólido negro
     background-size: cover; // Tamaño del fondo de la imagen cubriendo completamente el elemento
@@ -769,6 +769,21 @@ sec
     border-radius: 10px;
 }
 
+.item {
+    width: 70px;
+    height: 70px;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5 {
+    width: 70px;
+    height: 70px;
+    background-position: center;
+
+}
 
 /* dispositivos con un ancho máximo de 480px (modo horizontal) */
 @media screen and (max-width: 480px) {
@@ -806,6 +821,11 @@ sec
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, auto);
+    }
+
+    .item {
+        width: 90px;
+        height: 90px;
     }
 
     .item1,
@@ -907,6 +927,11 @@ sec
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, auto);
+    }
+
+    .item {
+        width: 180px;
+        height: 180px;
     }
 
     .item1,
@@ -1100,6 +1125,12 @@ sec
         grid-template-rows: 480px;
         /* Define filas de 480px de alto */
     }
+
+    .item {
+        width: 200px;
+        height: 200px;
+    }
+
 }
 
 /* Estilos para tabletas de 10 pulgadas en modo vertical */
