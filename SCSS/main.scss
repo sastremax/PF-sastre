@@ -354,6 +354,20 @@ video {
     }
 }
 
+.contenedor-fotoequipo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.fotoequipo {
+    width: auto;
+    height: 800px;
+    transform: rotate(-10deg);
+}
+
 .contenedor-recuadros img,
 .aboutgaleria img {
     width: auto;
