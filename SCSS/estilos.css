@@ -213,6 +213,14 @@ h4 {
   text-shadow: #000000 0, 0, 0, 0.4;
 }
 
+.parrafoprincipal {
+  color: rgb(255, 255, 255);
+  font-family: "Roboto Slab", sans-serif;
+  text-shadow: 0 0 5px #000000;
+  text-align: center; /* Centra el texto horizontalmente */
+  padding: 18px; /* Espaciado interno */
+}
+
 .videosCentrado {
   margin-top: 40px;
   /* Margen superior de 15px */
@@ -275,10 +283,8 @@ video {
 .Jumbotromp {
   background-image: url("../assets/images/parque.avif");
   background-size: cover;
+  height: 650px;
   background-position: center;
-  text-shadow: #000000 -2px; /* Sombra de texto */
-  font-size: 16px; /* Tamaño de fuente */
-  text-align: left; /* Alinea el texto a la izquierda */
 }
 
 .contenedor-recuadros {
@@ -686,23 +692,6 @@ input:focus {
   /* Espacio entre los input */
 }
 
-::-webkit-scrollbar,
-::-moz-scrollbar,
-::-ms-scrollbar,
-::-o-scrollbar {
-  background-color: #800080; /* Color de fondo de la barra de desplazamiento */
-}
-
-/* Estilos para el área deslizable de la barra de desplazamiento */
-::-webkit-scrollbar-thumb,
-::-moz-scrollbar-thumb,
-::-ms-scrollbar-thumb,
-::-o-scrollbar-thumb {
-  background-color: rgb(255, 215, 0); /* Color del área deslizable de la barra de desplazamiento */
-  border-radius: 10px; /* Radio de borde para la parte deslizable */
-  border: 1px solid #000000; /* Borde de la parte deslizable */
-}
-
 .centralizado {
   display: flex;
   /* Utiliza el modelo de caja flexible */
@@ -726,6 +715,10 @@ sec .row-about {
 /* Estilos específicos para dispositivos móviles */
 /* dispositivos con un ancho máximo de 320px (modo vertical) */
 @media screen and (max-width: 320px) {
+  .Jumbotromp {
+    background-size: contain;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
   .logo {
     width: 30px;
     height: 30px;
@@ -791,11 +784,12 @@ sec .row-about {
   }
   .contenedor-recuadros {
     width: 300px !important; /* Ancho deseado para dispositivos con un ancho máximo de 320px */
-    height: auto; /* Altura automática basada en el contenido */
-    flex-direction: column; /* Dirección de los elementos: columna */
+    display: flex;
+    /* Establece el contenedor como flexbox */
+    flex-direction: column;
+    /* Dirección de los elementos: columna */
     align-items: center;
     /* Centra los elementos horizontalmente */
-    margin: 0 auto; /* Centra el contenedor en la página */
   }
   footer {
     font-size: 14px;
@@ -815,6 +809,10 @@ sec .row-about {
 
 /* dispositivos con un ancho máximo de 480px (modo horizontal) */
 @media screen and (max-width: 480px) {
+  .Jumbotromp {
+    background-size: contain;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
   section {
     font-size: 16px;
   }
@@ -824,6 +822,17 @@ sec .row-about {
     align-items: center;
     padding: 0;
     margin: 0 auto;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+  nav ul li {
+    display: flex;
+    margin-bottom: 10px;
   }
   article {
     height: auto;
@@ -889,6 +898,17 @@ sec .row-about {
   }
 }
 @media screen and (min-width: 600px) and (max-width: 800px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .Jumbotromp {
+    background-size: contain;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
   section {
     font-size: 14px;
   }
