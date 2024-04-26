@@ -216,7 +216,7 @@ h4 {
 .parrafoprincipal {
   color: rgb(255, 255, 255);
   font-family: "Roboto Slab", sans-serif;
-  text-shadow: 0 0 5px #000000;
+  text-shadow: 0 0 6px #000000;
   text-align: center; /* Centra el texto horizontalmente */
   padding: 18px; /* Espaciado interno */
 }
