@@ -367,9 +367,12 @@ video {
 
 .fotoequipo {    
     width: auto;    
-    height: 500px;
-    
+    height: 500px;    
     transform: rotate(-10deg);
+}
+
+.fotito {
+    height: 50%;
 }
 
 .contact .mt-5 {
@@ -453,29 +456,16 @@ aside p {
 .Equipo-de-terapeutas {
     display: grid;
     /* Establece el contenedor como cuadrícula */
-    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
-    /* Columnas automáticas */
-    gap: 10px;
+    grid-column: 800px;  
+    gap: 20px;
     /* Espacio entre columnas */
-    margin-top: 25px;
+    margin-top: 50px;
     /* Margen superior */
 }
 
 .columnas-talleres {
     padding-left: 20px;
     padding-right: 35px;
-}
-
-.container-cursos{
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 35px;  
-    padding-bottom: 35px;
-}
-
-.row .align-items-start{
-    border-radius: 50px;
-    border-color: $c2;
 }
 
 .about-grid {
@@ -620,7 +610,6 @@ input {
         display: grid; // Asegura que la imagen sea un elemento de bloque
         margin-left: 15px;
         margin-right: 15px;
-
     }
 }
 
@@ -698,9 +687,6 @@ sec
     padding-left: 14px;
 }
 
-.row-servicio {
-    display: flex;
-}
 
 /* Estilos específicos para dispositivos móviles */
 /* dispositivos con un ancho máximo de 320px (modo vertical) */
@@ -845,7 +831,7 @@ sec
     }
 
     .Equipo-de-terapeutas {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));        
     }
 
     .about-grid {
@@ -1190,6 +1176,7 @@ sec
 
     .alineado-parrafo {
         font-size: 0.6rem;
+        font-family: 'Roboto Slab', Arial, sans-serif;
 
         /* Tamaño de fuente ligeramente reducido */
         .grid-item-hijo {
