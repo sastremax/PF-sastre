@@ -228,44 +228,27 @@ video {
 
 .contenedor-recuadros {
     height: auto;
-    /* Altura automática basada en el contenido */
-    width: 200px;
-    /* Ancho del contenedor al 100% */
+    width: auto;
     display: grid;
-    /* Establece el contenedor como grid */
-    flex-direction: column;
-    /* Dirección de los elementos: columna */
-    align-items: $centro;
-    /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente el contenedor */
     margin: 0 auto;
 
     /* Centra el contenedor horizontalmente */
     .recuadro {
-        height: 160px;
-        /*Alto*/
-        width: 160px;
-        /* Ancho */
+        height: 140px;
+        width: 140px;
         background-color: $c3;
-        /* Color de fondo */
         text-align: center;
-        /* Alineación del texto al centro */
-        @include borde-redondeado(4px solid $c2);
-        /* Borde sólido con color negro */
+        border: 4px solid $c2;
         padding: 15px;
-        /* Espaciado interno */
         overflow: hidden;
-        /* Oculta la barra de desplazamiento */
         margin: 15px;
-        /* Margen */
         text-transform: uppercase;
-        /*transformar el texto en mayúsculas*/
         display: flex;
-        /* Establece el contenedor como flexbox */
         justify-content: space-between;
-        /* Distribuye los elementos uniformemente a lo largo del eje principal */
         flex-direction: column;
-        /* Dirección de los elementos: en formato columna */
-        transition: 1.7s;
+        transition: 1.7s;        
 
         /* Transición con duración de 0.7 segundos */
         a {
@@ -702,6 +685,8 @@ sec
         align-items: center;
         padding: 0;
         margin: 0 auto;
+        min-height: 60px; /* Establece una altura mínima para la barra de navegación */
+        max-height: 80px; /* Establece una altura máxima para la barra de navegación */
     }
 
     section {
@@ -761,13 +746,16 @@ sec
     }
 
     .contenedor-recuadros {
-        width: 300px !important;/* Ancho deseado para dispositivos con un ancho máximo de 320px */
+        min-width: 319px !important; /* Ancho deseado para dispositivos con un ancho máximo de 320px */
+        max-width: 479px !important; /* Ancho deseado para dispositivos con un ancho máximo de 480px */
         display: flex;
-        /* Establece el contenedor como flexbox */
         flex-direction: column;
-        /* Dirección de los elementos: columna */
-        align-items: $centro;
-        /* Centra los elementos horizontalmente */
+        align-items: center; /* Centra los elementos horizontalmente */
+        justify-content: center; /* Centra los elementos verticalmente */
+        
+        .recuadro {
+            font-size: 10px;
+        }       
     }
 
     footer {
@@ -778,13 +766,14 @@ sec
         max-height: 480px;
         max-width: 320px;
     }
-}
 
 .fotoencuadrada {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    }
+
 }
 
 /* dispositivos con un ancho máximo de 480px (modo horizontal) */
@@ -889,7 +878,7 @@ sec
     }
 
     .contenedor-recuadros {
-        width: 480px;
+        min-width: 480px;
         display: flex;
         /* Establece el contenedor como flexbox */
         flex-direction: column;
