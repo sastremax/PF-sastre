@@ -159,11 +159,21 @@ h4 {
     color: $c3;
     font-family: 'Roboto Slab', sans-serif;
     text-shadow: 0 0 6px $c2;
-    text-align: center;
-    /* Centra el texto horizontalmente */
-
-    padding: 18px;
+    text-align: left;   /* Centra el texto a la izquierda */
+    padding-top: 50px;
+    padding-left: 120px;
+    font-size: 20px;
     /* Espaciado interno */
+}
+
+.parrafoprincipal ul {
+    list-style-type: none;
+    /* Quita los puntos de las viñetas */
+}
+
+.parrafoprincipal ul li {
+    padding-bottom: 28px;    
+    /* Agrega un margen izquierdo para mantener la sangría */
 }
 
 .videosCentrado {
